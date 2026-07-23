@@ -1,0 +1,112 @@
+/* ============================================================
+   EREXPO — NOT FOUND (404) PAGE
+   File: src/styles/not-found.css
+   ============================================================ */
+
+.not-found-section{
+  padding:160px 0 140px;
+  min-height:56vh;
+  display:flex;
+  align-items:center;
+}
+
+.not-found-inner{
+  max-width:640px;
+  margin:0 auto;
+  text-align:center;
+}
+
+.not-found-code{
+  font-size:96px;
+  font-weight:700;
+  line-height:1;
+  letter-spacing:-.02em;
+  color:#7a1f2b;
+  margin:0 0 12px;
+}
+
+.not-found-eyebrow{
+  font-size:13px;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  color:#7a1f2b;
+  margin:0 0 12px;
+}
+
+.not-found-title{
+  font-size:34px;
+  font-weight:700;
+  letter-spacing:-.01em;
+  color:#1d1d1f;
+  margin:0 0 16px;
+}
+
+.not-found-description{
+  font-size:16px;
+  line-height:1.65;
+  color:#66666b;
+  max-width:480px;
+  margin:0 auto 36px;
+}
+
+.not-found-actions{
+  display:flex;
+  justify-content:center;
+  gap:16px;
+  flex-wrap:wrap;
+}
+
+.not-found-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  height:52px;
+  padding:0 32px;
+  border-radius:999px;
+  font-size:15px;
+  font-weight:600;
+  letter-spacing:-.01em;
+  transition:.25s;
+}
+
+.not-found-btn--primary{
+  background:#7a1f2b;
+  color:#fff;
+}
+
+.not-found-btn--primary:hover{
+  background:#651924;
+}
+
+.not-found-btn--outline{
+  background:transparent;
+  color:#7a1f2b;
+  border:1px solid #7a1f2b;
+}
+
+.not-found-btn--outline:hover{
+  background:#7a1f2b;
+  color:#fff;
+}
+
+.not-found-btn:focus-visible{
+  outline:2px solid #7a1f2b;
+  outline-offset:2px;
+}
+
+@media (max-width:640px){
+
+  .not-found-section{
+    padding:120px 0 96px;
+  }
+
+  .not-found-code{
+    font-size:72px;
+  }
+
+  .not-found-title{
+    font-size:26px;
+  }
+
+}

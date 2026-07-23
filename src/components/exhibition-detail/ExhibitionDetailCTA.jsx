@@ -1,0 +1,83 @@
+import { Link } from "react-router-dom";
+
+import { useTranslation } from "../../hooks/useTranslation";
+
+function ExhibitionDetailCTA() {
+  const { language } = useTranslation();
+
+  const content = {
+    en: {
+      label: "Ready to Exhibit?",
+      title: "Grow Your Business Through International Exhibitions",
+      description:
+        "EREXPO helps Turkish manufacturers and exporters participate in leading international exhibitions with professional guidance, strategic planning and end-to-end participation management.",
+      benefits: [
+        "Official Representative Support",
+        "Professional Participation Management",
+        "International Business Network",
+      ],
+      primary: "Request Participation Information",
+      secondary: "Contact EREXPO",
+    },
+
+    tr: {
+      label: "Katılımcı Olmaya Hazır mısınız?",
+      title: "Uluslararası Fuarlarla İşinizi Büyütün",
+      description:
+        "EREXPO, Türk üretici ve ihracatçıların önde gelen uluslararası fuarlara profesyonel danışmanlık, stratejik planlama ve uçtan uca katılım yönetimiyle katılmalarına yardımcı olur.",
+      benefits: [
+        "Resmî Temsilcilik Desteği",
+        "Profesyonel Katılım Yönetimi",
+        "Uluslararası İş Ağı",
+      ],
+      primary: "Katılım Bilgisi Talep Edin",
+      secondary: "EREXPO ile İletişime Geçin",
+    },
+  };
+
+  const t = content[language];
+
+  return (
+    <section className="exhibition-detail-cta section-spacing">
+      <div className="container">
+        <div className="cta-card">
+          <p className="section-label">
+            {t.label}
+          </p>
+
+          <h2>{t.title}</h2>
+
+          <p className="cta-description">
+            {t.description}
+          </p>
+
+          <div className="cta-benefits">
+            {t.benefits.map((benefit) => (
+              <span key={benefit}>
+                ✓ {benefit}
+              </span>
+            ))}
+          </div>
+
+          <div className="cta-actions">
+            <Link
+              to="/contact"
+              className="btn btn-primary"
+            >
+              {t.primary}
+            </Link>
+
+            <Link
+              to="/contact"
+              className="btn btn-secondary"
+            >
+              {t.secondary}
+            </Link>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default ExhibitionDetailCTA;

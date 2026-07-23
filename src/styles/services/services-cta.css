@@ -1,0 +1,126 @@
+.services-cta {
+  padding: 0 0 24px;
+  background: #f7f7f5;
+}
+
+.services-cta-card {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.9fr);
+  gap: 56px;
+  align-items: start;
+  min-height: 150px;
+  padding: 26px 42px;
+  border-radius: 22px;
+  background: #1d1d1f;
+}
+
+.services-cta-card::after {
+  content: "";
+  position: absolute;
+  top: -125px;
+  right: -65px;
+  width: 250px;
+  height: 250px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+}
+
+.services-cta-left,
+.services-cta-right {
+  position: relative;
+  z-index: 1;
+}
+
+.services-cta-card .section-label {
+  margin: 0 0 8px;
+  color: #d5a4aa;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.services-cta-card h2 {
+  max-width: 560px;
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(1.55rem, 2.5vw, 2.25rem);
+  line-height: 1.04;
+  letter-spacing: -0.04em;
+}
+
+.services-cta-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 18px;
+}
+
+.services-cta-right p {
+  max-width: 520px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+.services-cta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  padding: 10px 17px;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #1d1d1f;
+  font-size: 0.76rem;
+  font-weight: 700;
+  transition:
+    transform 220ms ease,
+    background 220ms ease;
+}
+
+.services-cta-link:hover {
+  transform: translateY(-2px);
+  background: #f0ece7;
+}
+
+.services-cta-link span {
+  font-size: 0.9rem;
+  transition: transform 220ms ease;
+}
+
+.services-cta-link:hover span {
+  transform: translateX(3px);
+}
+
+@media (max-width: 900px) {
+  .services-cta-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    min-height: auto;
+    padding: 32px 28px;
+  }
+}
+
+@media (max-width: 640px) {
+  .services-cta {
+    padding-bottom: 20px;
+  }
+
+  .services-cta-card {
+    gap: 18px;
+    padding: 24px 42px;
+    border-radius: 20px;
+  }
+
+  .services-cta-card h2 {
+    font-size: clamp(1.65rem, 8vw, 2.2rem);
+  }
+
+  .services-cta-right p {
+    font-size: 0.82rem;
+  }
+}

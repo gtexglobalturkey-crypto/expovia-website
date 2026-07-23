@@ -1,0 +1,128 @@
+.services-hero {
+  padding: 30px 0 6px;
+  background: #f7f7f5;
+  border-bottom: 1px solid #e8e5df;
+}
+
+.services-hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
+  gap: 48px;
+  align-items: start;
+}
+
+.services-hero-heading {
+  max-width: 780px;
+}
+
+.services-hero .section-label {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 12px;
+  color: #7a202c;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.services-hero .section-label::before {
+  content: "";
+  width: 30px;
+  height: 1px;
+  margin-right: 12px;
+  background: #7a202c;
+}
+
+.services-hero h1 {
+  margin: 0;
+  max-width: 760px;
+  font-size: clamp(2.15rem, 3.6vw, 3.35rem);
+  line-height: 1.03;
+  letter-spacing: -0.05em;
+  color: #1d1d1f;
+}
+
+.services-hero-intro {
+  max-width: 430px;
+  padding-top: 2px;
+}
+
+.services-hero-intro p {
+  margin: 0;
+  font-size: 0.96rem;
+  line-height: 1.58;
+  color: #626266;
+}
+
+.services-hero-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(122, 32, 44, 0.32);
+  color: #7a202c;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.services-hero-link span {
+  font-size: 0.95rem;
+  transition: transform 220ms ease;
+}
+
+.services-hero-link:hover span {
+  transform: translate(3px, -3px);
+}
+
+@media (max-width: 992px) {
+  .services-hero {
+    padding: 36px 0 12px;
+  }
+
+  .services-hero-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .services-hero h1 {
+    max-width: 720px;
+    font-size: clamp(2.1rem, 5.6vw, 3.05rem);
+  }
+
+  .services-hero-intro {
+    max-width: 620px;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .services-hero {
+    padding: 30px 0 12px;
+  }
+
+  .services-hero-layout {
+    gap: 16px;
+  }
+
+  .services-hero .section-label {
+    margin-bottom: 10px;
+    font-size: 0.7rem;
+  }
+
+  .services-hero .section-label::before {
+    width: 24px;
+    margin-right: 10px;
+  }
+
+  .services-hero h1 {
+    font-size: clamp(1.95rem, 9.5vw, 2.5rem);
+    line-height: 1.04;
+  }
+
+  .services-hero-intro p {
+    font-size: 0.92rem;
+    line-height: 1.55;
+  }
+}

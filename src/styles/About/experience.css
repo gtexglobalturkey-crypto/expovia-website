@@ -1,0 +1,149 @@
+.experience-section {
+  padding: 72px 0;
+  background: #efeae4;
+}
+
+.experience-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(420px, 0.8fr);
+  gap: 72px;
+  align-items: start;
+}
+
+.experience-content {
+  max-width: 720px;
+}
+
+.experience-content .section-label {
+  margin-bottom: 16px;
+}
+
+.experience-content h2 {
+  margin: 0;
+  max-width: 700px;
+  font-size: clamp(38px, 4vw, 62px);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+  color: #1d1d1f;
+}
+
+.experience-content > p:not(.section-label) {
+  max-width: 660px;
+  margin: 24px 0 0;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #5e5b57;
+}
+
+.experience-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.experience-card {
+  min-height: 170px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(29, 29, 31, 0.08);
+}
+
+.experience-card strong {
+  display: block;
+  font-size: clamp(34px, 3vw, 48px);
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: #7c2638;
+}
+
+.experience-card span {
+  max-width: 170px;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #4f4c49;
+}
+
+.experience-gallery-placeholder {
+  margin-top: 48px;
+}
+
+.experience-photo {
+  min-height: 310px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(20, 20, 22, 0.06) 0%,
+      rgba(20, 20, 22, 0.78) 100%
+    ),
+    #d7d0c8;
+  border: 1px solid rgba(29, 29, 31, 0.1);
+}
+
+.experience-photo span {
+  margin-bottom: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.experience-photo p {
+  margin: 0;
+  font-size: clamp(24px, 3vw, 38px);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  color: #ffffff;
+}
+
+@media (max-width: 1100px) {
+  .experience-layout {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .experience-content {
+    max-width: 780px;
+  }
+
+  .experience-stats {
+    max-width: 760px;
+  }
+}
+
+@media (max-width: 720px) {
+  .experience-section {
+    padding: 54px 0;
+  }
+
+  .experience-content h2 {
+    font-size: 38px;
+  }
+
+  .experience-content > p:not(.section-label) {
+    font-size: 15px;
+  }
+
+  .experience-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-card {
+    min-height: 140px;
+  }
+
+  .experience-gallery-placeholder {
+    margin-top: 36px;
+  }
+
+  .experience-photo {
+    min-height: 240px;
+    padding: 24px;
+  }
+}

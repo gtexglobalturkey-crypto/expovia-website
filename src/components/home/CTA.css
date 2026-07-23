@@ -1,0 +1,140 @@
+.cta-section {
+  position: relative;
+  overflow: hidden;
+  padding: 44px 0 40px;
+  color: #ffffff;
+  background:
+    radial-gradient(
+      circle at 82% 18%,
+      rgba(255, 255, 255, 0.07),
+      transparent 28%
+    ),
+    linear-gradient(
+      135deg,
+      #8f1730 0%,
+      #731126 100%
+    );
+}
+
+.cta-section::before {
+  content: "";
+  position: absolute;
+  right: -150px;
+  top: -150px;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.07);
+  filter: blur(70px);
+  pointer-events: none;
+}
+
+.cta-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.cta-section__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 52px;
+  align-items: center;
+}
+
+.cta-section__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 12px;
+}
+
+.cta-section__eyebrow > span {
+  width: 30px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.56);
+}
+
+.cta-section__eyebrow p {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.cta-section__content h2 {
+  max-width: 700px;
+  margin-bottom: 16px;
+  font-size: clamp(30px, 3.4vw, 44px);
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.cta-section__content > p {
+  max-width: 580px;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.cta-section__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cta-section__actions .button {
+  width: 100%;
+  min-height: 46px;
+  padding-inline: 22px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+.cta-section__secondary-button {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.38);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.cta-section__secondary-button:hover {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.86);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.cta-section__actions p {
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+@media (max-width: 1100px) {
+  .cta-section__inner {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .cta-section__actions {
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 680px) {
+  .cta-section {
+    padding: 68px 0;
+  }
+
+  .cta-section__content h2 {
+    font-size: clamp(32px, 9vw, 44px);
+  }
+
+  .cta-section__content > p {
+    font-size: 13px;
+  }
+
+  .cta-section__actions {
+    max-width: none;
+  }
+}
