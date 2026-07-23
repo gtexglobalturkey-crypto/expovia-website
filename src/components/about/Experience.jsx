@@ -1,4 +1,4 @@
-import "../../styles/about/experience.css";
+import "../../styles/About/experience.css";
 
 import { useTranslation } from "../../hooks/useTranslation";
 
