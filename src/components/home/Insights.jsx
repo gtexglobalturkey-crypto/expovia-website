@@ -14,7 +14,7 @@ function Insights() {
       introLink: "Suggest a topic",
       cardLink: "Read insight",
       notice:
-        "New articles and market notes will be published as the EREXPO knowledge platform continues to grow.",
+        "New articles and market notes will be published as the EXPOVIA knowledge platform continues to grow.",
 
       insights: [
         {
@@ -49,7 +49,7 @@ function Insights() {
       introLink: "Konu önerin",
       cardLink: "İçeriği incele",
       notice:
-        "EREXPO bilgi platformu geliştikçe yeni makaleler ve pazar notları yayımlanacaktır.",
+        "EXPOVIA bilgi platformu geliştikçe yeni makaleler ve pazar notları yayımlanacaktır.",
 
       insights: [
         {

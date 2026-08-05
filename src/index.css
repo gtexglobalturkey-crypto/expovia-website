@@ -67,7 +67,13 @@ ol {
 }
 
 #root {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
+}
+
+#root > main {
+  flex: 1 0 auto;
 }
 
 .container {
@@ -76,7 +82,7 @@ ol {
 }
 
 .section-spacing {
-  padding: 112px 0;
+  padding: 40px 0;
 }
 
 @media (max-width: 1024px) {
@@ -85,7 +91,7 @@ ol {
   }
 
   .section-spacing {
-    padding: 88px 0;
+    padding: 32px 0;
   }
 }
 
@@ -95,6 +101,6 @@ ol {
   }
 
   .section-spacing {
-    padding: 72px 0;
+    padding: 28px 0;
   }
 }

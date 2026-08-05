@@ -1,14 +1,17 @@
 import { useEffect } from "react";
 
-const DEFAULT_SITE_NAME = "EREXPO";
+import { SITE_NAME } from "../../config/site";
+
+const DEFAULT_SITE_NAME = SITE_NAME;
 
 const DEFAULT_TITLE =
-  "EREXPO | International Exhibition Representation";
+  "EXPOVIA | International Exhibition Representation";
 
 const DEFAULT_DESCRIPTION =
-  "EREXPO provides international exhibition representation and participation support for companies expanding into global markets.";
+  "EXPOVIA provides international exhibition representation and participation support for companies expanding into global markets.";
 
-const DEFAULT_IMAGE = "/og-image.jpg";
+// TODO: set once a final EXPOVIA social share image exists — no og-image asset is available yet.
+const DEFAULT_IMAGE = "";
 
 function getOrCreateMeta(selector, attributes) {
   let element = document.head.querySelector(selector);
@@ -75,7 +78,7 @@ function SEO({
       canonical ?? window.location.pathname,
     );
 
-    const imageUrl = getAbsoluteUrl(image);
+    const imageUrl = image ? getAbsoluteUrl(image) : null;
 
     document.title = pageTitle;
 
@@ -134,7 +137,7 @@ function SEO({
         property: "og:url",
         content: canonicalUrl,
       },
-      {
+      imageUrl && {
         property: "og:image",
         content: imageUrl,
       },
@@ -146,7 +149,7 @@ function SEO({
         property: "og:locale",
         content: "en_US",
       },
-    ];
+    ].filter(Boolean);
 
     openGraphTags.forEach(
       ({ property, content }) => {
@@ -174,11 +177,11 @@ function SEO({
         name: "twitter:description",
         content: description,
       },
-      {
+      imageUrl && {
         name: "twitter:image",
         content: imageUrl,
       },
-    ];
+    ].filter(Boolean);
 
     twitterTags.forEach(({ name, content }) => {
       const meta = getOrCreateMeta(

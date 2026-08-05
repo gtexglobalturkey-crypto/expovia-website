@@ -5,7 +5,7 @@ import SEO from "../components/seo/SEO";
 
 import AboutHero from "../components/about/AboutHero";
 import WhoWeAre from "../components/about/WhoWeAre";
-import Experience from "../components/about/Experience";
+import AboutTimeline from "../components/about/AboutTimeline";
 import HowWeWork from "../components/about/HowWeWork";
 import Values from "../components/about/Values";
 
@@ -13,8 +13,8 @@ function About() {
   return (
     <div className="about-page">
       <SEO
-        title="About EREXPO"
-        description="Learn about EREXPO, our international exhibition representation expertise, industry experience and commitment to helping companies expand into global markets."
+        title="About EXPOVIA"
+        description="Learn about EXPOVIA, our international exhibition representation expertise, industry experience and commitment to helping companies expand into global markets."
         canonical="/about"
       />
 
@@ -25,7 +25,7 @@ function About() {
 
         <WhoWeAre />
 
-        <Experience />
+        <AboutTimeline />
 
         <HowWeWork />
 

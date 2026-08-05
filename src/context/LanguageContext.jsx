@@ -8,7 +8,7 @@ import {
 export const LanguageContext = createContext(null);
 
 const DEFAULT_LANGUAGE = "en";
-const STORAGE_KEY = "erexpo-language";
+const STORAGE_KEY = "expovia-language";
 
 export function LanguageProvider({ children }) {
   const [language, setLanguage] = useState(() => {

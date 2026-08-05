@@ -1,23 +1,25 @@
 import { useTranslation } from "../../hooks/useTranslation";
 
+import { CONTACT_EMAIL } from "../../config/site";
+
 function ContactCTA() {
   const { language } = useTranslation();
 
   const content = {
     en: {
       label: "Ready to Grow Internationally?",
-      title: "Start Your International Exhibition Journey with EREXPO",
+      title: "Start Your International Exhibition Journey with EXPOVIA",
       description:
-        "From selecting the right exhibition to managing every step of your participation, EREXPO helps Turkish companies connect with global business opportunities through international trade fairs.",
+        "From selecting the right exhibition to managing every step of your participation, EXPOVIA helps Turkish companies connect with global business opportunities through international trade fairs.",
       primaryButton: "Contact Us",
       secondaryButton: "Explore Exhibitions",
     },
 
     tr: {
       label: "Uluslararası Büyümeye Hazır mısınız?",
-      title: "EREXPO ile Uluslararası Fuar Yolculuğunuza Başlayın",
+      title: "EXPOVIA ile Uluslararası Fuar Yolculuğunuza Başlayın",
       description:
-        "Doğru fuarı seçmekten katılım sürecinizin her aşamasını yönetmeye kadar EREXPO, Türk şirketlerinin uluslararası ticaret fuarları aracılığıyla küresel iş fırsatlarına ulaşmasına yardımcı olur.",
+        "Doğru fuarı seçmekten katılım sürecinizin her aşamasını yönetmeye kadar EXPOVIA, Türk şirketlerinin uluslararası ticaret fuarları aracılığıyla küresel iş fırsatlarına ulaşmasına yardımcı olur.",
       primaryButton: "Bize Ulaşın",
       secondaryButton: "Fuarları Keşfedin",
     },
@@ -41,7 +43,11 @@ function ContactCTA() {
 
           <div className="contact-cta-actions">
             <a
-              href="mailto:info@erexpo.com"
+              href={
+                CONTACT_EMAIL
+                  ? `mailto:${CONTACT_EMAIL}`
+                  : undefined
+              }
               className="primary-button"
             >
               {t.primaryButton}

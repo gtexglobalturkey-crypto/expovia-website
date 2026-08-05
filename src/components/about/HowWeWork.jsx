@@ -1,5 +1,7 @@
 import { useTranslation } from "../../hooks/useTranslation";
 
+import bgPhoto from "../../assets/images/about/optimized/feature-tomarok-team.jpg";
+
 function HowWeWork() {
   const { language } = useTranslation();
 
@@ -79,7 +81,10 @@ function HowWeWork() {
 
   return (
     <section className="how-we-work section-spacing">
-      <div className="container">
+      <div
+        className="container"
+        style={{ "--how-we-work-photo": `url(${bgPhoto})` }}
+      >
         <div className="how-we-work-layout">
           <div className="how-we-work-heading">
             <p className="section-label">

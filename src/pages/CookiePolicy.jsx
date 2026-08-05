@@ -2,6 +2,8 @@ import LegalPage from "../components/legal/LegalPage";
 
 import { useTranslation } from "../hooks/useTranslation";
 
+import { CONTACT_EMAIL } from "../config/site";
+
 function CookiePolicy() {
   const { language } = useTranslation();
 
@@ -10,7 +12,7 @@ function CookiePolicy() {
       eyebrow: "Legal Information",
       title: "Cookie Policy",
       description:
-        "This Cookie Policy explains how EREXPO may use cookies and similar technologies when you visit our website and how you can manage your preferences.",
+        "This Cookie Policy explains how EXPOVIA may use cookies and similar technologies when you visit our website and how you can manage your preferences.",
       updatedLabel: "Last updated",
       updatedDate: "July 20, 2026",
 
@@ -23,7 +25,7 @@ function CookiePolicy() {
               <p>
                 This Cookie Policy provides information
                 about cookies and similar technologies that
-                may be used on the EREXPO website.
+                may be used on the EXPOVIA website.
               </p>
 
               <p>
@@ -35,7 +37,7 @@ function CookiePolicy() {
 
               <p>
                 This policy should be read together with the
-                EREXPO Privacy Policy.
+                EXPOVIA Privacy Policy.
               </p>
             </>
           ),
@@ -77,7 +79,7 @@ function CookiePolicy() {
             <>
               <p>
                 Depending on the website features and
-                services in use, EREXPO may use the
+                services in use, EXPOVIA may use the
                 following categories of cookies:
               </p>
 
@@ -153,7 +155,7 @@ function CookiePolicy() {
           content: (
             <>
               <p>
-                EREXPO may use analytics technologies to
+                EXPOVIA may use analytics technologies to
                 understand website performance and visitor
                 interactions.
               </p>
@@ -226,7 +228,7 @@ function CookiePolicy() {
           content: (
             <>
               <p>
-                The EREXPO website does not intend to place
+                The EXPOVIA website does not intend to place
                 non-essential marketing cookies without the
                 legally required consent.
               </p>
@@ -288,7 +290,7 @@ function CookiePolicy() {
             <>
               <p>
                 First-party cookies are set directly by the
-                EREXPO website.
+                EXPOVIA website.
               </p>
 
               <p>
@@ -426,7 +428,7 @@ function CookiePolicy() {
                 Where this information identifies or can
                 reasonably be linked to an individual, it
                 will be treated as personal information and
-                processed in accordance with the EREXPO
+                processed in accordance with the EXPOVIA
                 Privacy Policy.
               </p>
             </>
@@ -446,7 +448,7 @@ function CookiePolicy() {
 
               <p>
                 Where cookie-related information is
-                transferred internationally, EREXPO will
+                transferred internationally, EXPOVIA will
                 take reasonable measures to ensure that the
                 transfer is carried out in accordance with
                 applicable data protection legislation.
@@ -486,14 +488,20 @@ function CookiePolicy() {
               </p>
 
               <p>
-                <strong>EREXPO</strong>
+                <strong>EXPOVIA</strong>
                 <br />
                 International Exhibition Representation
                 <br />
                 Türkiye
                 <br />
-                <a href="mailto:info@erexpo.com">
-                  info@erexpo.com
+                <a
+                  href={
+                    CONTACT_EMAIL
+                      ? `mailto:${CONTACT_EMAIL}`
+                      : undefined
+                  }
+                >
+                  {CONTACT_EMAIL || "Email address pending"}
                 </a>
               </p>
             </>
@@ -506,7 +514,7 @@ function CookiePolicy() {
       eyebrow: "Yasal Bilgilendirme",
       title: "Çerez Politikası",
       description:
-        "Bu Çerez Politikası, EREXPO internet sitesini ziyaret ettiğinizde çerezlerin ve benzeri teknolojilerin nasıl kullanılabileceğini ve tercihlerinizi nasıl yönetebileceğinizi açıklar.",
+        "Bu Çerez Politikası, EXPOVIA internet sitesini ziyaret ettiğinizde çerezlerin ve benzeri teknolojilerin nasıl kullanılabileceğini ve tercihlerinizi nasıl yönetebileceğinizi açıklar.",
       updatedLabel: "Son güncelleme",
       updatedDate: "20 Temmuz 2026",
 
@@ -517,7 +525,7 @@ function CookiePolicy() {
           content: (
             <>
               <p>
-                Bu Çerez Politikası, EREXPO internet
+                Bu Çerez Politikası, EXPOVIA internet
                 sitesinde kullanılabilecek çerezler ve
                 benzeri teknolojiler hakkında bilgi verir.
               </p>
@@ -531,7 +539,7 @@ function CookiePolicy() {
               </p>
 
               <p>
-                Bu politika, EREXPO Gizlilik Politikası ile
+                Bu politika, EXPOVIA Gizlilik Politikası ile
                 birlikte değerlendirilmelidir.
               </p>
             </>
@@ -574,7 +582,7 @@ function CookiePolicy() {
             <>
               <p>
                 İnternet sitesindeki özelliklere ve
-                kullanılan hizmetlere bağlı olarak EREXPO
+                kullanılan hizmetlere bağlı olarak EXPOVIA
                 aşağıdaki çerez kategorilerini
                 kullanabilir:
               </p>
@@ -653,7 +661,7 @@ function CookiePolicy() {
           content: (
             <>
               <p>
-                EREXPO, internet sitesinin performansını ve
+                EXPOVIA, internet sitesinin performansını ve
                 ziyaretçi etkileşimlerini anlamak amacıyla
                 analiz teknolojileri kullanabilir.
               </p>
@@ -727,7 +735,7 @@ function CookiePolicy() {
           content: (
             <>
               <p>
-                EREXPO internet sitesi, kanunen gerekli
+                EXPOVIA internet sitesi, kanunen gerekli
                 onay alınmadan zorunlu olmayan pazarlama
                 çerezleri yerleştirmeyi amaçlamaz.
               </p>
@@ -788,7 +796,7 @@ function CookiePolicy() {
           content: (
             <>
               <p>
-                Birinci taraf çerezler doğrudan EREXPO
+                Birinci taraf çerezler doğrudan EXPOVIA
                 internet sitesi tarafından yerleştirilir.
               </p>
 
@@ -935,7 +943,7 @@ function CookiePolicy() {
                 Bu bilgilerin bir kişiyi tanımlaması veya
                 makul şekilde bir kişiyle
                 ilişkilendirilebilmesi halinde bilgiler
-                kişisel veri olarak kabul edilir ve EREXPO
+                kişisel veri olarak kabul edilir ve EXPOVIA
                 Gizlilik Politikası’na uygun şekilde
                 işlenir.
               </p>
@@ -999,14 +1007,20 @@ function CookiePolicy() {
               </p>
 
               <p>
-                <strong>EREXPO</strong>
+                <strong>EXPOVIA</strong>
                 <br />
                 Uluslararası Fuar Temsilciliği
                 <br />
                 Türkiye
                 <br />
-                <a href="mailto:info@erexpo.com">
-                  info@erexpo.com
+                <a
+                  href={
+                    CONTACT_EMAIL
+                      ? `mailto:${CONTACT_EMAIL}`
+                      : undefined
+                  }
+                >
+                  {CONTACT_EMAIL || "Email address pending"}
                 </a>
               </p>
             </>

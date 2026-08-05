@@ -4,8 +4,8 @@ import Footer from "../components/layout/Footer";
 import SEO from "../components/seo/SEO";
 
 import ServicesHero from "../components/Services/ServicesHero";
-import ServicesGrid from "../components/Services/ServicesGrid";
 import ServicesProcess from "../components/Services/ServicesProcess";
+import ServicesGrid from "../components/Services/ServicesGrid";
 import ServicesCTA from "../components/Services/ServicesCTA";
 
 function Services() {
@@ -13,7 +13,7 @@ function Services() {
     <>
       <SEO
         title="International Exhibition Services"
-        description="Discover EREXPO services for international exhibition participation, including exhibition selection, stand planning, participation management and pre-exhibition support."
+        description="Discover EXPOVIA services for international exhibition participation, including exhibition selection, stand planning, participation management and pre-exhibition support."
         canonical="/services"
       />
 
@@ -21,8 +21,8 @@ function Services() {
 
       <main>
         <ServicesHero />
-        <ServicesGrid />
         <ServicesProcess />
+        <ServicesGrid />
         <ServicesCTA />
       </main>
 

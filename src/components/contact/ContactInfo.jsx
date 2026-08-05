@@ -5,6 +5,8 @@ import {
 } from "lucide-react";
 import { useTranslation } from "../../hooks/useTranslation";
 
+import { CONTACT_EMAIL } from "../../config/site";
+
 function ContactInfo() {
   const { language } = useTranslation();
 
@@ -13,14 +15,14 @@ function ContactInfo() {
       label: "Contact Details",
       title: "Speak with Our Team",
       description:
-        "Contact EREXPO for exhibition selection, participation planning and organizer coordination.",
+        "Contact EXPOVIA for exhibition selection, participation planning and organizer coordination.",
 
       items: [
         {
           icon: <Mail size={14} />,
           heading: "Email",
-          value: "info@erexpo.com",
-          href: "mailto:info@erexpo.com",
+          value: CONTACT_EMAIL || "Email address pending",
+          href: CONTACT_EMAIL ? `mailto:${CONTACT_EMAIL}` : undefined,
           description:
             "General enquiries and participation requests.",
         },
@@ -46,14 +48,14 @@ function ContactInfo() {
       label: "İletişim Bilgileri",
       title: "Ekibimizle Görüşün",
       description:
-        "Fuar seçimi, katılım planlaması ve organizatör koordinasyonu için EREXPO ile iletişime geçin.",
+        "Fuar seçimi, katılım planlaması ve organizatör koordinasyonu için EXPOVIA ile iletişime geçin.",
 
       items: [
         {
           icon: <Mail size={14} />,
           heading: "E-posta",
-          value: "info@erexpo.com",
-          href: "mailto:info@erexpo.com",
+          value: CONTACT_EMAIL || "E-posta adresi belirleniyor",
+          href: CONTACT_EMAIL ? `mailto:${CONTACT_EMAIL}` : undefined,
           description:
             "Genel bilgi talepleri ve fuar katılım başvuruları.",
         },

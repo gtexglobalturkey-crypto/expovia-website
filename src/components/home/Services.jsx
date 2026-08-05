@@ -10,7 +10,7 @@ function Services() {
       label: "Our Services",
       title: "Structured support at every stage of participation.",
       intro:
-        "EREXPO manages international exhibition participation with clear communication, practical guidance and disciplined follow-up from the first enquiry to post-event evaluation.",
+        "EXPOVIA manages international exhibition participation with clear communication, practical guidance and disciplined follow-up from the first enquiry to post-event evaluation.",
       link: "Discuss your participation plans",
 
       services: [
@@ -30,7 +30,7 @@ function Services() {
           id: "03",
           title: "Organizer Communication",
           description:
-            "EREXPO coordinates communication with international organizers before, during and after participation.",
+            "EXPOVIA coordinates communication with international organizers before, during and after participation.",
         },
         {
           id: "04",
@@ -57,7 +57,7 @@ function Services() {
       label: "Hizmetlerimiz",
       title: "Katılım sürecinin her aşamasında planlı destek.",
       intro:
-        "EREXPO, ilk bilgi talebinden fuar sonrası değerlendirmeye kadar uluslararası fuar katılım sürecini açık iletişim, pratik rehberlik ve disiplinli takip anlayışıyla yönetir.",
+        "EXPOVIA, ilk bilgi talebinden fuar sonrası değerlendirmeye kadar uluslararası fuar katılım sürecini açık iletişim, pratik rehberlik ve disiplinli takip anlayışıyla yönetir.",
       link: "Katılım planlarınızı görüşelim",
 
       services: [
@@ -77,7 +77,7 @@ function Services() {
           id: "03",
           title: "Organizatör İletişimi",
           description:
-            "EREXPO, uluslararası organizatörlerle fuar öncesinde, sırasında ve sonrasında tüm iletişimi koordine eder.",
+            "EXPOVIA, uluslararası organizatörlerle fuar öncesinde, sırasında ve sonrasında tüm iletişimi koordine eder.",
         },
         {
           id: "04",

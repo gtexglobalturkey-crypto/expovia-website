@@ -10,7 +10,7 @@ function ExhibitionParticipation() {
       label: "Participation",
       title: "Choose Your Participation Strategy",
       description:
-        "Whether you require complete design flexibility, a turnkey stand package or professional participation consultancy, EREXPO helps you achieve the best exhibition experience.",
+        "Whether you require complete design flexibility, a turnkey stand package or professional participation consultancy, EXPOVIA helps you achieve the best exhibition experience.",
       popularLabel: "Most Popular",
 
       options: [
@@ -45,17 +45,17 @@ function ExhibitionParticipation() {
         },
         {
           number: "03",
-          title: "EREXPO Support",
+          title: "EXPOVIA Support",
           subtitle: "Professional Consultancy",
           description:
-            "From stand reservation to organizer communication, EREXPO manages every important step of your participation process.",
+            "From stand reservation to organizer communication, EXPOVIA manages every important step of your participation process.",
           features: [
             "Stand reservation",
             "Application management",
             "Organizer coordination",
             "Pre-exhibition guidance",
           ],
-          button: "Contact EREXPO",
+          button: "Contact EXPOVIA",
         },
       ],
     },
@@ -64,7 +64,7 @@ function ExhibitionParticipation() {
       label: "Katılım Seçenekleri",
       title: "Katılım Stratejinizi Seçin",
       description:
-        "İster tamamen özgün bir stant tasarımı, ister anahtar teslim bir paket ya da profesyonel katılım danışmanlığı tercih edin, EREXPO en iyi fuar deneyimine ulaşmanıza yardımcı olur.",
+        "İster tamamen özgün bir stant tasarımı, ister anahtar teslim bir paket ya da profesyonel katılım danışmanlığı tercih edin, EXPOVIA en iyi fuar deneyimine ulaşmanıza yardımcı olur.",
       popularLabel: "En Çok Tercih Edilen",
 
       options: [
@@ -99,17 +99,17 @@ function ExhibitionParticipation() {
         },
         {
           number: "03",
-          title: "EREXPO Desteği",
+          title: "EXPOVIA Desteği",
           subtitle: "Profesyonel Danışmanlık",
           description:
-            "Stant rezervasyonundan organizatör iletişimine kadar EREXPO, katılım sürecinizin tüm önemli adımlarını yönetir.",
+            "Stant rezervasyonundan organizatör iletişimine kadar EXPOVIA, katılım sürecinizin tüm önemli adımlarını yönetir.",
           features: [
             "Stant rezervasyonu",
             "Başvuru yönetimi",
             "Organizatör koordinasyonu",
             "Fuar öncesi yönlendirme",
           ],
-          button: "EREXPO ile İletişime Geçin",
+          button: "EXPOVIA ile İletişime Geçin",
         },
       ],
     },

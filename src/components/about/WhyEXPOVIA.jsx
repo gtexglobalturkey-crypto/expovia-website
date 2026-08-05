@@ -1,12 +1,12 @@
 import { useTranslation } from "../../hooks/useTranslation";
 
-function WhyERExpo() {
+function WhyEXPOVIA() {
   const { language } = useTranslation();
 
   const content = {
     en: {
-      label: "Why EREXPO",
-      title: "Why Companies Choose EREXPO",
+      label: "Why EXPOVIA",
+      title: "Why Companies Choose EXPOVIA",
       description:
         "We combine international exhibition experience with professional representation services to make global participation simpler, faster and more effective.",
 
@@ -39,8 +39,8 @@ function WhyERExpo() {
     },
 
     tr: {
-      label: "Neden EREXPO?",
-      title: "Şirketler Neden EREXPO’yu Tercih Ediyor?",
+      label: "Neden EXPOVIA?",
+      title: "Şirketler Neden EXPOVIA’yu Tercih Ediyor?",
       description:
         "Uluslararası fuar deneyimimizi profesyonel temsilcilik hizmetleriyle birleştirerek küresel katılım sürecini daha kolay, hızlı ve etkili hale getiriyoruz.",
 
@@ -76,9 +76,9 @@ function WhyERExpo() {
   const t = content[language];
 
   return (
-    <section className="why-erexpo section-spacing">
+    <section className="why-expovia section-spacing">
       <div className="container">
-        <div className="why-erexpo-heading">
+        <div className="why-expovia-heading">
           <p className="section-label">
             {t.label}
           </p>
@@ -88,13 +88,13 @@ function WhyERExpo() {
           <p>{t.description}</p>
         </div>
 
-        <div className="why-erexpo-grid">
+        <div className="why-expovia-grid">
           {t.reasons.map((item) => (
             <article
               key={item.number}
-              className="why-erexpo-card"
+              className="why-expovia-card"
             >
-              <span className="why-erexpo-number">
+              <span className="why-expovia-number">
                 {item.number}
               </span>
 
@@ -109,4 +109,4 @@ function WhyERExpo() {
   );
 }
 
-export default WhyERExpo;
+export default WhyEXPOVIA;

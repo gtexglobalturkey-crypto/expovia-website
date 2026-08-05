@@ -1,7 +1,9 @@
 import {
   ExternalLink,
- 
+
 } from "lucide-react";
+
+import { CONTACT_EMAIL } from "../../config/site";
 
 function ContactMap() {
   return (
@@ -13,7 +15,7 @@ function ContactMap() {
         <div className="contact-map-layout">
           <div className="contact-map">
             <iframe
-              title="EREXPO Office Location"
+              title="EXPOVIA Office Location"
               src="https://www.google.com/maps?q=Istanbul,Turkey&output=embed"
               loading="lazy"
               allowFullScreen
@@ -27,7 +29,7 @@ function ContactMap() {
             </p>
 
             <h2>
-              Visit EREXPO
+              Visit EXPOVIA
             </h2>
 
             <p>
@@ -58,8 +60,14 @@ function ContactMap() {
               <div className="contact-office-detail">
                 <span>Email</span>
 
-                <a href="mailto:info@erexpo.com">
-                  info@erexpo.com
+                <a
+                  href={
+                    CONTACT_EMAIL
+                      ? `mailto:${CONTACT_EMAIL}`
+                      : undefined
+                  }
+                >
+                  {CONTACT_EMAIL || "Email address pending"}
                 </a>
               </div>
 

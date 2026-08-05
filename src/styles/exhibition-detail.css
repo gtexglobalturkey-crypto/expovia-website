@@ -1,5 +1,5 @@
 
-/* EREXPO — EXHIBITION DETAIL PREMIUM */
+/* EXPOVIA — EXHIBITION DETAIL PREMIUM */
 
 .exhibition-detail-hero {
   position: relative;
@@ -179,7 +179,7 @@
 }
 
 .detail-hero-image::after {
-  content: "EREXPO";
+  content: "EXPOVIA";
   position: absolute;
   left: 22px;
   bottom: 20px;

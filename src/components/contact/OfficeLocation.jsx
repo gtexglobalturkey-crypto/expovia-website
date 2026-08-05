@@ -1,3 +1,5 @@
+import { CONTACT_EMAIL } from "../../config/site";
+
 function OfficeLocation() {
   return (
     <section className="office-location section-spacing">
@@ -28,7 +30,7 @@ function OfficeLocation() {
               <div>
                 <strong>Email</strong>
                 <span>
-                  info@erexpo.com
+                  {CONTACT_EMAIL || "Email address pending"}
                 </span>
               </div>
 

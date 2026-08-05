@@ -13,7 +13,7 @@ function Experience() {
       firstParagraph:
         "For more than fifteen years, we have worked closely with international exhibition organizers, manufacturers, exporters and industry professionals. During this journey, we gained practical experience in exhibition planning, organizer coordination, exhibitor support and international business development.",
       secondParagraph:
-        "EREXPO brings together this experience with a modern and transparent approach, helping Turkish companies participate in international exhibitions with confidence while building sustainable business relationships across global markets.",
+        "EXPOVIA brings together this experience with a modern and transparent approach, helping Turkish companies participate in international exhibitions with confidence while building sustainable business relationships across global markets.",
       photoLabel: "PHOTO PLACEHOLDER",
       photoText: "International Exhibition Experience",
 
@@ -44,7 +44,7 @@ function Experience() {
       firstParagraph:
         "On beş yılı aşkın süredir uluslararası fuar organizatörleri, üreticiler, ihracatçılar ve sektör profesyonelleriyle yakın çalışıyoruz. Bu süreç boyunca fuar planlaması, organizatör koordinasyonu, katılımcı desteği ve uluslararası iş geliştirme alanlarında güçlü bir uygulama deneyimi kazandık.",
       secondParagraph:
-        "EREXPO, bu deneyimi modern ve şeffaf bir yaklaşımla bir araya getirerek Türk şirketlerinin uluslararası fuarlara güvenle katılmasına ve küresel pazarlarda sürdürülebilir iş ilişkileri kurmasına yardımcı olur.",
+        "EXPOVIA, bu deneyimi modern ve şeffaf bir yaklaşımla bir araya getirerek Türk şirketlerinin uluslararası fuarlara güvenle katılmasına ve küresel pazarlarda sürdürülebilir iş ilişkileri kurmasına yardımcı olur.",
       photoLabel: "FOTOĞRAF ALANI",
       photoText: "Uluslararası Fuar Deneyimi",
 

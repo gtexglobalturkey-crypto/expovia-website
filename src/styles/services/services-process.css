@@ -1,113 +1,52 @@
 .services-process {
-  padding: 20px 0 8px;
-  background: #ffffff;
+  padding: 6px 0 4px;
+  background: #f7f7f5;
 }
 
 .services-process-heading {
   max-width: 680px;
-  margin-bottom: 14px;
 }
 
 .services-process-heading .section-label {
-  margin-bottom: 10px;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 6px;
+  color: #7a202c;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.services-process-heading .section-label::before {
+  content: "";
+  width: 30px;
+  height: 1px;
+  margin-right: 12px;
+  background: #7a202c;
 }
 
 .services-process-heading h2 {
   margin: 0;
-  font-size: clamp(1.8rem, 2.8vw, 2.5rem);
-  line-height: 1.08;
-  letter-spacing: -0.04em;
+  font-size: clamp(1.15rem, 1.8vw, 1.5rem);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
   color: #1d1d1f;
-}
-
-.services-process-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  border-top: 1px solid #e8e5df;
-  border-bottom: 1px solid #e8e5df;
-}
-
-.services-process-step {
-  min-height: 145px;
-  padding: 22px;
-  border-right: 1px solid #e8e5df;
-}
-
-.services-process-step:last-child {
-  border-right: 0;
-}
-
-.services-process-step > span {
-  display: block;
-  margin-bottom: 18px;
-  color: #7a202c;
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-}
-
-.services-process-step h3 {
-  margin: 0 0 10px;
-  font-size: 1.05rem;
-  line-height: 1.25;
-  letter-spacing: -0.02em;
-  color: #1d1d1f;
-}
-
-.services-process-step p {
-  margin: 0;
-  color: #666;
-  font-size: 0.84rem;
-  line-height: 1.5;
+  white-space: nowrap;
 }
 
 @media (max-width: 992px) {
   .services-process {
-    padding: 56px 0;
+    padding: 20px 0 16px;
   }
 
-  .services-process-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .services-process-step {
-    min-height: 170px;
-  }
-
-  .services-process-step:nth-child(2) {
-    border-right: 0;
-  }
-
-  .services-process-step:nth-child(-n + 2) {
-    border-bottom: 1px solid #e8e5df;
+  .services-process-heading h2 {
+    white-space: normal;
   }
 }
 
 @media (max-width: 640px) {
   .services-process {
-    padding: 48px 0;
-  }
-
-  .services-process-heading {
-    margin-bottom: 24px;
-  }
-
-  .services-process-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .services-process-step {
-    min-height: auto;
-    padding: 20px 0;
-    border-right: 0;
-    border-bottom: 1px solid #e8e5df;
-  }
-
-  .services-process-step:last-child {
-    border-bottom: 0;
-  }
-
-  .services-process-step > span {
-    margin-bottom: 18px;
+    padding: 18px 0 14px;
   }
 }

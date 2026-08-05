@@ -8,14 +8,14 @@ function IndustriesHero() {
       label: "Industries",
       title: "Sector-Focused Exhibition Opportunities",
       description:
-        "EREXPO helps Turkish manufacturers and exporters identify international exhibitions aligned with their products, commercial goals and target markets.",
+        "EXPOVIA helps Turkish manufacturers and exporters identify international exhibitions aligned with their products, commercial goals and target markets.",
     },
 
     tr: {
       label: "Sektörler",
-      title: "Sektörünüze Uygun Uluslararası Fuar Fırsatları",
+      title: "Hizmet Verdiğimiz Sektörler",
       description:
-        "EREXPO, Türk üretici ve ihracatçıların ürünlerine, ticari hedeflerine ve hedef pazarlarına uygun uluslararası fuarları belirlemelerine yardımcı olur.",
+        "EXPOVIA, Türk üretici ve ihracatçıların ürünlerine, ticari hedeflerine ve hedef pazarlarına uygun uluslararası fuarları belirlemelerine yardımcı olur.",
     },
   };
 

@@ -1,63 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- TODO: replace the placeholder domain below (example.com is the IANA-reserved placeholder) with the final EXPOVIA domain once confirmed. -->
 <urlset
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
 >
   <url>
-    <loc>https://www.erexpo.com/</loc>
+    <loc>https://example.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://www.erexpo.com/exhibitions</loc>
+    <loc>https://example.com/exhibitions</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.erexpo.com/exhibition-detail</loc>
+    <loc>https://example.com/exhibition-detail</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.erexpo.com/services</loc>
+    <loc>https://example.com/services</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.erexpo.com/industries</loc>
+    <loc>https://example.com/industries</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.erexpo.com/about</loc>
+    <loc>https://example.com/about</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.erexpo.com/contact</loc>
+    <loc>https://example.com/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.erexpo.com/privacy-policy</loc>
+    <loc>https://example.com/privacy-policy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
-    <loc>https://www.erexpo.com/cookie-policy</loc>
+    <loc>https://example.com/cookie-policy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
-    <loc>https://www.erexpo.com/terms-of-use</loc>
+    <loc>https://example.com/terms-of-use</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

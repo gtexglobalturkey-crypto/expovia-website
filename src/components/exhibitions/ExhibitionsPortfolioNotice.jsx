@@ -8,15 +8,15 @@ function ExhibitionsPortfolioNotice() {
   const content = {
     en: {
       supporting:
-        "Companies seeking international exhibition opportunities may contact EREXPO to share their target markets and industries.",
-      contact: "Contact EREXPO",
+        "Companies seeking international exhibition opportunities may contact EXPOVIA to share their target markets and industries.",
+      contact: "Contact EXPOVIA",
       industries: "Explore Industries",
     },
 
     tr: {
       supporting:
-        "Uluslararası fuar fırsatları arayan firmalar, hedef pazarlarını ve faaliyet gösterdikleri sektörleri paylaşmak üzere EREXPO ile iletişime geçebilir.",
-      contact: "EREXPO ile İletişime Geçin",
+        "Uluslararası fuar fırsatları arayan firmalar, hedef pazarlarını ve faaliyet gösterdikleri sektörleri paylaşmak üzere EXPOVIA ile iletişime geçebilir.",
+      contact: "EXPOVIA ile İletişime Geçin",
       industries: "Sektörleri Keşfedin",
     },
   };

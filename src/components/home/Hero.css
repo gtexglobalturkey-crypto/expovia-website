@@ -33,14 +33,16 @@
   position: relative;
   width: 100%;
   min-height: 520px;
-  display: flex;
-  align-items: center;
-  padding-top: 2px;
-  padding-bottom: 66px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.72fr);
+  align-items: end;
+  gap: 40px;
+  padding-top: 8px;
+  padding-bottom: 14px;
 }
 
 .premium-hero__content {
-  width: min(600px, 100%);
+  width: 100%;
   padding-left: 48px;
   color: #ffffff;
 }
@@ -49,7 +51,7 @@
   display: flex;
   align-items: center;
   gap: 11px;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 .premium-hero__eyebrow-line {
@@ -59,7 +61,7 @@
 }
 
 .premium-hero__label {
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 600;
   line-height: 1.4;
   letter-spacing: 0.13em;
@@ -68,11 +70,11 @@
 }
 
 .premium-hero__title {
-  max-width: 600px;
+  max-width: 560px;
   margin: 0;
-  font-size: clamp(40px, 4.6vw, 60px);
+  font-size: clamp(32px, 3.51vw, 47px);
   font-weight: 650;
-  line-height: 0.96;
+  line-height: 0.98;
   letter-spacing: -0.05em;
   color: #ffffff;
 }
@@ -81,11 +83,15 @@
   color: rgba(255, 255, 255, 0.62);
 }
 
+.premium-hero__title-accent {
+  color: #6b6e74;
+}
+
 .premium-hero__description {
-  max-width: 500px;
-  margin-top: 16px;
+  max-width: 480px;
+  margin-top: 15px;
   font-size: 14px;
-  line-height: 1.58;
+  line-height: 1.55;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -94,7 +100,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 19px;
+  margin-top: 15px;
 }
 
 .premium-hero__actions button {
@@ -117,14 +123,54 @@
   background: rgba(255, 255, 255, 0.09);
 }
 
+/* ---------------- DIVIDER ---------------- */
+
+.premium-hero__divider {
+  height: 1px;
+  margin-top: 14px;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+/* ---------------- WHY EXPOVIA (merged left-column content) ---------------- */
+
+.premium-hero__why {
+  margin-top: 14px;
+}
+
+.premium-hero__why-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin: 0 0 8px;
+}
+
+.premium-hero__why-eyebrow > span {
+  width: 30px;
+  height: 1px;
+  background: rgba(217, 146, 161, 0.78);
+}
+
+.premium-hero__why-eyebrow p {
+  margin: 0;
+  color: #d992a1;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
 .premium-hero__trust {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 16px;
-  margin-top: 18px;
-  padding-top: 15px;
-  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  gap: 18px;
+}
+
+/* English trust labels run longer than the Turkish copy; tighten the
+   row gap only for English so all three stay on one line without
+   touching the Turkish layout. */
+.premium-hero__trust--en {
+  gap: 8px;
 }
 
 .premium-hero__trust-item {
@@ -148,22 +194,82 @@
 
 .premium-hero__trust-item p {
   margin: 0;
-  font-size: 10px;
+  font-size: 11px;
   line-height: 1.4;
   color: rgba(255, 255, 255, 0.64);
 }
 
+.premium-hero__why-title {
+  max-width: 540px;
+  margin: 12px 0 0;
+  font-size: clamp(20px, 2vw, 27px);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+}
+
+.premium-hero__why > p {
+  max-width: 540px;
+  margin: 6px 0 0;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+/* ---------------- PRINCIPLES (right column) ---------------- */
+
+.premium-hero__principles {
+  align-self: end;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.premium-hero__principle {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  gap: 13px;
+  padding: 17px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  transition:
+    transform 220ms ease,
+    padding-left 220ms ease;
+}
+
+.premium-hero__principle:hover {
+  padding-left: 6px;
+  transform: translateX(3px);
+}
+
+.premium-hero__principle-number {
+  padding-top: 2px;
+  color: #d992a1;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.premium-hero__principle h3 {
+  margin: 0 0 5px;
+  font-size: 16px;
+  line-height: 1.14;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+.premium-hero__principle p {
+  max-width: 300px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.56);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
 .premium-hero__scroll {
   position: absolute;
-  right: 0;
-  bottom: 18px;
+  right: 20px;
+  bottom: 16px;
+  z-index: 1;
   display: flex;
   align-items: center;
-  gap: 9px;
-  font-size: 9px;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
   color: rgba(255, 255, 255, 0.54);
   transition:
     color 0.25s ease,
@@ -212,7 +318,14 @@
 @media (max-width: 1100px) {
   .premium-hero,
   .premium-hero__inner {
-    min-height: 510px;
+    min-height: 0;
+  }
+
+  .premium-hero__inner {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding-top: 36px;
+    padding-bottom: 40px;
   }
 
   .premium-hero__content {
@@ -220,7 +333,20 @@
   }
 
   .premium-hero__title {
-    font-size: clamp(38px, 5.6vw, 54px);
+    font-size: clamp(34px, 5.04vw, 49px);
+  }
+
+  .premium-hero__why-title {
+    max-width: 680px;
+  }
+
+  .premium-hero__why > p {
+    max-width: 680px;
+  }
+
+  .premium-hero__principles {
+    align-self: start;
+    max-width: 680px;
   }
 }
 
@@ -246,7 +372,6 @@
   }
 
   .premium-hero__inner {
-    min-height: 560px;
     align-items: flex-start;
     padding-top: 48px;
     padding-bottom: 56px;
@@ -271,7 +396,7 @@
   }
 
   .premium-hero__title {
-    font-size: clamp(36px, 10.5vw, 48px);
+    font-size: clamp(32px, 9.45vw, 43px);
     line-height: 1;
   }
 
@@ -290,12 +415,47 @@
     width: 100%;
   }
 
+  .premium-hero__divider {
+    margin-top: 24px;
+  }
+
+  .premium-hero__why {
+    margin-top: 22px;
+  }
+
   .premium-hero__trust {
     align-items: flex-start;
     flex-direction: column;
     gap: 11px;
-    margin-top: 20px;
-    padding-top: 17px;
+  }
+
+  .premium-hero__why-title {
+    font-size: clamp(26px, 8vw, 32px);
+  }
+
+  .premium-hero__why > p {
+    font-size: 12px;
+    line-height: 1.46;
+  }
+
+  .premium-hero__principle {
+    grid-template-columns: 32px minmax(0, 1fr);
+    gap: 11px;
+    padding: 14px 0;
+  }
+
+  .premium-hero__principle:hover {
+    padding-left: 0;
+    transform: none;
+  }
+
+  .premium-hero__principle h3 {
+    font-size: 16px;
+  }
+
+  .premium-hero__principle p {
+    max-width: none;
+    font-size: 12px;
   }
 
   .premium-hero__scroll {
@@ -305,13 +465,12 @@
 
 @media (max-width: 480px) {
   .premium-hero__inner {
-    min-height: 530px;
     padding-top: 42px;
     padding-bottom: 48px;
   }
 
   .premium-hero__title {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .premium-hero__description {
@@ -321,7 +480,8 @@
 
 @media (prefers-reduced-motion: reduce) {
   .premium-hero__scroll,
-  .premium-hero__scroll-icon > span {
+  .premium-hero__scroll-icon > span,
+  .premium-hero__principle {
     animation: none;
     transition: none;
   }

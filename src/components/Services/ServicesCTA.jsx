@@ -8,18 +8,18 @@ function ServicesCTA() {
   const content = {
     en: {
       label: "Ready to Participate?",
-      title: "Plan Your Next International Exhibition with EREXPO",
+      title: "Plan Your Next International Exhibition with EXPOVIA",
       description:
         "Tell us about your company, products and target markets. Our team will help you identify the right exhibition and manage the participation process.",
-      button: "Contact EREXPO",
+      button: "Contact EXPOVIA",
     },
 
     tr: {
       label: "Katılıma Hazır mısınız?",
-      title: "Bir Sonraki Uluslararası Fuarınızı EREXPO ile Planlayın",
+      title: "Bir Sonraki Uluslararası Fuarınızı EXPOVIA ile Planlayın",
       description:
         "Şirketiniz, ürünleriniz ve hedef pazarlarınız hakkında bize bilgi verin. Ekibimiz doğru fuarı belirlemenize ve katılım sürecini yönetmenize yardımcı olsun.",
-      button: "EREXPO ile İletişime Geçin",
+      button: "EXPOVIA ile İletişime Geçin",
     },
   };
 

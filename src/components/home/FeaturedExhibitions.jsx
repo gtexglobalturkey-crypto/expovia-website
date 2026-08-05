@@ -1,31 +1,58 @@
+import { useEffect, useRef, useState } from "react";
+import { Factory, HardHat, Pickaxe, Wheat, Zap } from "lucide-react";
+
 import { useTranslation } from "../../hooks/useTranslation";
 import "./FeaturedExhibitions.css";
 
+const sectorIcons = [Pickaxe, HardHat, Zap, Wheat, Factory];
+
 function FeaturedExhibitions() {
   const { language } = useTranslation();
+  const sectorsRef = useRef(null);
+  const [sectorsVisible, setSectorsVisible] = useState(false);
+
+  useEffect(() => {
+    const node = sectorsRef.current;
+
+    if (!node) return undefined;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setSectorsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    observer.observe(node);
+
+    return () => observer.disconnect();
+  }, []);
 
   const content = {
     en: {
       eyebrow: "Exhibition Portfolio",
       title: "International Exhibition Portfolio",
       description:
-        "EREXPO is developing its international exhibition portfolio and establishing partnerships with international exhibition organizers. Confirmed exhibitions and participation opportunities will be announced here.",
+        "EXPOVIA is developing its international exhibition portfolio and establishing partnerships with international exhibition organizers. Confirmed exhibitions and participation opportunities will be announced here.",
 
       sectors: [
         {
           name: "Mining",
           description:
-            "Mining equipment, technologies and mineral processing.",
+            "Mining equipment, extraction technologies and processing solutions.",
         },
         {
           name: "Construction",
           description:
-            "Building materials, machinery and infrastructure technologies.",
+            "Building materials, construction machinery and infrastructure technologies.",
         },
         {
           name: "Energy",
           description:
-            "Conventional and renewable energy technologies.",
+            "Conventional and renewable energy generation technologies.",
         },
         {
           name: "Agriculture",
@@ -44,23 +71,23 @@ function FeaturedExhibitions() {
       eyebrow: "Fuar Portföyü",
       title: "Uluslararası Fuar Portföyü",
       description:
-        "EREXPO, uluslararası fuar portföyünü oluşturmakta ve uluslararası fuar organizatörleriyle iş birlikleri kurmaktadır. Onaylanan fuarlar ve katılım fırsatları burada duyurulacaktır.",
+        "EXPOVIA, uluslararası fuar portföyünü oluşturmakta ve uluslararası fuar organizatörleriyle iş birlikleri kurmaktadır. Onaylanan fuarlar ve katılım fırsatları burada duyurulacaktır.",
 
       sectors: [
         {
           name: "Madencilik",
           description:
-            "Madencilik ekipmanları, teknolojileri ve maden işleme.",
+            "Maden çıkarma ekipmanları, işleme teknolojileri ve saha çözümleri.",
         },
         {
           name: "İnşaat",
           description:
-            "Yapı malzemeleri, makineler ve altyapı teknolojileri.",
+            "Yapı malzemeleri, inşaat makineleri ve altyapı teknolojileri.",
         },
         {
           name: "Enerji",
           description:
-            "Geleneksel ve yenilenebilir enerji teknolojileri.",
+            "Geleneksel ve yenilenebilir enerji üretim teknolojileri.",
         },
         {
           name: "Tarım",
@@ -81,12 +108,12 @@ function FeaturedExhibitions() {
   return (
     <section
       id="exhibitions"
-      className="featured-exhibitions"
+      className="home-featured-exhibitions"
     >
       <div className="container">
-        <div className="featured-exhibitions__heading">
-          <div className="featured-exhibitions__heading-content">
-            <div className="featured-exhibitions__eyebrow">
+        <div className="home-featured-exhibitions__heading">
+          <div className="home-featured-exhibitions__heading-content">
+            <div className="home-featured-exhibitions__eyebrow">
               <span />
               <p>{t.eyebrow}</p>
             </div>
@@ -94,22 +121,38 @@ function FeaturedExhibitions() {
             <h2>{t.title}</h2>
           </div>
 
-          <div className="featured-exhibitions__intro">
+          <div className="home-featured-exhibitions__intro">
             <p>{t.description}</p>
           </div>
         </div>
 
-        <div className="featured-exhibitions__sectors">
-          {t.sectors.map((sector) => (
-            <div
-              key={sector.name}
-              className="featured-exhibitions__sector-card"
-            >
-              <h3>{sector.name}</h3>
+        <div
+          ref={sectorsRef}
+          className={`home-featured-exhibitions__sectors ${
+            sectorsVisible ? "is-visible" : ""
+          }`}
+        >
+          {t.sectors.map((sector, index) => {
+            const Icon = sectorIcons[index];
 
-              <p>{sector.description}</p>
-            </div>
-          ))}
+            return (
+              <div
+                key={sector.name}
+                className="home-featured-exhibitions__sector-card"
+              >
+                <div className="home-featured-exhibitions__sector-icon">
+                  <Icon
+                    size={22}
+                    strokeWidth={1.7}
+                  />
+                </div>
+
+                <h3>{sector.name}</h3>
+
+                <p>{sector.description}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

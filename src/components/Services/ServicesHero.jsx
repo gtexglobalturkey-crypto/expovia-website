@@ -8,15 +8,14 @@ function ServicesHero() {
       label: "Services",
       title: "Professional Exhibition Services for International Success",
       description:
-        "EREXPO supports companies throughout every stage of international exhibition participation, from selecting the right event to completing a successful exhibition experience.",
+        "EXPOVIA supports companies throughout every stage of international exhibition participation, from selecting the right event to completing a successful exhibition experience.",
     },
 
     tr: {
       label: "Hizmetler",
-      title:
-        "Uluslararası Başarı İçin Profesyonel Fuar Hizmetleri",
+      title: "Profesyonel Fuar Hizmetleri",
       description:
-        "EREXPO, doğru fuarın seçilmesinden başarılı bir katılım sürecinin tamamlanmasına kadar uluslararası fuar katılımının her aşamasında şirketlere destek olur.",
+        "EXPOVIA, doğru fuarın seçilmesinden başarılı bir katılım sürecinin tamamlanmasına kadar uluslararası fuar katılımının her aşamasında şirketlere destek olur.",
     },
   };
 

@@ -3,6 +3,7 @@
   overflow: hidden;
   color: #ffffff;
   background: #121316;
+  border-top: 1px solid rgba(255,255,255,.08);
 }
 
 .site-footer::before {
@@ -23,129 +24,76 @@
   z-index: 1;
 }
 
-.site-footer__main {
-  display: grid;
-  grid-template-columns: 1.1fr 1.4fr;
-  gap: 64px;
-  padding: 64px 0 42px;
-}
-
-.site-footer__brand {
-  max-width: 460px;
+.site-footer__bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+  padding: 13px 0;
 }
 
 .site-footer__logo-link {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+}
+
+/* Same crop technique as the header: the master logo file is a
+   1536x1024 canvas where the visible wordmark only occupies a
+   902x182 band starting at (321, 353) — .site-footer__logo-mark
+   crops a fixed window onto that band so the mark itself, not the
+   transparent canvas, fills the requested height. */
+.site-footer__logo-mark {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 34px;
+  width: calc(34px * 4.9560);
 }
 
 .site-footer__logo-image {
-  width: 42px;
-  height: 42px;
-  object-fit: contain;
+  position: absolute;
+  top: calc(34px * -1.9396);
+  left: calc(34px * -1.7637);
+  height: calc(34px * 5.6264);
+  width: calc(34px * 8.4396);
+  max-width: none;
+  display: block;
 }
 
-.site-footer__logo-text {
-  display: flex;
-  flex-direction: column;
-}
-
-.site-footer__logo-text strong {
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: .08em;
-}
-
-.site-footer__logo-text span {
-  margin-top: 3px;
-  color: rgba(255,255,255,.55);
-  font-size: 10px;
-  letter-spacing: .05em;
-}
-
-.site-footer__description {
-  margin-top: 24px;
-  max-width: 430px;
-  color: rgba(255,255,255,.68);
-  font-size: 14px;
-  line-height: 1.7;
-}
-
-.site-footer__navigation {
-  display: grid;
-  grid-template-columns: repeat(4,minmax(0,1fr));
-  gap: 42px;
-}
-
-.site-footer__column {
-  display: flex;
-  flex-direction: column;
-}
-
-.site-footer__column-title {
-  margin-bottom: 16px;
-  color: rgba(255,255,255,.42);
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-}
-
-.site-footer__link-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.site-footer__link-list a {
-  color: rgba(255,255,255,.72);
-  font-size: 13px;
-  transition: .25s;
-}
-
-.site-footer__link-list a:hover {
-  color: #fff;
-}
-
-.site-footer__contact {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  font-style: normal;
-}
-
-.site-footer__contact a,
-.site-footer__contact span {
-  color: rgba(255,255,255,.72);
-  font-size: 13px;
+.site-footer__copyright {
+  color: rgba(255,255,255,.5);
+  font-size: 12px;
   line-height: 1.5;
 }
 
-.site-footer__contact a:hover {
+/* display:contents removes the <nav> box so its <Link> children become
+   direct flex items of .site-footer__bar, keeping every gap between
+   logo / copyright / links / back-to-top equal via the parent's gap +
+   justify-content: space-between, while the <nav> itself still exists
+   for its aria-label landmark. */
+.site-footer__links {
+  display: contents;
+}
+
+.site-footer__links a {
+  color: rgba(255,255,255,.72);
+  font-size: 13px;
+  white-space: nowrap;
+  transition: .25s;
+}
+
+.site-footer__links a:hover {
   color: #fff;
-}
-
-.site-footer__bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  padding: 22px 0 26px;
-  margin-top: 36px;
-  border-top: 1px solid rgba(255,255,255,.08);
-}
-
-.site-footer__bottom p {
-  color: rgba(255,255,255,.45);
-  font-size: 11px;
 }
 
 .site-footer__back-to-top {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 16px;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
   border: 1px solid rgba(255,255,255,.12);
   border-radius: 999px;
   background: transparent;
@@ -159,39 +107,22 @@
   border-color: rgba(255,255,255,.35);
 }
 
-@media (max-width:1100px) {
-  .site-footer__main {
-    grid-template-columns: 1fr;
-    gap: 48px;
-  }
-
-  .site-footer__navigation {
-    grid-template-columns: repeat(2,minmax(0,1fr));
-  }
-}
-
-@media (max-width:768px) {
-  .site-footer__main {
-    padding: 48px 0 34px;
-  }
-
-  .site-footer__navigation {
-    grid-template-columns: repeat(2,1fr);
-    gap: 28px;
-  }
-
-  .site-footer__bottom {
-    flex-direction: column;
-    align-items: flex-start;
+/* Equal-space distribution only reads well on a single unwrapped
+   line; once the row wraps, space-between stretches each wrapped
+   line's leftover items apart unevenly, so switch to a plain
+   flex-start + gap flow below the width that still fits one line. */
+@media (max-width:900px) {
+  .site-footer__bar {
+    justify-content: flex-start;
   }
 }
 
 @media (max-width:560px) {
-  .site-footer__navigation {
-    grid-template-columns: 1fr;
+  .site-footer__bar {
+    gap: 10px 20px;
   }
 
-  .site-footer__description {
-    font-size: 13px;
+  .site-footer__copyright {
+    font-size: 11px;
   }
 }

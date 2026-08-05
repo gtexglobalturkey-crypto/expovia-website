@@ -10,28 +10,28 @@ function ExhibitionDetailCTA() {
       label: "Ready to Exhibit?",
       title: "Grow Your Business Through International Exhibitions",
       description:
-        "EREXPO helps Turkish manufacturers and exporters participate in leading international exhibitions with professional guidance, strategic planning and end-to-end participation management.",
+        "EXPOVIA helps Turkish manufacturers and exporters participate in leading international exhibitions with professional guidance, strategic planning and end-to-end participation management.",
       benefits: [
         "Official Representative Support",
         "Professional Participation Management",
         "International Business Network",
       ],
       primary: "Request Participation Information",
-      secondary: "Contact EREXPO",
+      secondary: "Contact EXPOVIA",
     },
 
     tr: {
       label: "Katılımcı Olmaya Hazır mısınız?",
       title: "Uluslararası Fuarlarla İşinizi Büyütün",
       description:
-        "EREXPO, Türk üretici ve ihracatçıların önde gelen uluslararası fuarlara profesyonel danışmanlık, stratejik planlama ve uçtan uca katılım yönetimiyle katılmalarına yardımcı olur.",
+        "EXPOVIA, Türk üretici ve ihracatçıların önde gelen uluslararası fuarlara profesyonel danışmanlık, stratejik planlama ve uçtan uca katılım yönetimiyle katılmalarına yardımcı olur.",
       benefits: [
         "Resmî Temsilcilik Desteği",
         "Profesyonel Katılım Yönetimi",
         "Uluslararası İş Ağı",
       ],
       primary: "Katılım Bilgisi Talep Edin",
-      secondary: "EREXPO ile İletişime Geçin",
+      secondary: "EXPOVIA ile İletişime Geçin",
     },
   };
 

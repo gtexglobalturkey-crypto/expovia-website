@@ -2,6 +2,8 @@ import LegalPage from "../components/legal/LegalPage";
 
 import { useTranslation } from "../hooks/useTranslation";
 
+import { CONTACT_EMAIL } from "../config/site";
+
 function PrivacyPolicy() {
   const { language } = useTranslation();
 
@@ -10,7 +12,7 @@ function PrivacyPolicy() {
       eyebrow: "Legal Information",
       title: "Privacy Policy",
       description:
-        "This Privacy Policy explains how EREXPO collects, uses, stores and protects personal information when you visit our website or contact us.",
+        "This Privacy Policy explains how EXPOVIA collects, uses, stores and protects personal information when you visit our website or contact us.",
       updatedLabel: "Last updated",
       updatedDate: "July 20, 2026",
 
@@ -21,14 +23,14 @@ function PrivacyPolicy() {
           content: (
             <>
               <p>
-                EREXPO respects your privacy and is committed
+                EXPOVIA respects your privacy and is committed
                 to protecting the personal information you
                 share with us.
               </p>
 
               <p>
                 This Privacy Policy applies to information
-                collected through the EREXPO website,
+                collected through the EXPOVIA website,
                 contact forms, email communications and
                 exhibition-related enquiries.
               </p>
@@ -51,7 +53,7 @@ function PrivacyPolicy() {
             <>
               <p>
                 For the purposes of applicable personal data
-                protection legislation, EREXPO acts as the
+                protection legislation, EXPOVIA acts as the
                 data controller for personal information
                 collected through this website.
               </p>
@@ -62,14 +64,20 @@ function PrivacyPolicy() {
               </p>
 
               <p>
-                <strong>EREXPO</strong>
+                <strong>EXPOVIA</strong>
                 <br />
                 International Exhibition Representation
                 <br />
                 Türkiye
                 <br />
-                <a href="mailto:info@erexpo.com">
-                  info@erexpo.com
+                <a
+                  href={
+                    CONTACT_EMAIL
+                      ? `mailto:${CONTACT_EMAIL}`
+                      : undefined
+                  }
+                >
+                  {CONTACT_EMAIL || "Email address pending"}
                 </a>
               </p>
             </>
@@ -82,7 +90,7 @@ function PrivacyPolicy() {
           content: (
             <>
               <p>
-                Depending on how you interact with EREXPO,
+                Depending on how you interact with EXPOVIA,
                 we may collect the following categories of
                 personal information:
               </p>
@@ -149,7 +157,7 @@ function PrivacyPolicy() {
                 </li>
 
                 <li>
-                  Contact EREXPO by email, telephone or
+                  Contact EXPOVIA by email, telephone or
                   another communication channel
                 </li>
 
@@ -263,7 +271,7 @@ function PrivacyPolicy() {
 
                 <li>
                   Processing is necessary for the legitimate
-                  business interests of EREXPO, provided
+                  business interests of EXPOVIA, provided
                   that your fundamental rights are not
                   overridden
                 </li>
@@ -327,7 +335,7 @@ function PrivacyPolicy() {
               </ul>
 
               <p>
-                EREXPO does not sell or rent personal
+                EXPOVIA does not sell or rent personal
                 information to third parties.
               </p>
             </>
@@ -349,7 +357,7 @@ function PrivacyPolicy() {
 
               <p>
                 Where an international transfer is
-                required, EREXPO takes reasonable measures
+                required, EXPOVIA takes reasonable measures
                 to ensure that the transfer is carried out
                 in accordance with applicable data
                 protection legislation and appropriate
@@ -395,7 +403,7 @@ function PrivacyPolicy() {
           content: (
             <>
               <p>
-                EREXPO applies reasonable administrative,
+                EXPOVIA applies reasonable administrative,
                 organisational and technical safeguards to
                 protect personal information against
                 unauthorised access, disclosure, alteration,
@@ -419,7 +427,7 @@ function PrivacyPolicy() {
           content: (
             <>
               <p>
-                The EREXPO website may use cookies and
+                The EXPOVIA website may use cookies and
                 similar technologies to provide essential
                 website functionality, remember user
                 preferences, analyse website performance and
@@ -429,7 +437,7 @@ function PrivacyPolicy() {
               <p>
                 More detailed information about cookies and
                 available choices will be provided in the
-                EREXPO Cookie Policy.
+                EXPOVIA Cookie Policy.
               </p>
             </>
           ),
@@ -507,13 +515,13 @@ function PrivacyPolicy() {
           content: (
             <>
               <p>
-                The EREXPO website may contain links to
+                The EXPOVIA website may contain links to
                 exhibition organisers, venues, service
                 providers or other third-party websites.
               </p>
 
               <p>
-                EREXPO is not responsible for the privacy
+                EXPOVIA is not responsible for the privacy
                 practices, security or content of
                 third-party websites. Visitors should
                 review the privacy policies of those
@@ -530,7 +538,7 @@ function PrivacyPolicy() {
           content: (
             <>
               <p>
-                EREXPO may update this Privacy Policy when
+                EXPOVIA may update this Privacy Policy when
                 necessary to reflect changes in legal
                 requirements, business activities, website
                 functions or data processing practices.
@@ -558,14 +566,20 @@ function PrivacyPolicy() {
               </p>
 
               <p>
-                <strong>EREXPO</strong>
+                <strong>EXPOVIA</strong>
                 <br />
                 International Exhibition Representation
                 <br />
                 Türkiye
                 <br />
-                <a href="mailto:info@erexpo.com">
-                  info@erexpo.com
+                <a
+                  href={
+                    CONTACT_EMAIL
+                      ? `mailto:${CONTACT_EMAIL}`
+                      : undefined
+                  }
+                >
+                  {CONTACT_EMAIL || "Email address pending"}
                 </a>
               </p>
             </>
@@ -578,7 +592,7 @@ function PrivacyPolicy() {
       eyebrow: "Yasal Bilgilendirme",
       title: "Gizlilik Politikası",
       description:
-        "Bu Gizlilik Politikası, EREXPO’nun internet sitemizi ziyaret ettiğinizde veya bizimle iletişime geçtiğinizde kişisel verileri nasıl topladığını, kullandığını, sakladığını ve koruduğunu açıklar.",
+        "Bu Gizlilik Politikası, EXPOVIA’nun internet sitemizi ziyaret ettiğinizde veya bizimle iletişime geçtiğinizde kişisel verileri nasıl topladığını, kullandığını, sakladığını ve koruduğunu açıklar.",
       updatedLabel: "Son güncelleme",
       updatedDate: "20 Temmuz 2026",
 
@@ -589,13 +603,13 @@ function PrivacyPolicy() {
           content: (
             <>
               <p>
-                EREXPO, özel hayatın gizliliğine saygı
+                EXPOVIA, özel hayatın gizliliğine saygı
                 gösterir ve bizimle paylaşılan kişisel
                 verilerin korunmasına önem verir.
               </p>
 
               <p>
-                Bu Gizlilik Politikası; EREXPO internet
+                Bu Gizlilik Politikası; EXPOVIA internet
                 sitesi, iletişim formları, e-posta
                 yazışmaları ve fuar katılım talepleri
                 aracılığıyla elde edilen kişisel veriler
@@ -622,7 +636,7 @@ function PrivacyPolicy() {
                 Yürürlükteki kişisel verilerin korunması
                 mevzuatı kapsamında, bu internet sitesi
                 aracılığıyla toplanan kişisel veriler
-                bakımından EREXPO veri sorumlusu olarak
+                bakımından EXPOVIA veri sorumlusu olarak
                 hareket eder.
               </p>
 
@@ -633,14 +647,20 @@ function PrivacyPolicy() {
               </p>
 
               <p>
-                <strong>EREXPO</strong>
+                <strong>EXPOVIA</strong>
                 <br />
                 Uluslararası Fuar Temsilciliği
                 <br />
                 Türkiye
                 <br />
-                <a href="mailto:info@erexpo.com">
-                  info@erexpo.com
+                <a
+                  href={
+                    CONTACT_EMAIL
+                      ? `mailto:${CONTACT_EMAIL}`
+                      : undefined
+                  }
+                >
+                  {CONTACT_EMAIL || "Email address pending"}
                 </a>
               </p>
             </>
@@ -653,7 +673,7 @@ function PrivacyPolicy() {
           content: (
             <>
               <p>
-                EREXPO ile kurduğunuz iletişimin niteliğine
+                EXPOVIA ile kurduğunuz iletişimin niteliğine
                 bağlı olarak aşağıdaki kişisel veri
                 kategorileri işlenebilir:
               </p>
@@ -827,7 +847,7 @@ function PrivacyPolicy() {
 
                 <li>
                   Temel hak ve özgürlüklerinize zarar
-                  vermemek kaydıyla EREXPO’nun meşru
+                  vermemek kaydıyla EXPOVIA’nun meşru
                   menfaatleri
                 </li>
 
@@ -889,7 +909,7 @@ function PrivacyPolicy() {
               </ul>
 
               <p>
-                EREXPO, kişisel verileri üçüncü kişilere
+                EXPOVIA, kişisel verileri üçüncü kişilere
                 satmaz veya kiralamaz.
               </p>
             </>
@@ -955,7 +975,7 @@ function PrivacyPolicy() {
           content: (
             <>
               <p>
-                EREXPO; kişisel verileri yetkisiz erişim,
+                EXPOVIA; kişisel verileri yetkisiz erişim,
                 açıklama, değiştirme, kayıp veya kötüye
                 kullanıma karşı korumak amacıyla makul
                 idari, organizasyonel ve teknik güvenlik
@@ -978,7 +998,7 @@ function PrivacyPolicy() {
           content: (
             <>
               <p>
-                EREXPO internet sitesi; temel site
+                EXPOVIA internet sitesi; temel site
                 işlevlerinin sağlanması, kullanıcı
                 tercihlerinin hatırlanması, site
                 performansının analiz edilmesi ve ziyaretçi
@@ -989,7 +1009,7 @@ function PrivacyPolicy() {
               <p>
                 Çerezlerin kullanımı ve tercihlerinizi nasıl
                 yönetebileceğiniz hakkında ayrıntılı bilgi
-                EREXPO Çerez Politikası’nda yer alacaktır.
+                EXPOVIA Çerez Politikası’nda yer alacaktır.
               </p>
             </>
           ),
@@ -1066,14 +1086,14 @@ function PrivacyPolicy() {
           content: (
             <>
               <p>
-                EREXPO internet sitesi; fuar
+                EXPOVIA internet sitesi; fuar
                 organizatörleri, fuar alanları, hizmet
                 sağlayıcılar veya diğer üçüncü taraf
                 internet sitelerine bağlantılar içerebilir.
               </p>
 
               <p>
-                EREXPO, üçüncü taraf internet sitelerinin
+                EXPOVIA, üçüncü taraf internet sitelerinin
                 gizlilik uygulamalarından, güvenliğinden
                 veya içeriğinden sorumlu değildir.
                 Ziyaretçilerin kişisel veri paylaşmadan önce
@@ -1090,7 +1110,7 @@ function PrivacyPolicy() {
           content: (
             <>
               <p>
-                EREXPO; hukuki gerekliliklerde, ticari
+                EXPOVIA; hukuki gerekliliklerde, ticari
                 faaliyetlerde, internet sitesi
                 özelliklerinde veya veri işleme
                 uygulamalarında meydana gelen değişiklikleri
@@ -1119,14 +1139,20 @@ function PrivacyPolicy() {
               </p>
 
               <p>
-                <strong>EREXPO</strong>
+                <strong>EXPOVIA</strong>
                 <br />
                 Uluslararası Fuar Temsilciliği
                 <br />
                 Türkiye
                 <br />
-                <a href="mailto:info@erexpo.com">
-                  info@erexpo.com
+                <a
+                  href={
+                    CONTACT_EMAIL
+                      ? `mailto:${CONTACT_EMAIL}`
+                      : undefined
+                  }
+                >
+                  {CONTACT_EMAIL || "Email address pending"}
                 </a>
               </p>
             </>

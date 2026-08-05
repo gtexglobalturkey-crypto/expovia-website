@@ -1,7 +1,7 @@
 .cta-section {
   position: relative;
   overflow: hidden;
-  padding: 44px 0 40px;
+  padding: 16px 0 16px;
   color: #ffffff;
   background:
     radial-gradient(
@@ -64,7 +64,7 @@
 
 .cta-section__content h2 {
   max-width: 700px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   font-size: clamp(30px, 3.4vw, 44px);
   line-height: 1;
   letter-spacing: -0.05em;

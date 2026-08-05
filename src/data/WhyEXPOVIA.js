@@ -1,4 +1,4 @@
-const whyERExpo = [
+const whyEXPOVIA = [
   {
     id: 1,
     number: "01",
@@ -21,4 +21,4 @@ const whyERExpo = [
   },
 ];
 
-export default whyERExpo;
+export default whyEXPOVIA;

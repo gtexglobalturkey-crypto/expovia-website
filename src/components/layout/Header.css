@@ -24,60 +24,43 @@
   transition:.25s;
 }
 
-.site-header--scrolled .header-inner{
-  height:68px;
-}
-
 /* ---------------- LOGO ---------------- */
 
 .logo{
   display:flex;
   align-items:center;
-  gap:10px;
   flex-shrink:0;
   text-decoration:none;
 }
 
-.logo-image{
-  width:46px;
-  height:46px;
-  object-fit:contain;
-  object-position:center;
+/* The master logo file (expovia-logo.png) is a 1536x1024 canvas in
+   which the visible wordmark only occupies a 902x182 band starting at
+   (321, 353) — the rest is transparent padding. .logo-mark crops a
+   fixed window onto that band so the visible mark, not the canvas,
+   fills the requested height; the img is scaled and offset to match. */
+.logo-mark{
+  --logo-h: 48px;
+  position:relative;
   display:block;
+  overflow:hidden;
+  height:var(--logo-h);
+  width:calc(var(--logo-h) * 4.9560);
   flex-shrink:0;
-  transition:all .25s ease;
+  transition:transform .25s ease;
 }
 
-.logo:hover .logo-image{
+.logo:hover .logo-mark{
   transform:scale(1.05);
 }
 
-.site-header--scrolled .logo-image{
-  width:42px;
-  height:42px;
-}
-
-.logo-text{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-}
-
-.logo-text strong{
-  margin:0;
-  color:#1f1f1f;
-  font-size:17px;
-  font-weight:700;
-  line-height:1;
-  letter-spacing:.08em;
-}
-
-.logo-text small{
-  margin-top:4px;
-  color:#9a9a9a;
-  font-size:10px;
-  line-height:1.2;
-  letter-spacing:.06em;
+.logo-image{
+  position:absolute;
+  top:calc(var(--logo-h) * -1.9396);
+  left:calc(var(--logo-h) * -1.7637);
+  height:calc(var(--logo-h) * 5.6264);
+  width:calc(var(--logo-h) * 8.4396);
+  max-width:none;
+  display:block;
 }
 
 /* ---------------- MENU ---------------- */
@@ -298,27 +281,12 @@ display:inline-flex;
 
 @media (max-width:768px){
 
-.header-inner,
-.site-header--scrolled .header-inner{
+.header-inner{
 height:68px;
 }
 
-.logo{
-gap:8px;
-}
-
-.logo-image,
-.site-header--scrolled .logo-image{
-width:38px;
-height:38px;
-}
-
-.logo-text strong{
-font-size:16px;
-}
-
-.logo-text small{
-display:none;
+.logo-mark{
+--logo-h: 40px;
 }
 
 .language-button{
@@ -341,14 +309,12 @@ height:34px;
 
 @media (max-width:520px){
 
-.logo-image,
-.site-header--scrolled .logo-image{
-width:34px;
-height:34px;
-}
-
-.logo-text strong{
-font-size:15px;
+/* The cropped mark's real aspect ratio (~4.96:1) makes it much wider
+   than the old full-canvas box at the same height. 40px would overlap
+   the language buttons/menu toggle on phones under ~470px wide, so it
+   steps down here to keep the header on one line without overflow. */
+.logo-mark{
+--logo-h: 32px;
 }
 
 .header-right{

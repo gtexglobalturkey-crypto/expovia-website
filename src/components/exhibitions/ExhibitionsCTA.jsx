@@ -8,19 +8,19 @@ function ExhibitionsCTA() {
   const content = {
     en: {
       label: "Ready to Expand Internationally?",
-      title: "Let EREXPO Help You Choose the Right Exhibition",
+      title: "Let EXPOVIA Help You Choose the Right Exhibition",
       description:
-        "From selecting the most suitable international exhibition to managing your participation process, EREXPO supports Turkish manufacturers and exporters with professional guidance every step of the way.",
-      primary: "Contact EREXPO",
+        "From selecting the most suitable international exhibition to managing your participation process, EXPOVIA supports Turkish manufacturers and exporters with professional guidance every step of the way.",
+      primary: "Contact EXPOVIA",
       secondary: "View Our Services",
     },
 
     tr: {
       label: "Uluslararası Pazarlara Açılmaya Hazır mısınız?",
-      title: "Doğru Fuarı Seçmenize EREXPO Yardımcı Olsun",
+      title: "Doğru Fuarı Seçmenize EXPOVIA Yardımcı Olsun",
       description:
-        "En uygun uluslararası fuarın seçilmesinden katılım sürecinin yönetilmesine kadar EREXPO, Türk üretici ve ihracatçılara her aşamada profesyonel destek sunar.",
-      primary: "EREXPO ile İletişime Geçin",
+        "En uygun uluslararası fuarın seçilmesinden katılım sürecinin yönetilmesine kadar EXPOVIA, Türk üretici ve ihracatçılara her aşamada profesyonel destek sunar.",
+      primary: "EXPOVIA ile İletişime Geçin",
       secondary: "Hizmetlerimizi İnceleyin",
     },
   };

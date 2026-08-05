@@ -1,5 +1,5 @@
 .services-hero {
-  padding: 30px 0 6px;
+  padding: 4px 0 0px;
   background: #f7f7f5;
   border-bottom: 1px solid #e8e5df;
 }
@@ -18,7 +18,7 @@
 .services-hero .section-label {
   display: inline-flex;
   align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   color: #7a202c;
   font-size: 0.74rem;
   font-weight: 700;
@@ -37,21 +37,21 @@
 .services-hero h1 {
   margin: 0;
   max-width: 760px;
-  font-size: clamp(2.15rem, 3.6vw, 3.35rem);
-  line-height: 1.03;
+  font-size: clamp(1.6rem, 2.7vw, 2.5rem);
+  line-height: 1.06;
   letter-spacing: -0.05em;
   color: #1d1d1f;
 }
 
 .services-hero-intro {
   max-width: 430px;
-  padding-top: 2px;
+  padding-top: 0;
 }
 
 .services-hero-intro p {
   margin: 0;
-  font-size: 0.96rem;
-  line-height: 1.58;
+  font-size: 0.9rem;
+  line-height: 1.5;
   color: #626266;
 }
 
@@ -59,7 +59,7 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  margin-top: 12px;
+  margin-top: 8px;
   padding-bottom: 4px;
   border-bottom: 1px solid rgba(122, 32, 44, 0.32);
   color: #7a202c;

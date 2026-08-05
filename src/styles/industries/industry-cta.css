@@ -1,7 +1,7 @@
 .industry-cta,
 .industry-cta.section-spacing {
   margin: 0;
-  padding: 8px 0 8px !important;
+  padding: 2px 0 4px !important;
   background: #f7f7f5;
 }
 
@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 32px;
-  padding: 20px 34px;
+  padding: 10px 30px;
   border-radius: 22px;
   background: #1d1d1f;
   color: #ffffff;
@@ -30,17 +30,17 @@
   margin: 0;
   max-width: 680px;
   color: #ffffff;
-  font-size: clamp(1.6rem, 2.6vw, 2.3rem);
+  font-size: clamp(1.28rem, 1.96vw, 1.78rem);
   line-height: 1.08;
   letter-spacing: -0.03em;
 }
 
 .industry-cta-card p {
-  margin: 10px 0 0;
+  margin: 4px 0 0;
   max-width: 620px;
   color: rgba(255, 255, 255, 0.72);
-  font-size: 0.88rem;
-  line-height: 1.55;
+  font-size: 0.85rem;
+  line-height: 1.45;
 }
 
 .industry-cta-button {

@@ -1,8 +1,8 @@
 .exhibitions-hero.section-spacing {
   position: relative;
   overflow: hidden;
-  padding-top: 54px !important;
-  padding-bottom: 38px !important;
+  padding-top: 14px !important;
+  padding-bottom: 12px !important;
   background:
     radial-gradient(
       circle at 85% 22%,
@@ -46,24 +46,24 @@
 }
 
 .exhibitions-hero .section-label {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .exhibitions-hero h1 {
   max-width: 790px;
   margin: 0;
-  font-size: clamp(38px, 4.15vw, 58px) !important;
+  font-size: clamp(22px, 2.4vw, 32px) !important;
   font-weight: 600;
-  line-height: 0.98;
-  letter-spacing: -0.055em;
+  line-height: 1.05;
+  letter-spacing: -0.045em;
   color: #171719;
 }
 
 .exhibitions-hero .hero-description {
   max-width: 650px;
-  margin-top: 16px;
-  font-size: 14px;
-  line-height: 1.58;
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 1.5;
   color: #646267;
 }
 
@@ -364,7 +364,7 @@
 }
 
 .exhibition-image::after {
-  content: "EREXPO";
+  content: "EXPOVIA";
   position: absolute;
   left: 16px;
   bottom: 14px;
@@ -551,15 +551,15 @@
 
 /* CTA */
 
-.exhibitions-cta {
-  padding-top: 92px;
-  padding-bottom: 96px;
+.exhibitions-cta.section-spacing {
+  padding-top: 6px !important;
+  padding-bottom: 8px !important;
 }
 
 .exhibitions-cta .cta-card {
   position: relative;
   overflow: hidden;
-  padding: 62px;
+  padding: 20px 28px;
   background:
     radial-gradient(
       circle at 90% 15%,
@@ -609,38 +609,38 @@
 
 .exhibitions-cta h2 {
   max-width: 760px;
-  margin: 16px 0 0;
-  font-size: clamp(36px, 4.8vw, 60px);
+  margin: 8px 0 0;
+  font-size: clamp(22px, 2.6vw, 32px);
   font-weight: 600;
-  line-height: 1;
-  letter-spacing: -0.05em;
+  line-height: 1.06;
+  letter-spacing: -0.045em;
   color: #ffffff;
 }
 
 .exhibitions-cta .cta-card > p:not(.section-label) {
   max-width: 690px;
-  margin: 22px 0 0;
-  font-size: 16px;
-  line-height: 1.7;
+  margin: 10px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
   color: rgba(255, 255, 255, 0.76);
 }
 
 .exhibitions-cta .cta-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 30px;
+  gap: 10px;
+  margin-top: 16px;
 }
 
 .exhibitions-cta .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 48px;
-  padding: 0 21px;
-  font-size: 13px;
+  min-height: 38px;
+  padding: 0 18px;
+  font-size: 12px;
   font-weight: 600;
-  border-radius: 10px;
+  border-radius: 9px;
   transition:
     transform 180ms ease,
     background 180ms ease,
@@ -677,9 +677,9 @@
 /* PORTFOLIO STATUS — replaces search/filters/featured/all lists while
    the exhibition portfolio has no confirmed entries yet. */
 
-.exhibitions-status {
-  padding-top: 8px;
-  padding-bottom: 96px;
+.exhibitions-status.section-spacing {
+  padding-top: 6px !important;
+  padding-bottom: 10px !important;
 }
 
 .exhibitions-status-card {
@@ -687,20 +687,20 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
-  padding: 34px 40px;
+  gap: 14px;
+  padding: 14px 20px;
   background: #ffffff;
   border: 1px solid #e5e2dc;
   border-left: 3px solid #871c37;
-  border-radius: 16px;
+  border-radius: 14px;
 }
 
 .exhibitions-status-card p {
   flex: 1;
   min-width: 240px;
   margin: 0;
-  font-size: 15px;
-  line-height: 1.65;
+  font-size: 13px;
+  line-height: 1.5;
   color: #4f4d52;
 }
 
@@ -708,20 +708,20 @@
   display: flex;
   flex-wrap: wrap;
   flex: 0 0 auto;
-  gap: 12px;
+  gap: 10px;
 }
 
 .exhibitions-status-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 44px;
-  padding: 0 22px;
+  min-height: 36px;
+  padding: 0 16px;
   font: inherit;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   white-space: nowrap;
-  border-radius: 10px;
+  border-radius: 9px;
   transition:
     background 180ms ease,
     border-color 180ms ease,

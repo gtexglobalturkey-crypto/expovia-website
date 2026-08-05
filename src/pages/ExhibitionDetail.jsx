@@ -19,7 +19,7 @@ function ExhibitionDetail() {
     <>
       <SEO
         title="Mining Türkiye 2027"
-        description="Discover Mining Türkiye 2027, one of the leading international mining exhibitions, with participation information, exhibitor profiles, floor plan and EREXPO support services."
+        description="Discover Mining Türkiye 2027, one of the leading international mining exhibitions, with participation information, exhibitor profiles, floor plan and EXPOVIA support services."
         canonical="/exhibition-detail"
       />
 

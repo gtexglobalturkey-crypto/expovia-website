@@ -2,6 +2,8 @@ import LegalPage from "../components/legal/LegalPage";
 
 import { useTranslation } from "../hooks/useTranslation";
 
+import { CONTACT_EMAIL } from "../config/site";
+
 function TermsOfUse() {
   const { language } = useTranslation();
 
@@ -10,7 +12,7 @@ function TermsOfUse() {
       eyebrow: "Legal Information",
       title: "Terms of Use",
       description:
-        "These Terms of Use govern access to and use of the EREXPO website, content, services and exhibition-related information.",
+        "These Terms of Use govern access to and use of the EXPOVIA website, content, services and exhibition-related information.",
       updatedLabel: "Last updated",
       updatedDate: "July 20, 2026",
 
@@ -21,7 +23,7 @@ function TermsOfUse() {
           content: (
             <>
               <p>
-                By accessing or using the EREXPO website,
+                By accessing or using the EXPOVIA website,
                 you agree to comply with these Terms of Use.
               </p>
 
@@ -34,12 +36,12 @@ function TermsOfUse() {
         },
 
         {
-          id: "about-erexpo",
-          title: "About EREXPO",
+          id: "about-expovia",
+          title: "About EXPOVIA",
           content: (
             <>
               <p>
-                EREXPO provides international exhibition
+                EXPOVIA provides international exhibition
                 representation, business development and
                 participation support services.
               </p>
@@ -109,7 +111,7 @@ function TermsOfUse() {
           content: (
             <>
               <p>
-                EREXPO aims to keep website information
+                EXPOVIA aims to keep website information
                 accurate, clear and current.
               </p>
 
@@ -137,7 +139,7 @@ function TermsOfUse() {
                 Content published on the website does not
                 constitute a binding commercial offer,
                 contract, guarantee or commitment unless
-                expressly confirmed in writing by EREXPO.
+                expressly confirmed in writing by EXPOVIA.
               </p>
 
               <p>
@@ -163,7 +165,7 @@ function TermsOfUse() {
               </p>
 
               <p>
-                EREXPO is not responsible for acts,
+                EXPOVIA is not responsible for acts,
                 omissions, availability, pricing or policies
                 of independent third-party providers except
                 where liability cannot be excluded by law.
@@ -185,7 +187,7 @@ function TermsOfUse() {
 
               <p>
                 These links are provided for convenience.
-                EREXPO does not control and is not
+                EXPOVIA does not control and is not
                 responsible for third-party content,
                 security, availability or privacy
                 practices.
@@ -200,10 +202,10 @@ function TermsOfUse() {
           content: (
             <>
               <p>
-                Unless otherwise stated, the EREXPO name,
+                Unless otherwise stated, the EXPOVIA name,
                 logo, website design, text, graphics,
                 layout, documents and original content are
-                owned by or licensed to EREXPO.
+                owned by or licensed to EXPOVIA.
               </p>
 
               <p>
@@ -272,7 +274,7 @@ function TermsOfUse() {
               <p>
                 Personal information collected through the
                 website is processed in accordance with the
-                EREXPO Privacy Policy and Cookie Policy.
+                EXPOVIA Privacy Policy and Cookie Policy.
               </p>
 
               <p>
@@ -291,7 +293,7 @@ function TermsOfUse() {
           content: (
             <>
               <p>
-                EREXPO does not guarantee that the website
+                EXPOVIA does not guarantee that the website
                 will always be uninterrupted, error-free or
                 available.
               </p>
@@ -318,7 +320,7 @@ function TermsOfUse() {
               </p>
 
               <p>
-                EREXPO does not guarantee specific business
+                EXPOVIA does not guarantee specific business
                 results, sales outcomes, visitor numbers,
                 commercial opportunities or exhibition
                 performance.
@@ -334,7 +336,7 @@ function TermsOfUse() {
             <>
               <p>
                 To the maximum extent permitted by law,
-                EREXPO will not be liable for indirect,
+                EXPOVIA will not be liable for indirect,
                 incidental, consequential or special loss
                 arising from use of or reliance on the
                 website.
@@ -374,7 +376,7 @@ function TermsOfUse() {
           content: (
             <>
               <p>
-                EREXPO may update website content, features,
+                EXPOVIA may update website content, features,
                 services or these Terms of Use when
                 necessary.
               </p>
@@ -394,7 +396,7 @@ function TermsOfUse() {
           content: (
             <>
               <p>
-                EREXPO may restrict or terminate access to
+                EXPOVIA may restrict or terminate access to
                 the website where misuse, security risk,
                 unlawful conduct or violation of these terms
                 is identified.
@@ -447,14 +449,20 @@ function TermsOfUse() {
               </p>
 
               <p>
-                <strong>EREXPO</strong>
+                <strong>EXPOVIA</strong>
                 <br />
                 International Exhibition Representation
                 <br />
                 Türkiye
                 <br />
-                <a href="mailto:info@erexpo.com">
-                  info@erexpo.com
+                <a
+                  href={
+                    CONTACT_EMAIL
+                      ? `mailto:${CONTACT_EMAIL}`
+                      : undefined
+                  }
+                >
+                  {CONTACT_EMAIL || "Email address pending"}
                 </a>
               </p>
             </>
@@ -467,7 +475,7 @@ function TermsOfUse() {
       eyebrow: "Yasal Bilgilendirme",
       title: "Kullanım Koşulları",
       description:
-        "Bu Kullanım Koşulları, EREXPO internet sitesine, içeriklerine, hizmetlerine ve fuar bilgilerine erişimi ve bunların kullanımını düzenler.",
+        "Bu Kullanım Koşulları, EXPOVIA internet sitesine, içeriklerine, hizmetlerine ve fuar bilgilerine erişimi ve bunların kullanımını düzenler.",
       updatedLabel: "Son güncelleme",
       updatedDate: "20 Temmuz 2026",
 
@@ -478,7 +486,7 @@ function TermsOfUse() {
           content: (
             <>
               <p>
-                EREXPO internet sitesine erişerek veya siteyi
+                EXPOVIA internet sitesine erişerek veya siteyi
                 kullanarak bu Kullanım Koşulları’na uymayı
                 kabul etmiş olursunuz.
               </p>
@@ -492,12 +500,12 @@ function TermsOfUse() {
         },
 
         {
-          id: "erexpo-hakkinda",
-          title: "EREXPO Hakkında",
+          id: "expovia-hakkinda",
+          title: "EXPOVIA Hakkında",
           content: (
             <>
               <p>
-                EREXPO; uluslararası fuar temsilciliği, iş
+                EXPOVIA; uluslararası fuar temsilciliği, iş
                 geliştirme ve fuar katılım destek hizmetleri
                 sunar.
               </p>
@@ -567,7 +575,7 @@ function TermsOfUse() {
           content: (
             <>
               <p>
-                EREXPO, internet sitesindeki bilgileri doğru,
+                EXPOVIA, internet sitesindeki bilgileri doğru,
                 açık ve güncel tutmaya çalışır.
               </p>
 
@@ -593,7 +601,7 @@ function TermsOfUse() {
             <>
               <p>
                 İnternet sitesinde yayımlanan içerikler,
-                EREXPO tarafından yazılı olarak açıkça teyit
+                EXPOVIA tarafından yazılı olarak açıkça teyit
                 edilmedikçe bağlayıcı ticari teklif,
                 sözleşme, garanti veya taahhüt oluşturmaz.
               </p>
@@ -621,7 +629,7 @@ function TermsOfUse() {
 
               <p>
                 Kanunen sorumluluğun sınırlandırılamadığı
-                durumlar dışında EREXPO, bağımsız üçüncü
+                durumlar dışında EXPOVIA, bağımsız üçüncü
                 tarafların işlem, ihmal, erişilebilirlik,
                 fiyatlandırma veya politikalarından sorumlu
                 değildir.
@@ -643,7 +651,7 @@ function TermsOfUse() {
 
               <p>
                 Bu bağlantılar kolaylık amacıyla sunulur.
-                EREXPO, üçüncü taraf içeriklerini,
+                EXPOVIA, üçüncü taraf içeriklerini,
                 güvenliğini, erişilebilirliğini veya gizlilik
                 uygulamalarını kontrol etmez ve bunlardan
                 sorumlu değildir.
@@ -658,10 +666,10 @@ function TermsOfUse() {
           content: (
             <>
               <p>
-                Aksi belirtilmedikçe EREXPO adı, logosu,
+                Aksi belirtilmedikçe EXPOVIA adı, logosu,
                 internet sitesi tasarımı, metinleri,
                 grafikleri, düzeni, belgeleri ve özgün
-                içerikleri EREXPO’ya aittir veya lisanslı
+                içerikleri EXPOVIA’ya aittir veya lisanslı
                 olarak kullanılmaktadır.
               </p>
 
@@ -731,7 +739,7 @@ function TermsOfUse() {
             <>
               <p>
                 İnternet sitesi üzerinden toplanan kişisel
-                veriler, EREXPO Gizlilik Politikası ve Çerez
+                veriler, EXPOVIA Gizlilik Politikası ve Çerez
                 Politikası kapsamında işlenir.
               </p>
 
@@ -751,7 +759,7 @@ function TermsOfUse() {
           content: (
             <>
               <p>
-                EREXPO, internet sitesinin her zaman
+                EXPOVIA, internet sitesinin her zaman
                 kesintisiz, hatasız veya erişilebilir
                 olacağını garanti etmez.
               </p>
@@ -778,7 +786,7 @@ function TermsOfUse() {
               </p>
 
               <p>
-                EREXPO; belirli bir ticari sonuç, satış,
+                EXPOVIA; belirli bir ticari sonuç, satış,
                 ziyaretçi sayısı, iş fırsatı veya fuar
                 performansı garanti etmez.
               </p>
@@ -792,7 +800,7 @@ function TermsOfUse() {
           content: (
             <>
               <p>
-                Kanunun izin verdiği en geniş ölçüde EREXPO,
+                Kanunun izin verdiği en geniş ölçüde EXPOVIA,
                 internet sitesinin kullanılması veya
                 içeriklere güvenilmesi sonucunda doğan
                 dolaylı, arızi, sonuç niteliğindeki veya özel
@@ -835,7 +843,7 @@ function TermsOfUse() {
           content: (
             <>
               <p>
-                EREXPO, gerekli gördüğünde site içeriğini,
+                EXPOVIA, gerekli gördüğünde site içeriğini,
                 özelliklerini, hizmetlerini veya bu Kullanım
                 Koşulları’nı güncelleyebilir.
               </p>
@@ -857,7 +865,7 @@ function TermsOfUse() {
               <p>
                 Kötüye kullanım, güvenlik riski, hukuka
                 aykırı davranış veya bu koşulların ihlali
-                halinde EREXPO internet sitesine erişimi
+                halinde EXPOVIA internet sitesine erişimi
                 sınırlandırabilir veya sonlandırabilir.
               </p>
             </>
@@ -909,14 +917,20 @@ function TermsOfUse() {
               </p>
 
               <p>
-                <strong>EREXPO</strong>
+                <strong>EXPOVIA</strong>
                 <br />
                 Uluslararası Fuar Temsilciliği
                 <br />
                 Türkiye
                 <br />
-                <a href="mailto:info@erexpo.com">
-                  info@erexpo.com
+                <a
+                  href={
+                    CONTACT_EMAIL
+                      ? `mailto:${CONTACT_EMAIL}`
+                      : undefined
+                  }
+                >
+                  {CONTACT_EMAIL || "Email address pending"}
                 </a>
               </p>
             </>

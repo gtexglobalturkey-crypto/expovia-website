@@ -4,6 +4,8 @@ import { useTranslation } from "../../hooks/useTranslation";
 
 import Button from "../ui/Button";
 
+import { CONTACT_EMAIL } from "../../config/site";
+
 function CTA() {
   const { language } = useTranslation();
 
@@ -11,8 +13,8 @@ function CTA() {
     en: {
       title: "Planning to exhibit internationally?",
       description:
-        "Tell us about your company, target markets and participation objectives. EREXPO will help you identify the most suitable international exhibition opportunities.",
-      primary: "Contact EREXPO",
+        "Tell us about your company, target markets and participation objectives. EXPOVIA will help you identify the most suitable international exhibition opportunities.",
+      primary: "Contact EXPOVIA",
       footer:
         "Professional international exhibition representation for Turkish manufacturers and exporters.",
       subject: "International Exhibition Inquiry",
@@ -21,8 +23,8 @@ function CTA() {
     tr: {
       title: "Uluslararası bir fuara katılmayı mı planlıyorsunuz?",
       description:
-        "Şirketiniz, hedef pazarlarınız ve fuar katılım hedefleriniz hakkında bize bilgi verin. EREXPO sizin için en uygun uluslararası fuar fırsatlarını belirlemenize yardımcı olsun.",
-      primary: "EREXPO ile İletişime Geçin",
+        "Şirketiniz, hedef pazarlarınız ve fuar katılım hedefleriniz hakkında bize bilgi verin. EXPOVIA sizin için en uygun uluslararası fuar fırsatlarını belirlemenize yardımcı olsun.",
+      primary: "EXPOVIA ile İletişime Geçin",
       footer:
         "Türk üretici ve ihracatçıları için profesyonel uluslararası fuar temsilciliği.",
       subject: "Uluslararası Fuar Katılım Talebi",
@@ -32,7 +34,11 @@ function CTA() {
   const t = content[language];
 
   const handleContact = () => {
-    window.location.href = `mailto:info@erexpo.com?subject=${encodeURIComponent(
+    if (!CONTACT_EMAIL) {
+      return;
+    }
+
+    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
       t.subject
     )}`;
   };

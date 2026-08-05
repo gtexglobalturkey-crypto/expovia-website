@@ -13,7 +13,7 @@ function FeaturedExhibitions() {
       label: "Featured",
       title: "Featured Exhibitions",
       description:
-        "Hand-picked international exhibitions recommended by EREXPO for companies looking to expand into global markets.",
+        "Hand-picked international exhibitions recommended by EXPOVIA for companies looking to expand into global markets.",
       country: "Country",
       city: "City",
       date: "Date",
@@ -52,7 +52,7 @@ function FeaturedExhibitions() {
       label: "Öne Çıkanlar",
       title: "Öne Çıkan Fuarlar",
       description:
-        "EREXPO tarafından uluslararası pazarlara açılmak isteyen firmalar için özenle seçilen fuarlar.",
+        "EXPOVIA tarafından uluslararası pazarlara açılmak isteyen firmalar için özenle seçilen fuarlar.",
 
       country: "Ülke",
       city: "Şehir",

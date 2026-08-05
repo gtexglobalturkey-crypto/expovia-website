@@ -4,7 +4,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { useContext, useEffect, useRef, useState } from "react";
 import { Menu, X } from "lucide-react";
 
-import logo from "../../assets/images/erexpo-logo.png";
+import logo from "../../assets/images/expovia-logo.png";
 
 import { useTranslation } from "../../hooks/useTranslation";
 import { LanguageContext } from "../../context/LanguageContext";
@@ -108,18 +108,15 @@ function Header() {
         <Link
           to="/"
           className="logo"
+          aria-label="EXPOVIA home"
         >
-          <img
-            src={logo}
-            alt="EREXPO"
-            className="logo-image"
-          />
-
-          <div className="logo-text">
-            <strong>EREXPO</strong>
-
-            <small>{t.header.subtitle}</small>
-          </div>
+          <span className="logo-mark">
+            <img
+              src={logo}
+              alt="EXPOVIA"
+              className="logo-image"
+            />
+          </span>
         </Link>
 
         <nav
