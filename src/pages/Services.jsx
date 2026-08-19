@@ -8,11 +8,16 @@ import ServicesProcess from "../components/Services/ServicesProcess";
 import ServicesGrid from "../components/Services/ServicesGrid";
 import ServicesCTA from "../components/Services/ServicesCTA";
 
+import { PAGE_TITLES } from "../config/pageTitles";
+import { useTranslation } from "../hooks/useTranslation";
+
 function Services() {
+  const { language } = useTranslation();
+
   return (
     <>
       <SEO
-        title="International Exhibition Services"
+        title={PAGE_TITLES.services[language]}
         description="Discover VIAFA services for international exhibition participation, including exhibition selection, stand planning, participation management and pre-exhibition support."
         canonical="/services"
       />

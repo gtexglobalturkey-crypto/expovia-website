@@ -10,13 +10,17 @@ import ViawaShowcase from "../components/Viawa/ViawaShowcase";
 import ViawaClosing from "../components/Viawa/ViawaClosing";
 import ViawaLoginModal from "../components/Viawa/ViawaLoginModal";
 
+import { PAGE_TITLES } from "../config/pageTitles";
+import { useTranslation } from "../hooks/useTranslation";
+
 function Viawa() {
+  const { language } = useTranslation();
   const [isLoginOpen, setIsLoginOpen] = useState(false);
 
   return (
     <>
       <SEO
-        title="VIAWA"
+        title={PAGE_TITLES.viawa[language]}
         description="VIAWA is VIAFA's internal operational platform, developed to plan, manage and follow international exhibition projects within one consistent workspace."
         canonical="/viawa"
       />

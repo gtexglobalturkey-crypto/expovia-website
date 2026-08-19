@@ -16,6 +16,8 @@ import ViamateClosing from "../components/Viamate/ViamateClosing";
 
 import { useTranslation } from "../hooks/useTranslation";
 
+import { PAGE_TITLES } from "../config/pageTitles";
+
 function Viamate() {
   const { language } = useTranslation();
 
@@ -35,7 +37,7 @@ function Viamate() {
   return (
     <>
       <SEO
-        title="VIAMATE"
+        title={PAGE_TITLES.viamate[language]}
         description={t.description}
         canonical="/viamate"
       />
