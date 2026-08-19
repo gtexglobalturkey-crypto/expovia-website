@@ -1,0 +1,335 @@
+.viamate-section {
+  background: #ffffff;
+  padding: 32px 0;
+}
+
+.viamate-section--alt {
+  background: #f7f7f5;
+}
+
+.viamate-section-inner {
+  max-width: 720px;
+}
+
+.viamate-motif-rule {
+  display: block;
+  width: 30px;
+  height: 2px;
+  margin-bottom: 16px;
+  background: #7a1f2b;
+  border-radius: 1px;
+}
+
+.viamate-section h2 {
+  margin: 0 0 16px;
+  font-size: clamp(1.4rem, 2.4vw, 1.9rem);
+  line-height: 1.18;
+  letter-spacing: -0.03em;
+  color: #1d1d1f;
+}
+
+.viamate-section p {
+  margin: 0 0 14px;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: #44444a;
+}
+
+.viamate-section p:last-of-type {
+  margin-bottom: 0;
+}
+
+.viamate-inline-emphasis {
+  font-weight: 700;
+  color: #1d1d1f;
+}
+
+.viamate-callout {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 18px 0 0 !important;
+  padding: 14px 18px;
+  border-radius: 14px;
+  background: rgba(122, 31, 43, 0.06);
+  font-size: 0.9rem !important;
+  font-weight: 600;
+  line-height: 1.55;
+  color: #7a1f2b !important;
+}
+
+.viamate-callout svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #7a1f2b;
+}
+
+/* ---- section-level lead icon (Expenses, Offline) ---- */
+
+.viamate-section-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  background: rgba(122, 31, 43, 0.08);
+  color: #7a1f2b;
+}
+
+/* ---- offline section background accent ---- */
+
+.viamate-offline-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.viamate-offline-section::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 6%;
+  width: 300px;
+  height: 300px;
+  transform: translateY(-50%);
+  background: radial-gradient(
+    circle,
+    rgba(122, 31, 43, 0.07) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* ---- scattered problem icons ---- */
+
+.viamate-scatter-icons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.viamate-scatter-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #e4e0d9;
+  border-radius: 10px;
+  background: #f7f7f5;
+  color: #9a9a9e;
+}
+
+.viamate-scatter-icon:nth-child(2) {
+  transform: rotate(-4deg);
+}
+
+.viamate-scatter-icon:nth-child(3) {
+  transform: rotate(3deg);
+}
+
+.viamate-scatter-icon:nth-child(4) {
+  transform: rotate(-2deg);
+}
+
+/* ---- action / option lists (ContactCapture, Meeting) ---- */
+
+.viamate-action-list,
+.viamate-option-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 4px 0 18px;
+  padding: 0;
+  list-style: none;
+}
+
+.viamate-action-item,
+.viamate-option-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 1px solid #e4e0d9;
+  border-radius: 14px;
+  background: #ffffff;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: #44444a;
+}
+
+.viamate-section--alt .viamate-action-item {
+  background: #ffffff;
+}
+
+.viamate-action-icon,
+.viamate-option-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(122, 31, 43, 0.08);
+  color: #7a1f2b;
+}
+
+.viamate-option-question {
+  display: block;
+  color: #7a7a80;
+}
+
+.viamate-option-action {
+  display: block;
+  margin-top: 4px;
+  color: #1d1d1f;
+}
+
+/* ---- punchline card (closing emphasis block) ---- */
+
+.viamate-punchline-card {
+  margin-top: 22px;
+  padding: 20px 22px;
+  border-radius: 16px;
+  background: #1d1d1f;
+}
+
+.viamate-punchline-card h3 {
+  margin: 0 0 6px;
+  font-size: 1.02rem;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.viamate-punchline-card p {
+  margin: 0 !important;
+  font-size: 0.86rem !important;
+  color: rgba(255, 255, 255, 0.72) !important;
+}
+
+.viamate-punchline-card--outline {
+  background: #ffffff;
+  border: 1px solid rgba(122, 31, 43, 0.2);
+  box-shadow: 0 1px 2px rgba(24, 24, 26, 0.04);
+}
+
+.viamate-punchline-card--outline h3 {
+  color: #1d1d1f;
+}
+
+.viamate-punchline-card--outline p {
+  color: #55555a !important;
+}
+
+/* ---- before/after contrast row (TripOutcome) ---- */
+
+.viamate-contrast-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0 0;
+}
+
+.viamate-contrast-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.viamate-contrast-item--before {
+  border: 1px solid #e4e0d9;
+  background: #f7f7f5;
+  color: #9a9a9e;
+  text-decoration: line-through;
+  text-decoration-color: #c8c4bc;
+}
+
+.viamate-contrast-item--after {
+  border: 1px solid rgba(122, 31, 43, 0.22);
+  background: rgba(122, 31, 43, 0.06);
+  color: #7a1f2b;
+}
+
+@media (max-width: 640px) {
+  .viamate-section {
+    padding: 32px 0;
+  }
+
+  .viamate-punchline-card {
+    padding: 18px;
+  }
+}
+
+/* ---- story illustrations (Problem / Trip Outcome) ---- */
+
+.viamate-illustration-host {
+  position: relative;
+}
+
+.viamate-story-illustration {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+}
+
+.viamate-story-illustration--problem {
+  width: 455px;
+  opacity: 0.95;
+  mask-image: radial-gradient(
+    ellipse 72% 68% at 50% 55%,
+    #000 45%,
+    transparent 88%
+  );
+  -webkit-mask-image: radial-gradient(
+    ellipse 72% 68% at 50% 55%,
+    #000 45%,
+    transparent 88%
+  );
+}
+
+.viamate-story-illustration--solution {
+  width: 285px;
+}
+
+.viamate-story-illustration--right {
+  right: 12px;
+}
+
+.viamate-story-illustration--left {
+  left: 12px;
+}
+
+.viamate-story-illustration--offline-badge {
+  width: 140px;
+  right: 203px;
+}
+
+.viamate-story-illustration--transfer-scene {
+  width: 679px;
+  top: 77px;
+  right: -7px;
+  transform: none;
+}
+
+@media (min-width: 1300px) {
+  .viamate-story-illustration {
+    display: block;
+  }
+
+  .viamate-problem-inner,
+  .viamate-tripoutcome-inner {
+    margin-left: auto;
+  }
+}

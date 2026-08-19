@@ -10,7 +10,7 @@ function ExhibitionFloorPlan() {
       label: "Floor Plan",
       title: "Find the Best Stand Location",
       lead:
-        "Stand location is one of the most important factors affecting exhibition performance. EXPOVIA helps you evaluate the available locations and select the most suitable position according to your products, visitor flow and marketing objectives.",
+        "Stand location is one of the most important factors affecting exhibition performance. VIAFA helps you evaluate the available locations and select the most suitable position according to your products, visitor flow and marketing objectives.",
       advantages: [
         "Official exhibition floor plan",
         "Available stand locations",
@@ -18,7 +18,7 @@ function ExhibitionFloorPlan() {
         "Stand size recommendations",
       ],
       primary: "Request Floor Plan",
-      secondary: "Contact EXPOVIA",
+      secondary: "Contact VIAFA",
       hallA: "Hall A",
       hallB: "Hall B",
       hallC: "Hall C",
@@ -33,7 +33,7 @@ function ExhibitionFloorPlan() {
       label: "Fuar Yerleşim Planı",
       title: "En Uygun Stand Konumunu Bulun",
       lead:
-        "Stand konumu, fuar performansını etkileyen en önemli unsurlardan biridir. EXPOVIA; mevcut alanları değerlendirmenize, ziyaretçi akışını analiz etmenize ve ürünleriniz ile pazarlama hedeflerinize en uygun konumu seçmenize yardımcı olur.",
+        "Stand konumu, fuar performansını etkileyen en önemli unsurlardan biridir. VIAFA; mevcut alanları değerlendirmenize, ziyaretçi akışını analiz etmenize ve ürünleriniz ile pazarlama hedeflerinize en uygun konumu seçmenize yardımcı olur.",
       advantages: [
         "Resmî fuar yerleşim planı",
         "Müsait stand alanları",
@@ -41,7 +41,7 @@ function ExhibitionFloorPlan() {
         "Stand ölçüsü önerileri",
       ],
       primary: "Yerleşim Planını Talep Et",
-      secondary: "EXPOVIA ile İletişime Geç",
+      secondary: "VIAFA ile İletişime Geç",
       hallA: "Salon A",
       hallB: "Salon B",
       hallC: "Salon C",

@@ -13,8 +13,8 @@ function CTA() {
     en: {
       title: "Planning to exhibit internationally?",
       description:
-        "Tell us about your company, target markets and participation objectives. EXPOVIA will help you identify the most suitable international exhibition opportunities.",
-      primary: "Contact EXPOVIA",
+        "Tell us about your company, target markets and participation objectives. VIAFA will help you identify the most suitable international exhibition opportunities.",
+      primary: "Contact VIAFA",
       footer:
         "Professional international exhibition representation for Turkish manufacturers and exporters.",
       subject: "International Exhibition Inquiry",
@@ -23,8 +23,8 @@ function CTA() {
     tr: {
       title: "Uluslararası bir fuara katılmayı mı planlıyorsunuz?",
       description:
-        "Şirketiniz, hedef pazarlarınız ve fuar katılım hedefleriniz hakkında bize bilgi verin. EXPOVIA sizin için en uygun uluslararası fuar fırsatlarını belirlemenize yardımcı olsun.",
-      primary: "EXPOVIA ile İletişime Geçin",
+        "Şirketiniz, hedef pazarlarınız ve fuar katılım hedefleriniz hakkında bize bilgi verin. VIAFA sizin için en uygun uluslararası fuar fırsatlarını belirlemenize yardımcı olsun.",
+      primary: "VIAFA ile İletişime Geçin",
       footer:
         "Türk üretici ve ihracatçıları için profesyonel uluslararası fuar temsilciliği.",
       subject: "Uluslararası Fuar Katılım Talebi",

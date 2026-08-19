@@ -1,0 +1,76 @@
+.viamate-phone-screenshot {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.viamate-phone-screenshot-frame {
+  width: 100%;
+  max-width: 240px;
+  overflow: hidden;
+  border: 1px solid rgba(122, 31, 43, 0.18);
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow:
+    0 0 0 4px rgba(122, 31, 43, 0.48),
+    0 0 0 10px rgba(122, 31, 43, 0.34),
+    0 20px 42px rgba(24, 24, 26, 0.1);
+}
+
+.viamate-phone-screenshot-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 720 / 1498;
+}
+
+/* ---- two-column text + screenshot layout (Contact Capture, Meeting, Expenses) ---- */
+
+.viamate-section-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(200px, 260px);
+  align-items: center;
+  gap: 44px;
+  max-width: 840px;
+}
+
+.viamate-section-split .viamate-phone-screenshot {
+  order: 2;
+}
+
+.viamate-section-split--reverse {
+  grid-template-columns: minmax(200px, 260px) minmax(0, 1fr);
+}
+
+.viamate-section-split--reverse .viamate-phone-screenshot {
+  order: -1;
+}
+
+.viamate-section-split--centered {
+  margin: 0 auto;
+}
+
+.viamate-section-split--wide {
+  max-width: 1100px;
+}
+
+.viamate-section-split--gap-lg {
+  gap: 82px;
+}
+
+@media (max-width: 900px) {
+  .viamate-section-split {
+    grid-template-columns: 1fr;
+    max-width: 640px;
+    gap: 28px;
+  }
+
+  .viamate-section-split .viamate-phone-screenshot,
+  .viamate-section-split--reverse .viamate-phone-screenshot {
+    order: 2;
+  }
+
+  .viamate-phone-screenshot-frame {
+    max-width: 220px;
+  }
+}

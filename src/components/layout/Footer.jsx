@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import { useTranslation } from "../../hooks/useTranslation";
 
-import logo from "../../assets/images/expovia-logo-white.png";
+import logo from "../../assets/images/VIAFA-seffaf-temiz.png";
 
 import "./Footer.css";
 
@@ -18,7 +18,6 @@ function Footer() {
       cookies: "Cookie Policy",
       terms: "Terms of Use",
       rights: "All Rights Reserved.",
-      backToTop: "Back to top",
       footerNav: "Footer",
     },
 
@@ -28,7 +27,6 @@ function Footer() {
       cookies: "Çerez Politikası",
       terms: "Kullanım Koşulları",
       rights: "Tüm hakları saklıdır.",
-      backToTop: "Yukarı dön",
       footerNav: "Alt Bilgi",
     },
   };
@@ -54,32 +52,25 @@ function Footer() {
     },
   ];
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <footer className="site-footer">
       <div className="container site-footer__bar">
         <Link
           to="/"
           className="site-footer__logo-link"
-          aria-label="EXPOVIA home"
+          aria-label="VIAFA home"
         >
           <span className="site-footer__logo-mark">
             <img
               src={logo}
-              alt="EXPOVIA"
+              alt="VIAFA"
               className="site-footer__logo-image"
             />
           </span>
         </Link>
 
         <p className="site-footer__copyright">
-          © {currentYear} EXPOVIA · {t.rights}
+          © {currentYear} VIAFA · {t.rights}
         </p>
 
         <nav
@@ -95,15 +86,6 @@ function Footer() {
             </Link>
           ))}
         </nav>
-
-        <button
-          type="button"
-          className="site-footer__back-to-top"
-          onClick={scrollToTop}
-          aria-label={t.backToTop}
-        >
-          <span aria-hidden="true">↑</span>
-        </button>
       </div>
     </footer>
   );

@@ -13,8 +13,8 @@ function Contact() {
   return (
     <>
       <SEO
-        title="Contact EXPOVIA"
-        description="Contact EXPOVIA for international exhibition participation, stand planning, representation services and business development opportunities."
+        title="Contact VIAFA"
+        description="Contact VIAFA for international exhibition participation, stand planning, representation services and business development opportunities."
         canonical="/contact"
       />
 

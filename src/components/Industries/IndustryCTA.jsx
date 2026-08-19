@@ -11,7 +11,7 @@ function IndustryCTA() {
       title:
         "Explore International Exhibition Opportunities for Your Industry",
       description:
-        "Discover exhibitions aligned with your products, target markets and international growth goals. EXPOVIA supports your company throughout the participation process.",
+        "Discover exhibitions aligned with your products, target markets and international growth goals. VIAFA supports your company throughout the participation process.",
       button: "View Exhibitions",
     },
 
@@ -20,7 +20,7 @@ function IndustryCTA() {
       title:
         "Sektörünüze Uygun Uluslararası Fuar Fırsatlarını Keşfedin",
       description:
-        "Ürünlerinize, hedef pazarlarınıza ve uluslararası büyüme hedeflerinize uygun fuarları keşfedin. EXPOVIA, katılım sürecinin tamamında şirketinize destek olur.",
+        "Ürünlerinize, hedef pazarlarınıza ve uluslararası büyüme hedeflerinize uygun fuarları keşfedin. VIAFA, katılım sürecinin tamamında şirketinize destek olur.",
       button: "Fuarları İnceleyin",
     },
   };

@@ -30,7 +30,7 @@ function Hero() {
         </>
       ),
       description:
-        "EXPOVIA represents leading international exhibitions and connects Turkish manufacturers and exporters with the right markets, organizers and global business opportunities.",
+        "VIAFA represents leading international exhibitions and connects Turkish manufacturers and exporters with the right markets, organizers and global business opportunities.",
       primary: "Explore Exhibitions",
       trust: [
         "International Exhibition Expertise",
@@ -38,11 +38,11 @@ function Hero() {
         "End-to-End Participation Support",
       ],
       aria: "Scroll to exhibitions",
-      whyLabel: "Why EXPOVIA",
+      whyLabel: "Why VIAFA",
       whyTitle: "A professional partner for international growth.",
       whyParagraphs: [
         "Participating in an international exhibition requires much more than reserving a stand. Success depends on choosing the right market, the right organizer and preparing every step correctly.",
-        "EXPOVIA combines local market knowledge with international exhibition experience to help Turkish manufacturers and exporters expand confidently into global markets.",
+        "VIAFA combines local market knowledge with international exhibition experience to help Turkish manufacturers and exporters expand confidently into global markets.",
       ],
       principles: [
         {
@@ -61,7 +61,7 @@ function Hero() {
           id: "03",
           title: "Professional participation management",
           description:
-            "From the first enquiry to post-exhibition follow-up, EXPOVIA manages every detail with consistency and care.",
+            "From the first enquiry to post-exhibition follow-up, VIAFA manages every detail with consistency and care.",
         },
       ],
     },
@@ -79,7 +79,7 @@ function Hero() {
         </>
       ),
       description:
-        "EXPOVIA, dünyanın önde gelen uluslararası fuarlarını Türkiye'de temsil eder ve üreticileri ile ihracatçıları doğru pazarlar, organizatörler ve yeni iş fırsatlarıyla buluşturur.",
+        "VIAFA, dünyanın önde gelen uluslararası fuarlarını Türkiye'de temsil eder ve üreticileri ile ihracatçıları doğru pazarlar, organizatörler ve yeni iş fırsatlarıyla buluşturur.",
       primary: "Fuarları İncele",
       trust: [
         "Uluslararası Fuar Uzmanlığı",
@@ -87,11 +87,11 @@ function Hero() {
         "Uçtan Uca Katılım Desteği",
       ],
       aria: "Fuarlara git",
-      whyLabel: "Neden EXPOVIA",
+      whyLabel: "Neden VIAFA",
       whyTitle: "Uluslararası büyüme için profesyonel bir iş ortağı.",
       whyParagraphs: [
         "Uluslararası bir fuara katılmak, yalnızca bir stand alanı ayırtmaktan çok daha fazlasını gerektirir. Başarı; doğru pazarın, doğru organizatörün seçilmesine ve her adımın doğru şekilde hazırlanmasına bağlıdır.",
-        "EXPOVIA, yerel pazar bilgisini uluslararası fuarcılık deneyimiyle birleştirerek Türk üretici ve ihracatçıların küresel pazarlara güvenle açılmasına yardımcı olur.",
+        "VIAFA, yerel pazar bilgisini uluslararası fuarcılık deneyimiyle birleştirerek Türk üretici ve ihracatçıların küresel pazarlara güvenle açılmasına yardımcı olur.",
       ],
       principles: [
         {
@@ -110,7 +110,7 @@ function Hero() {
           id: "03",
           title: "Profesyonel katılım yönetimi",
           description:
-            "İlk bilgi talebinden fuar sonrası takibe kadar EXPOVIA, sürecin her detayını tutarlı ve özenli şekilde yönetir.",
+            "İlk bilgi talebinden fuar sonrası takibe kadar VIAFA, sürecin her detayını tutarlı ve özenli şekilde yönetir.",
         },
       ],
     },

@@ -33,18 +33,14 @@
   text-decoration:none;
 }
 
-/* The master logo file (expovia-logo.png) is a 1536x1024 canvas in
-   which the visible wordmark only occupies a 902x182 band starting at
-   (321, 353) — the rest is transparent padding. .logo-mark crops a
-   fixed window onto that band so the visible mark, not the canvas,
-   fills the requested height; the img is scaled and offset to match. */
+/* VIAFA-seffaf-temiz.png is already a tightly-cropped transparent
+   logo, so the mark just needs a fixed-height box that lets the image
+   scale to fit within it without clipping or stretching. */
 .logo-mark{
-  --logo-h: 48px;
-  position:relative;
-  display:block;
-  overflow:hidden;
+  --logo-h: 60px;
+  display:flex;
+  align-items:center;
   height:var(--logo-h);
-  width:calc(var(--logo-h) * 4.9560);
   flex-shrink:0;
   transition:transform .25s ease;
 }
@@ -54,13 +50,11 @@
 }
 
 .logo-image{
-  position:absolute;
-  top:calc(var(--logo-h) * -1.9396);
-  left:calc(var(--logo-h) * -1.7637);
-  height:calc(var(--logo-h) * 5.6264);
-  width:calc(var(--logo-h) * 8.4396);
-  max-width:none;
   display:block;
+  height:100%;
+  width:auto;
+  max-width:none;
+  object-fit:contain;
 }
 
 /* ---------------- MENU ---------------- */
@@ -109,6 +103,18 @@
 .nav a:hover::after,
 .nav a.active::after{
   width:100%;
+}
+
+.viamate-nav-logo,
+.viawa-nav-logo{
+  display:block;
+  height:16px;
+  width:auto;
+}
+
+.mobile-nav-inner .viamate-nav-logo,
+.mobile-nav-inner .viawa-nav-logo{
+  height:18px;
 }
 
 /* ---------------- RIGHT ---------------- */
@@ -286,7 +292,7 @@ height:68px;
 }
 
 .logo-mark{
---logo-h: 40px;
+--logo-h: 50px;
 }
 
 .language-button{
@@ -309,12 +315,10 @@ height:34px;
 
 @media (max-width:520px){
 
-/* The cropped mark's real aspect ratio (~4.96:1) makes it much wider
-   than the old full-canvas box at the same height. 40px would overlap
-   the language buttons/menu toggle on phones under ~470px wide, so it
-   steps down here to keep the header on one line without overflow. */
+/* Steps down here to keep the header on one line without overflow
+   on phones under ~470px wide. */
 .logo-mark{
---logo-h: 32px;
+--logo-h: 40px;
 }
 
 .header-right{

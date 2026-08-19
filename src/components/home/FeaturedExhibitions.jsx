@@ -36,7 +36,7 @@ function FeaturedExhibitions() {
       eyebrow: "Exhibition Portfolio",
       title: "International Exhibition Portfolio",
       description:
-        "EXPOVIA is developing its international exhibition portfolio and establishing partnerships with international exhibition organizers. Confirmed exhibitions and participation opportunities will be announced here.",
+        "VIAFA is developing its international exhibition portfolio and establishing partnerships with international exhibition organizers. Confirmed exhibitions and participation opportunities will be announced here.",
 
       sectors: [
         {
@@ -71,7 +71,7 @@ function FeaturedExhibitions() {
       eyebrow: "Fuar Portföyü",
       title: "Uluslararası Fuar Portföyü",
       description:
-        "EXPOVIA, uluslararası fuar portföyünü oluşturmakta ve uluslararası fuar organizatörleriyle iş birlikleri kurmaktadır. Onaylanan fuarlar ve katılım fırsatları burada duyurulacaktır.",
+        "VIAFA, uluslararası fuar portföyünü oluşturmakta ve uluslararası fuar organizatörleriyle iş birlikleri kurmaktadır. Onaylanan fuarlar ve katılım fırsatları burada duyurulacaktır.",
 
       sectors: [
         {

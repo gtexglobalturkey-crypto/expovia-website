@@ -5,6 +5,7 @@
 }
 
 .services-hero-layout {
+  position: relative;
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
   gap: 48px;

@@ -8,18 +8,18 @@ function ServicesCTA() {
   const content = {
     en: {
       label: "Ready to Participate?",
-      title: "Plan Your Next International Exhibition with EXPOVIA",
+      title: "Plan Your Next International Exhibition with VIAFA",
       description:
         "Tell us about your company, products and target markets. Our team will help you identify the right exhibition and manage the participation process.",
-      button: "Contact EXPOVIA",
+      button: "Contact VIAFA",
     },
 
     tr: {
       label: "Katılıma Hazır mısınız?",
-      title: "Bir Sonraki Uluslararası Fuarınızı EXPOVIA ile Planlayın",
+      title: "Bir Sonraki Uluslararası Fuarınızı VIAFA ile Planlayın",
       description:
         "Şirketiniz, ürünleriniz ve hedef pazarlarınız hakkında bize bilgi verin. Ekibimiz doğru fuarı belirlemenize ve katılım sürecini yönetmenize yardımcı olsun.",
-      button: "EXPOVIA ile İletişime Geçin",
+      button: "VIAFA ile İletişime Geçin",
     },
   };
 

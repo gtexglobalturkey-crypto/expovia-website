@@ -8,14 +8,14 @@ function ExhibitionsHero() {
       label: "International Exhibitions",
       title: "Our Exhibition Portfolio Is Being Prepared",
       description:
-        "EXPOVIA is currently developing its international exhibition portfolio and establishing partnerships with leading international exhibition organizers. Confirmed exhibitions and participation opportunities will be published here as agreements are finalized.",
+        "VIAFA is currently developing its international exhibition portfolio and establishing partnerships with leading international exhibition organizers. Confirmed exhibitions and participation opportunities will be published here as agreements are finalized.",
     },
 
     tr: {
       label: "Uluslararası Fuarlar",
       title: "Fuar Portföyümüz Hazırlanıyor",
       description:
-        "EXPOVIA, uluslararası fuar portföyünü oluşturmakta ve önde gelen uluslararası fuar organizatörleriyle iş birlikleri kurmaktadır. Anlaşmalar tamamlandıkça onaylanmış fuarlar ve katılım fırsatları bu sayfada yayımlanacaktır.",
+        "VIAFA, uluslararası fuar portföyünü oluşturmakta ve önde gelen uluslararası fuar organizatörleriyle iş birlikleri kurmaktadır. Anlaşmalar tamamlandıkça onaylanmış fuarlar ve katılım fırsatları bu sayfada yayımlanacaktır.",
     },
   };
 

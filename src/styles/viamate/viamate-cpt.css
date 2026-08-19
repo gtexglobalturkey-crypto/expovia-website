@@ -1,0 +1,162 @@
+.viamate-cpt {
+  padding: 40px 0 64px;
+  background:
+    linear-gradient(180deg, #f7f7f5 0%, rgba(29, 29, 31, 0) 64px),
+    linear-gradient(0deg, #ffffff 0%, rgba(29, 29, 31, 0) 64px),
+    #1d1d1f;
+}
+
+.viamate-cpt-eyebrow {
+  position: relative;
+  margin: 0 0 24px;
+  padding-top: 10px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.68);
+  text-align: center;
+}
+
+.viamate-cpt-eyebrow::before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  width: 30px;
+  height: 2px;
+  transform: translateX(-50%);
+  background: #a3384a;
+  border-radius: 1px;
+}
+
+.viamate-cpt-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 48px;
+}
+
+.viamate-cpt-step {
+  position: relative;
+}
+
+.viamate-cpt-number {
+  position: absolute;
+  top: -8px;
+  right: 0;
+  font-size: 2.75rem;
+  font-weight: 800;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.2);
+  pointer-events: none;
+  user-select: none;
+}
+
+.viamate-cpt-step-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.viamate-cpt-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(122, 31, 43, 0.22);
+  color: #ffffff;
+}
+
+.viamate-cpt-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+.viamate-cpt-step h3 {
+  margin: 0 0 10px;
+  font-size: 1.22rem;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.viamate-cpt-step p {
+  margin: 0 0 10px;
+  font-size: 0.86rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.66);
+}
+
+.viamate-cpt-step p:last-of-type {
+  margin-bottom: 0;
+}
+
+.viamate-cpt-lead {
+  font-weight: 700 !important;
+  color: #ffffff !important;
+}
+
+.viamate-cpt-emphasis {
+  margin-top: 12px !important;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 0.8rem !important;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.86) !important;
+}
+
+.viamate-file-chip {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.78rem;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.viamate-cpt-connector {
+  position: absolute;
+  top: 19px;
+  left: calc(100% + 8px);
+  width: 32px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.viamate-cpt-closing {
+  margin: 36px 0 0;
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .viamate-cpt-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .viamate-cpt-connector {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .viamate-cpt {
+    padding: 44px 0;
+  }
+
+  .viamate-cpt-number {
+    font-size: 2.2rem;
+  }
+}

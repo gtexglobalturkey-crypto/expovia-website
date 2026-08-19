@@ -1,0 +1,140 @@
+.fairy {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity 500ms ease,
+    transform 500ms ease;
+}
+
+.fairy--entering,
+.fairy--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fairy--exiting {
+  opacity: 0;
+  transform: translateY(-12px);
+}
+
+.fairy-bubble {
+  max-width: 220px;
+  margin-bottom: 10px;
+  padding: 10px 14px;
+  border: 1px solid #e4e0d9;
+  border-radius: 14px 14px 4px 14px;
+  background: #ffffff;
+  box-shadow: 0 12px 28px rgba(24, 24, 26, 0.16);
+}
+
+.fairy-bubble p {
+  display: -webkit-box;
+  overflow: hidden;
+  margin: 0;
+  color: #1d1d1f;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.42;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.fairy-figure {
+  display: block;
+  height: 136px;
+  width: auto;
+  filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.18));
+}
+
+.fairy--visible.fairy--wave .fairy-figure {
+  animation: fairy-sway 2.2s ease-in-out infinite;
+}
+
+.fairy--visible.fairy--point .fairy-figure {
+  animation: fairy-bob 2.4s ease-in-out infinite;
+}
+
+.fairy--visible.fairy--inform .fairy-figure {
+  animation: fairy-bob 2.4s ease-in-out infinite;
+}
+
+.fairy--visible.fairy--cheer .fairy-figure {
+  animation: fairy-cheer 1.8s ease-in-out infinite;
+}
+
+@keyframes fairy-sway {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-4px) rotate(-2deg);
+  }
+}
+
+@keyframes fairy-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes fairy-cheer {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-8px) rotate(3deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .fairy-bubble {
+    max-width: 168px;
+    padding: 8px 11px;
+  }
+
+  .fairy-bubble p {
+    font-size: 11.5px;
+  }
+
+  .fairy-figure {
+    height: 96px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fairy-figure {
+    height: 80px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fairy {
+    transition: opacity 400ms ease;
+    transform: none;
+  }
+
+  .fairy--exiting {
+    transform: none;
+  }
+
+  .fairy--visible .fairy-figure {
+    animation: none;
+  }
+}

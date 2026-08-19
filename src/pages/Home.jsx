@@ -12,7 +12,7 @@ function Home() {
     <>
       <SEO
         title="International Exhibition Representation"
-        description="EXPOVIA helps manufacturers and exporters participate in leading international trade exhibitions through professional exhibition representation, participation management and business development services."
+        description="VIAFA helps manufacturers and exporters participate in leading international trade exhibitions through professional exhibition representation, participation management and business development services."
         canonical="/"
       />
 

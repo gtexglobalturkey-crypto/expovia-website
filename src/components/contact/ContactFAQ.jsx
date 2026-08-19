@@ -5,12 +5,12 @@ const faqs = [
   {
     question: "How do I participate in an international exhibition?",
     answer:
-      "Simply contact the EXPOVIA team. We evaluate your products, target markets and objectives, then recommend the most suitable exhibitions and guide you through the complete participation process.",
+      "Simply contact the VIAFA team. We evaluate your products, target markets and objectives, then recommend the most suitable exhibitions and guide you through the complete participation process.",
   },
   {
-    question: "Does EXPOVIA organize exhibitions?",
+    question: "Does VIAFA organize exhibitions?",
     answer:
-      "EXPOVIA acts as an official international exhibition representative. We work closely with exhibition organizers and provide professional participation services for Turkish companies.",
+      "VIAFA acts as an official international exhibition representative. We work closely with exhibition organizers and provide professional participation services for Turkish companies.",
   },
   {
     question: "Can you help us choose the right exhibition?",
@@ -18,7 +18,7 @@ const faqs = [
       "Yes. We analyze your industry, export goals and target countries to recommend the exhibitions that provide the greatest business potential.",
   },
   {
-    question: "What services does EXPOVIA provide?",
+    question: "What services does VIAFA provide?",
     answer:
       "Our services include exhibition selection, stand reservation, organizer coordination, participation management and pre-exhibition guidance to ensure a smooth participation experience.",
   },
@@ -42,7 +42,7 @@ function ContactFAQ() {
 
             <p>
               Find quick answers about international exhibitions, participation
-              procedures and how EXPOVIA supports your company throughout the
+              procedures and how VIAFA supports your company throughout the
               process.
             </p>
           </div>

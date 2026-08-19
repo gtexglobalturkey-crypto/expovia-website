@@ -32,7 +32,7 @@ function WhyContact() {
         <div className="contact-section-header">
           <div className="contact-section-header-copy">
             <p className="contact-section-label">
-              Why EXPOVIA
+              Why VIAFA
             </p>
 
             <h2 className="contact-section-heading">

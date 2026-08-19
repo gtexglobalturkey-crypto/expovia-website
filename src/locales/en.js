@@ -5,6 +5,8 @@ const en = {
     industries: "Industries",
     about: "About",
     services: "Services",
+    viamate: "VIAMATE",
+    viawa: "VIAWA",
     contact: "Contact Us",
     subtitle: "International Exhibition Representation",
   },

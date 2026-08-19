@@ -120,7 +120,7 @@ function ExhibitionOverview() {
           value: "Madencilik Profesyonelleri",
         },
         {
-          label: "Sergileme Alanı",
+          label: "Net Fuar Alanı",
           value: "78.000 m²",
         },
       ],

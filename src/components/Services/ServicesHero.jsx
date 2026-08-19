@@ -8,14 +8,14 @@ function ServicesHero() {
       label: "Services",
       title: "Professional Exhibition Services for International Success",
       description:
-        "EXPOVIA supports companies throughout every stage of international exhibition participation, from selecting the right event to completing a successful exhibition experience.",
+        "VIAFA supports companies throughout every stage of international exhibition participation, from selecting the right event to completing a successful exhibition experience.",
     },
 
     tr: {
       label: "Hizmetler",
       title: "Profesyonel Fuar Hizmetleri",
       description:
-        "EXPOVIA, doğru fuarın seçilmesinden başarılı bir katılım sürecinin tamamlanmasına kadar uluslararası fuar katılımının her aşamasında şirketlere destek olur.",
+        "VIAFA, doğru fuarın seçilmesinden başarılı bir katılım sürecinin tamamlanmasına kadar uluslararası fuar katılımının her aşamasında şirketlere destek olur.",
     },
   };
 

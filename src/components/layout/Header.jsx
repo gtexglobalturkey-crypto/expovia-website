@@ -4,7 +4,9 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { useContext, useEffect, useRef, useState } from "react";
 import { Menu, X } from "lucide-react";
 
-import logo from "../../assets/images/expovia-logo.png";
+import logo from "../../assets/images/VIAFA-seffaf-temiz.png";
+import viamateLogo from "../../assets/images/viamate/viamate-logo.png";
+import viawaLogo from "../../assets/images/viawa/viawa-logo.png";
 
 import { useTranslation } from "../../hooks/useTranslation";
 import { LanguageContext } from "../../context/LanguageContext";
@@ -108,12 +110,12 @@ function Header() {
         <Link
           to="/"
           className="logo"
-          aria-label="EXPOVIA home"
+          aria-label="VIAFA home"
         >
           <span className="logo-mark">
             <img
               src={logo}
-              alt="EXPOVIA"
+              alt="VIAFA"
               className="logo-image"
             />
           </span>
@@ -137,6 +139,22 @@ function Header() {
 
           <NavLink to="/services">
             {t.header.services}
+          </NavLink>
+
+          <NavLink to="/viamate">
+            <img
+              src={viamateLogo}
+              alt={t.header.viamate}
+              className="viamate-nav-logo"
+            />
+          </NavLink>
+
+          <NavLink to="/viawa">
+            <img
+              src={viawaLogo}
+              alt={t.header.viawa}
+              className="viawa-nav-logo"
+            />
           </NavLink>
         </nav>
 
@@ -232,6 +250,13 @@ function Header() {
             </NavLink>
 
             <NavLink
+              to="/about"
+              onClick={closeMobileMenu}
+            >
+              {t.header.about}
+            </NavLink>
+
+            <NavLink
               to="/services"
               onClick={closeMobileMenu}
             >
@@ -239,10 +264,25 @@ function Header() {
             </NavLink>
 
             <NavLink
-              to="/about"
+              to="/viamate"
               onClick={closeMobileMenu}
             >
-              {t.header.about}
+              <img
+                src={viamateLogo}
+                alt={t.header.viamate}
+                className="viamate-nav-logo"
+              />
+            </NavLink>
+
+            <NavLink
+              to="/viawa"
+              onClick={closeMobileMenu}
+            >
+              <img
+                src={viawaLogo}
+                alt={t.header.viawa}
+                className="viawa-nav-logo"
+              />
             </NavLink>
 
             <NavLink

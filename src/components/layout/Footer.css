@@ -38,27 +38,21 @@
   align-items: center;
 }
 
-/* Same crop technique as the header: the master logo file is a
-   1536x1024 canvas where the visible wordmark only occupies a
-   902x182 band starting at (321, 353) — .site-footer__logo-mark
-   crops a fixed window onto that band so the mark itself, not the
-   transparent canvas, fills the requested height. */
+/* VIAFA-seffaf-temiz.png is already a tightly-cropped transparent
+   logo, so the mark just needs a fixed-height box that lets the image
+   scale to fit within it without clipping or stretching. */
 .site-footer__logo-mark {
-  position: relative;
-  display: block;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
   height: 34px;
-  width: calc(34px * 4.9560);
 }
 
 .site-footer__logo-image {
-  position: absolute;
-  top: calc(34px * -1.9396);
-  left: calc(34px * -1.7637);
-  height: calc(34px * 5.6264);
-  width: calc(34px * 8.4396);
-  max-width: none;
   display: block;
+  height: 100%;
+  width: auto;
+  max-width: none;
+  object-fit: contain;
 }
 
 .site-footer__copyright {
@@ -69,7 +63,7 @@
 
 /* display:contents removes the <nav> box so its <Link> children become
    direct flex items of .site-footer__bar, keeping every gap between
-   logo / copyright / links / back-to-top equal via the parent's gap +
+   logo / copyright / links equal via the parent's gap +
    justify-content: space-between, while the <nav> itself still exists
    for its aria-label landmark. */
 .site-footer__links {
@@ -85,26 +79,6 @@
 
 .site-footer__links a:hover {
   color: #fff;
-}
-
-.site-footer__back-to-top {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 34px;
-  height: 34px;
-  border: 1px solid rgba(255,255,255,.12);
-  border-radius: 999px;
-  background: transparent;
-  color: rgba(255,255,255,.75);
-  cursor: pointer;
-  transition: .25s;
-}
-
-.site-footer__back-to-top:hover {
-  color: #fff;
-  border-color: rgba(255,255,255,.35);
 }
 
 /* Equal-space distribution only reads well on a single unwrapped

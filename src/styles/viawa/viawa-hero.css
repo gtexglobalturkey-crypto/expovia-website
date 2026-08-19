@@ -1,0 +1,190 @@
+.viawa-hero {
+  padding: 4px 0 0px;
+  background: #f7f7f5;
+  border-bottom: 1px solid #e8e5df;
+}
+
+.viawa-hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(360px, 0.8fr);
+  gap: 48px;
+  align-items: center;
+  padding: 40px 0 44px;
+}
+
+.viawa-hero-copy {
+  max-width: 560px;
+}
+
+.viawa-hero .section-label {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 8px;
+  color: #7a202c;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.viawa-hero .section-label::before {
+  content: "";
+  width: 30px;
+  height: 1px;
+  margin-right: 12px;
+  background: #7a202c;
+}
+
+.viawa-hero h1 {
+  margin: 0;
+  font-size: clamp(1.6rem, 2.7vw, 2.4rem);
+  line-height: 1.08;
+  letter-spacing: -0.05em;
+  color: #1d1d1f;
+}
+
+.viawa-hero-description {
+  margin: 14px 0 0;
+  max-width: 480px;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: #626266;
+}
+
+.viawa-hero-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.viawa-hero-highlights li {
+  position: relative;
+  max-width: 480px;
+  padding-left: 22px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #44444a;
+}
+
+.viawa-hero-highlights li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: #7a202c;
+  transform: rotate(45deg);
+}
+
+.viawa-hero-actions {
+  margin-top: 26px;
+}
+
+.viawa-hero-note {
+  margin: 14px 0 0;
+  font-size: 0.76rem;
+  color: #9a9a9e;
+}
+
+.viawa-hero-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.viawa-hero-visual-frame {
+  position: relative;
+  width: 100%;
+  max-width: 430px;
+  aspect-ratio: 4 / 3.1;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #1d1d1f;
+  box-shadow: 0 30px 60px rgba(24, 24, 26, 0.18);
+  transform: rotate(2deg);
+  transition: transform 260ms ease;
+}
+
+.viawa-hero-visual-frame:hover {
+  transform: rotate(0deg);
+}
+
+.viawa-hero-visual-bar {
+  display: flex;
+  gap: 6px;
+  padding: 12px 14px 10px;
+}
+
+.viawa-hero-visual-bar span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.viawa-hero-visual-frame img {
+  display: block;
+  width: 100%;
+  height: calc(100% - 29px);
+  object-fit: cover;
+  object-position: top left;
+}
+
+@media (max-width: 992px) {
+  .viawa-hero-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    max-width: 640px;
+    padding: 32px 0 12px;
+  }
+
+  .viawa-hero-copy {
+    max-width: 640px;
+  }
+
+  .viawa-hero-highlights li {
+    max-width: none;
+  }
+
+  .viawa-hero-visual-frame {
+    max-width: 420px;
+    transform: none;
+  }
+
+  .viawa-hero h1 {
+    font-size: clamp(2rem, 5vw, 2.8rem);
+  }
+}
+
+@media (max-width: 640px) {
+  .viawa-hero-layout {
+    padding: 26px 0 8px;
+  }
+
+  .viawa-hero .section-label {
+    margin-bottom: 10px;
+    font-size: 0.7rem;
+  }
+
+  .viawa-hero .section-label::before {
+    width: 24px;
+    margin-right: 10px;
+  }
+
+  .viawa-hero h1 {
+    font-size: clamp(1.75rem, 8vw, 2.3rem);
+    line-height: 1.06;
+  }
+
+  .viawa-hero-description {
+    font-size: 0.9rem;
+  }
+
+  .viawa-hero-visual {
+    display: none;
+  }
+}

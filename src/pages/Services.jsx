@@ -13,7 +13,7 @@ function Services() {
     <>
       <SEO
         title="International Exhibition Services"
-        description="Discover EXPOVIA services for international exhibition participation, including exhibition selection, stand planning, participation management and pre-exhibition support."
+        description="Discover VIAFA services for international exhibition participation, including exhibition selection, stand planning, participation management and pre-exhibition support."
         canonical="/services"
       />
 

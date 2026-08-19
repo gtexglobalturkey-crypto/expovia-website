@@ -1,0 +1,176 @@
+.viawa-login-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(17, 17, 18, 0.56);
+  backdrop-filter: blur(4px);
+  animation: viawa-login-fade 200ms ease;
+}
+
+.viawa-login-panel {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  padding: 40px 32px 32px;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.28);
+  animation: viawa-login-rise 240ms ease;
+}
+
+.viawa-login-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background: #f1f0ec;
+  color: #626266;
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 200ms ease, color 200ms ease;
+}
+
+.viawa-login-close:hover {
+  background: #e8e5df;
+  color: #1d1d1f;
+}
+
+.viawa-login-logo {
+  display: block;
+  height: 22px;
+  width: auto;
+  margin-bottom: 22px;
+}
+
+.viawa-login-panel h2 {
+  margin: 0 0 6px;
+  font-size: 1.3rem;
+  letter-spacing: -0.03em;
+  color: #1d1d1f;
+}
+
+.viawa-login-subtitle {
+  margin: 0 0 24px;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: #66666b;
+}
+
+.viawa-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.viawa-login-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #44444a;
+}
+
+.viawa-login-form input[type="email"],
+.viawa-login-form input[type="password"] {
+  padding: 11px 14px;
+  border: 1px solid #e2dfd8;
+  border-radius: 10px;
+  background: #faf9f7;
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: #1d1d1f;
+  transition: border-color 200ms ease, background 200ms ease;
+}
+
+.viawa-login-form input[type="email"]:focus,
+.viawa-login-form input[type="password"]:focus {
+  outline: none;
+  border-color: #7a202c;
+  background: #ffffff;
+}
+
+.viawa-login-remember {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin-top: -4px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #626266;
+  cursor: pointer;
+}
+
+.viawa-login-remember input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  accent-color: #7a1f2b;
+  cursor: pointer;
+}
+
+.viawa-login-submit {
+  margin-top: 6px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 999px;
+  background: #7a1f2b;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 200ms ease, transform 200ms ease;
+}
+
+.viawa-login-submit:hover {
+  background: #651924;
+  transform: translateY(-1px);
+}
+
+.viawa-login-note {
+  margin: 18px 0 0;
+  font-size: 0.72rem;
+  line-height: 1.5;
+  color: #9a9a9e;
+}
+
+@keyframes viawa-login-fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes viawa-login-rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 640px) {
+  .viawa-login-panel {
+    padding: 32px 22px 26px;
+  }
+}

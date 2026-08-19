@@ -1,6 +1,17 @@
 import { useState } from "react";
 import { useTranslation } from "../../hooks/useTranslation";
 
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mdenpjol";
+
+const INITIAL_FORM = {
+  company: "",
+  contact_person: "",
+  corporate_email: "",
+  phone: "",
+  industry: "",
+  message: "",
+};
+
 function ContactForm() {
   const { language } = useTranslation();
 
@@ -22,11 +33,15 @@ function ContactForm() {
       },
 
       button: "Send Message",
+      buttonSending: "Sending...",
+      success:
+        "Your message has been sent successfully. We'll get back to you shortly.",
+      error: "Your message could not be sent. Please try again.",
     },
 
     tr: {
       label: "Mesaj Gönderin",
-      title: "Projenizden Bize Bahsedin",
+      title: "Bize Ulaşın",
       description:
         "Aşağıdaki formu doldurun. Ekibimiz en kısa sürede sizinle iletişime geçecektir.",
 
@@ -41,19 +56,17 @@ function ContactForm() {
       },
 
       button: "Mesaj Gönder",
+      buttonSending: "Gönderiliyor...",
+      success:
+        "Mesajınız başarıyla gönderildi. En kısa sürede sizinle iletişime geçeceğiz.",
+      error: "Mesaj gönderilemedi. Lütfen tekrar deneyin.",
     },
   };
 
   const t = content[language];
 
-  const [form, setForm] = useState({
-    company: "",
-    name: "",
-    email: "",
-    phone: "",
-    industry: "",
-    message: "",
-  });
+  const [form, setForm] = useState(INITIAL_FORM);
+  const [status, setStatus] = useState("idle");
 
   function handleChange(event) {
     const { name, value } = event.target;
@@ -64,11 +77,39 @@ function ContactForm() {
     }));
   }
 
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault();
 
-    console.log(form);
+    if (status === "submitting") {
+      return;
+    }
+
+    setStatus("submitting");
+
+    try {
+      const formData = new FormData(event.target);
+      formData.append("_replyto", form.corporate_email);
+
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+        },
+        body: formData,
+      });
+
+      if (response.ok) {
+        setForm(INITIAL_FORM);
+        setStatus("success");
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   }
+
+  const isSubmitting = status === "submitting";
 
   return (
     <section className="contact-workspace-form-panel">
@@ -97,17 +138,17 @@ function ContactForm() {
 
           <input
             type="text"
-            name="name"
+            name="contact_person"
             placeholder={t.placeholders.name}
-            value={form.name}
+            value={form.contact_person}
             onChange={handleChange}
           />
 
           <input
             type="email"
-            name="email"
+            name="corporate_email"
             placeholder={t.placeholders.email}
-            value={form.email}
+            value={form.corporate_email}
             onChange={handleChange}
           />
 
@@ -139,9 +180,22 @@ function ContactForm() {
         <button
           type="submit"
           className="primary-button"
+          disabled={isSubmitting}
         >
-          {t.button}
+          {isSubmitting ? t.buttonSending : t.button}
         </button>
+
+        {status === "success" && (
+          <p className="contact-form-status contact-form-status--success">
+            {t.success}
+          </p>
+        )}
+
+        {status === "error" && (
+          <p className="contact-form-status contact-form-status--error">
+            {t.error}
+          </p>
+        )}
       </form>
     </section>
   );

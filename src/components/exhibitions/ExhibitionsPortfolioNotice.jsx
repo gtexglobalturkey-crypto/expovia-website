@@ -8,15 +8,15 @@ function ExhibitionsPortfolioNotice() {
   const content = {
     en: {
       supporting:
-        "Companies seeking international exhibition opportunities may contact EXPOVIA to share their target markets and industries.",
-      contact: "Contact EXPOVIA",
+        "Companies seeking international exhibition opportunities may contact VIAFA to share their target markets and industries.",
+      contact: "Contact VIAFA",
       industries: "Explore Industries",
     },
 
     tr: {
       supporting:
-        "Uluslararası fuar fırsatları arayan firmalar, hedef pazarlarını ve faaliyet gösterdikleri sektörleri paylaşmak üzere EXPOVIA ile iletişime geçebilir.",
-      contact: "EXPOVIA ile İletişime Geçin",
+        "Uluslararası fuar fırsatları arayan firmalar, hedef pazarlarını ve faaliyet gösterdikleri sektörleri paylaşmak üzere VIAFA ile iletişime geçebilir.",
+      contact: "VIAFA ile İletişime Geçin",
       industries: "Sektörleri Keşfedin",
     },
   };

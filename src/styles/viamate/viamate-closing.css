@@ -1,0 +1,91 @@
+.viamate-closing {
+  padding: 16px 0 64px;
+  background: #f7f7f5;
+}
+
+.viamate-closing-card {
+  position: relative;
+  overflow: hidden;
+  max-width: 780px;
+  padding: 52px 56px;
+  border-radius: 20px;
+  background: #1d1d1f;
+  box-shadow: 0 24px 60px rgba(24, 24, 26, 0.18);
+}
+
+.viamate-closing-card::after {
+  content: "";
+  position: absolute;
+  top: -110px;
+  right: -60px;
+  width: 220px;
+  height: 220px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+}
+
+.viamate-closing-card h2 {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 18px;
+  color: #ffffff;
+  font-size: clamp(1.65rem, 2.8vw, 2.3rem);
+  line-height: 1.18;
+  letter-spacing: -0.03em;
+}
+
+.viamate-closing-card p {
+  position: relative;
+  z-index: 1;
+  max-width: 560px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.viamate-closing-philosophy {
+  margin-top: 20px !important;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #ffffff !important;
+}
+
+.viamate-closing-card .viamate-store-badges {
+  position: relative;
+  z-index: 1;
+  margin-top: 24px;
+}
+
+.viamate-closing-card .viamate-store-badge {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+}
+
+.viamate-closing-card .viamate-store-badge svg {
+  color: #ffffff;
+}
+
+.viamate-closing-card .viamate-store-badge-label {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.viamate-closing-availability-note {
+  position: relative;
+  z-index: 1;
+  margin-top: 12px !important;
+  font-size: 0.76rem !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+@media (max-width: 640px) {
+  .viamate-closing {
+    padding: 8px 0 48px;
+  }
+
+  .viamate-closing-card {
+    padding: 34px 28px;
+    border-radius: 18px;
+  }
+}

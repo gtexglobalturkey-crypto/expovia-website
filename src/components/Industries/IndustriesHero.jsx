@@ -8,14 +8,14 @@ function IndustriesHero() {
       label: "Industries",
       title: "Sector-Focused Exhibition Opportunities",
       description:
-        "EXPOVIA helps Turkish manufacturers and exporters identify international exhibitions aligned with their products, commercial goals and target markets.",
+        "VIAFA helps Turkish manufacturers and exporters identify international exhibitions aligned with their products, commercial goals and target markets.",
     },
 
     tr: {
       label: "Sektörler",
       title: "Hizmet Verdiğimiz Sektörler",
       description:
-        "EXPOVIA, Türk üretici ve ihracatçıların ürünlerine, ticari hedeflerine ve hedef pazarlarına uygun uluslararası fuarları belirlemelerine yardımcı olur.",
+        "VIAFA, Türk üretici ve ihracatçıların ürünlerine, ticari hedeflerine ve hedef pazarlarına uygun uluslararası fuarları belirlemelerine yardımcı olur.",
     },
   };
 

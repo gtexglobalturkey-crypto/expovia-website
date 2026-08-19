@@ -16,6 +16,20 @@
 @import "./styles/services/services-process.css";
 @import "./styles/services/services-cta.css";
 
+/* VIAMATE */
+@import "./styles/viamate/viamate-hero.css";
+@import "./styles/viamate/viamate-sections.css";
+@import "./styles/viamate/viamate-screenshot.css";
+@import "./styles/viamate/viamate-cpt.css";
+@import "./styles/viamate/viamate-faq.css";
+@import "./styles/viamate/viamate-closing.css";
+
+/* VIAWA */
+@import "./styles/viawa/viawa-hero.css";
+@import "./styles/viawa/viawa-showcase.css";
+@import "./styles/viawa/viawa-closing.css";
+@import "./styles/viawa/viawa-login.css";
+
 /* Not Found */
 @import "./styles/not-found.css";
 

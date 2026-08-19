@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# TODO: set the final EXPOVIA domain once confirmed, e.g. https://www.expovia.com/sitemap.xml
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://expoviafair.com/sitemap.xml

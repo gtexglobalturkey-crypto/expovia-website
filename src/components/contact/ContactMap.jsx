@@ -15,7 +15,7 @@ function ContactMap() {
         <div className="contact-map-layout">
           <div className="contact-map">
             <iframe
-              title="EXPOVIA Office Location"
+              title="VIAFA Office Location"
               src="https://www.google.com/maps?q=Istanbul,Turkey&output=embed"
               loading="lazy"
               allowFullScreen
@@ -29,7 +29,7 @@ function ContactMap() {
             </p>
 
             <h2>
-              Visit EXPOVIA
+              Visit VIAFA
             </h2>
 
             <p>

@@ -1,4 +1,5 @@
 import {
+  Building2,
   Mail,
   MapPin,
   Phone,
@@ -10,12 +11,14 @@ import { CONTACT_EMAIL } from "../../config/site";
 function ContactInfo() {
   const { language } = useTranslation();
 
+  const legalName =
+    "EXPOVİA ULUSLARARASI FUARCILIK TEKNOLOJİ SEYAHAT TURİZM İÇ VE DIŞ TİCARET LTD. ŞTİ.";
+  const mersisNo = "0381114212500001";
+
   const content = {
     en: {
       label: "Contact Details",
       title: "Speak with Our Team",
-      description:
-        "Contact EXPOVIA for exhibition selection, participation planning and organizer coordination.",
 
       items: [
         {
@@ -29,17 +32,22 @@ function ContactInfo() {
         {
           icon: <Phone size={14} />,
           heading: "Phone",
-          value: "+90 (212) 123 45 67",
-          href: "tel:+902121234567",
+          value: ["+90 542 789 55 91", "+90 542 789 55 93"],
+          href: ["tel:+905427895591", "tel:+905427895593"],
           description:
             "Speak directly with our exhibition team.",
         },
         {
           icon: <MapPin size={14} />,
           heading: "Office",
-          value: "Istanbul, Türkiye",
-          description:
-            "Connecting Turkish companies with global exhibition markets.",
+          value:
+            "Hürriyet Mah. Şehit Yavuz Ayan Sk. Yapıncakkent Sit. A Blk. No:1/1 D:1, 59030 Süleymanpaşa/Tekirdağ, Turkey",
+        },
+        {
+          icon: <Building2 size={14} />,
+          heading: "Company Details",
+          value: legalName,
+          description: `Mersis No: ${mersisNo}`,
         },
       ],
     },
@@ -47,8 +55,6 @@ function ContactInfo() {
     tr: {
       label: "İletişim Bilgileri",
       title: "Ekibimizle Görüşün",
-      description:
-        "Fuar seçimi, katılım planlaması ve organizatör koordinasyonu için EXPOVIA ile iletişime geçin.",
 
       items: [
         {
@@ -62,17 +68,22 @@ function ContactInfo() {
         {
           icon: <Phone size={14} />,
           heading: "Telefon",
-          value: "+90 (212) 123 45 67",
-          href: "tel:+902121234567",
+          value: ["+90 542 789 55 91", "+90 542 789 55 93"],
+          href: ["tel:+905427895591", "tel:+905427895593"],
           description:
             "Fuar danışmanlarımızla doğrudan görüşebilirsiniz.",
         },
         {
           icon: <MapPin size={14} />,
           heading: "Ofis",
-          value: "İstanbul, Türkiye",
-          description:
-            "Türk şirketlerini uluslararası fuar pazarlarıyla buluşturuyoruz.",
+          value:
+            "Hürriyet Mah. Şehit Yavuz Ayan Sk. Yapıncakkent Sit. A Blk. No:1/1 D:1, 59030 Süleymanpaşa/Tekirdağ",
+        },
+        {
+          icon: <Building2 size={14} />,
+          heading: "Firma Bilgileri",
+          value: legalName,
+          description: `Mersis No: ${mersisNo}`,
         },
       ],
     },
@@ -88,8 +99,6 @@ function ContactInfo() {
         </p>
 
         <h2>{t.title}</h2>
-
-        <p>{t.description}</p>
       </div>
 
       <div className="contact-workspace-info-list">
@@ -105,15 +114,28 @@ function ContactInfo() {
             <div>
               <span>{item.heading}</span>
 
-              {item.href ? (
-                <a href={item.href}>
-                  {item.value}
-                </a>
+              {Array.isArray(item.value) ? (
+                <div className="contact-workspace-info-value-list">
+                  {item.value.map((value, i) =>
+                    item.href?.[i] ? (
+                      <a
+                        key={value}
+                        href={item.href[i]}
+                      >
+                        {value}
+                      </a>
+                    ) : (
+                      <strong key={value}>{value}</strong>
+                    ),
+                  )}
+                </div>
+              ) : item.href ? (
+                <a href={item.href}>{item.value}</a>
               ) : (
                 <strong>{item.value}</strong>
               )}
 
-              <p>{item.description}</p>
+              {item.description && <p>{item.description}</p>}
             </div>
           </div>
         ))}

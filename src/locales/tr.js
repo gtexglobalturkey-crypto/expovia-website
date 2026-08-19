@@ -5,6 +5,8 @@ const tr = {
     industries: "Sektörler",
     about: "Hakkımızda",
     services: "Hizmetler",
+    viamate: "VIAMATE",
+    viawa: "VIAWA",
     contact: "İletişim",
     subtitle: "Uluslararası Fuar Temsilciliği",
   },

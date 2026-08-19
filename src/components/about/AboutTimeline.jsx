@@ -15,7 +15,7 @@ function AboutTimeline() {
       label: "Our Journey",
       title: "15+ Years, One Fair at a Time",
       description:
-        "A few frames from the exhibition floors we've worked — the years that led to EXPOVIA.",
+        "A few frames from the exhibition floors we've worked — the years that led to VIAFA.",
       milestones: [
         { caption: "On the exhibition floor" },
         { caption: "Together" },
@@ -30,7 +30,7 @@ function AboutTimeline() {
       label: "Yolculuğumuz",
       title: "15+ Yıl, Fuar Fuar",
       description:
-        "Çalıştığımız fuar sahalarından birkaç kare — EXPOVIA'ya uzanan yıllar.",
+        "Çalıştığımız fuar sahalarından birkaç kare — VIAFA'ya uzanan yıllar.",
       milestones: [
         { caption: "Fuar sahasında" },
         { caption: "Birlikte" },

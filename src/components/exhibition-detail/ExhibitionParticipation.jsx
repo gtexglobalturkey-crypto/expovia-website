@@ -10,7 +10,7 @@ function ExhibitionParticipation() {
       label: "Participation",
       title: "Choose Your Participation Strategy",
       description:
-        "Whether you require complete design flexibility, a turnkey stand package or professional participation consultancy, EXPOVIA helps you achieve the best exhibition experience.",
+        "Whether you require complete design flexibility, a turnkey stand package or professional participation consultancy, VIAFA helps you achieve the best exhibition experience.",
       popularLabel: "Most Popular",
 
       options: [
@@ -45,17 +45,17 @@ function ExhibitionParticipation() {
         },
         {
           number: "03",
-          title: "EXPOVIA Support",
+          title: "VIAFA Support",
           subtitle: "Professional Consultancy",
           description:
-            "From stand reservation to organizer communication, EXPOVIA manages every important step of your participation process.",
+            "From stand reservation to organizer communication, VIAFA manages every important step of your participation process.",
           features: [
             "Stand reservation",
             "Application management",
             "Organizer coordination",
             "Pre-exhibition guidance",
           ],
-          button: "Contact EXPOVIA",
+          button: "Contact VIAFA",
         },
       ],
     },
@@ -64,7 +64,7 @@ function ExhibitionParticipation() {
       label: "Katılım Seçenekleri",
       title: "Katılım Stratejinizi Seçin",
       description:
-        "İster tamamen özgün bir stant tasarımı, ister anahtar teslim bir paket ya da profesyonel katılım danışmanlığı tercih edin, EXPOVIA en iyi fuar deneyimine ulaşmanıza yardımcı olur.",
+        "İster tamamen özgün bir stant tasarımı, ister anahtar teslim bir paket ya da profesyonel katılım danışmanlığı tercih edin, VIAFA en iyi fuar deneyimine ulaşmanıza yardımcı olur.",
       popularLabel: "En Çok Tercih Edilen",
 
       options: [
@@ -99,17 +99,17 @@ function ExhibitionParticipation() {
         },
         {
           number: "03",
-          title: "EXPOVIA Desteği",
+          title: "VIAFA Desteği",
           subtitle: "Profesyonel Danışmanlık",
           description:
-            "Stant rezervasyonundan organizatör iletişimine kadar EXPOVIA, katılım sürecinizin tüm önemli adımlarını yönetir.",
+            "Stant rezervasyonundan organizatör iletişimine kadar VIAFA, katılım sürecinizin tüm önemli adımlarını yönetir.",
           features: [
             "Stant rezervasyonu",
             "Başvuru yönetimi",
             "Organizatör koordinasyonu",
             "Fuar öncesi yönlendirme",
           ],
-          button: "EXPOVIA ile İletişime Geçin",
+          button: "VIAFA ile İletişime Geçin",
         },
       ],
     },

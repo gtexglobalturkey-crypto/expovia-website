@@ -12,7 +12,7 @@ function Exhibitions() {
     <>
       <SEO
         title="International Trade Exhibitions"
-        description="Explore international trade exhibitions across mining, construction, energy, manufacturing and other strategic industries with EXPOVIA."
+        description="Explore international trade exhibitions across mining, construction, energy, manufacturing and other strategic industries with VIAFA."
         canonical="/exhibitions"
       />
 

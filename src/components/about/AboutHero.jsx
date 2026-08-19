@@ -5,12 +5,12 @@ function AboutHero() {
 
   const content = {
     en: {
-      label: "About EXPOVIA",
+      label: "About VIAFA",
       titleFirst: "15 Years of Exhibition Experience.",
       titleSecond:
         "A New Generation of International Exhibition Services.",
       description:
-        "EXPOVIA was founded on more than 15 years of international exhibition experience. After years of working with organizers, manufacturers and exporters, we established EXPOVIA to provide a more professional, transparent and reliable exhibition representation service for Turkish companies expanding into global markets.",
+        "VIAFA was founded on more than 15 years of international exhibition experience. After years of working with organizers, manufacturers and exporters, we established VIAFA to provide a more professional, transparent and reliable exhibition representation service for Turkish companies expanding into global markets.",
       highlights: [
         {
           title: "15+ Years",
@@ -32,12 +32,12 @@ function AboutHero() {
     },
 
     tr: {
-      label: "EXPOVIA Hakkında",
+      label: "VIAFA Hakkında",
       titleFirst: "15 Yıllık Fuar Deneyimi.",
       titleSecond:
         "Yeni Nesil Uluslararası Fuar Hizmetleri.",
       description:
-        "EXPOVIA, 15 yılı aşkın uluslararası fuar deneyimi üzerine kurulmuştur. Organizatörler, üreticiler ve ihracatçılarla yıllar boyunca edinilen deneyimin ardından, küresel pazarlara açılan Türk şirketlerine daha profesyonel, şeffaf ve güvenilir bir fuar temsilcilik hizmeti sunmak amacıyla EXPOVIA’yu kurduk.",
+        "VIAFA, 15 yılı aşkın uluslararası fuar deneyimi üzerine kurulmuştur. Organizatörler, üreticiler ve ihracatçılarla yıllar boyunca edinilen deneyimin ardından, küresel pazarlara açılan Türk şirketlerine daha profesyonel, şeffaf ve güvenilir bir fuar temsilcilik hizmeti sunmak amacıyla VIAFA’yu kurduk.",
       highlights: [
         {
           title: "15+ Yıl",

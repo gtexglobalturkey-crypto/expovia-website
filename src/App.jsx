@@ -15,6 +15,8 @@ import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Services from "./pages/Services";
 import TermsOfUse from "./pages/TermsOfUse";
+import Viamate from "./pages/Viamate";
+import Viawa from "./pages/Viawa";
 
 function App() {
   return (
@@ -51,6 +53,16 @@ function App() {
         <Route
           path="/services"
           element={<Services />}
+        />
+
+        <Route
+          path="/viamate"
+          element={<Viamate />}
+        />
+
+        <Route
+          path="/viawa"
+          element={<Viawa />}
         />
 
         <Route

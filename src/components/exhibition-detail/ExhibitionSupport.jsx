@@ -5,10 +5,10 @@ function ExhibitionSupport() {
 
   const content = {
     en: {
-      label: "EXPOVIA Support",
+      label: "VIAFA Support",
       title: "Your Professional Partner Throughout the Entire Journey",
       lead:
-        "International exhibition participation requires careful planning, professional coordination and local market knowledge. EXPOVIA supports every important step from the first consultation to the successful completion of your participation.",
+        "International exhibition participation requires careful planning, professional coordination and local market knowledge. VIAFA supports every important step from the first consultation to the successful completion of your participation.",
       highlightTitle: "End-to-End Participation Management",
       highlightText:
         "One dedicated partner for planning, coordination and execution.",
@@ -24,7 +24,7 @@ function ExhibitionSupport() {
           number: "02",
           title: "Stand Selection & Reservation",
           description:
-            "EXPOVIA helps you choose the most suitable stand location, manages reservations and coordinates communication with the organizer.",
+            "VIAFA helps you choose the most suitable stand location, manages reservations and coordinates communication with the organizer.",
         },
         {
           number: "03",
@@ -42,10 +42,10 @@ function ExhibitionSupport() {
     },
 
     tr: {
-      label: "EXPOVIA Desteği",
+      label: "VIAFA Desteği",
       title: "Tüm Süreç Boyunca Profesyonel İş Ortağınız",
       lead:
-        "Uluslararası fuar katılımı dikkatli planlama, profesyonel koordinasyon ve yerel pazar bilgisi gerektirir. EXPOVIA, ilk danışmanlık görüşmesinden katılımınızın başarıyla tamamlanmasına kadar tüm önemli adımlarda yanınızda olur.",
+        "Uluslararası fuar katılımı dikkatli planlama, profesyonel koordinasyon ve yerel pazar bilgisi gerektirir. VIAFA, ilk danışmanlık görüşmesinden katılımınızın başarıyla tamamlanmasına kadar tüm önemli adımlarda yanınızda olur.",
       highlightTitle: "Uçtan Uca Katılım Yönetimi",
       highlightText:
         "Planlama, koordinasyon ve uygulama için tek ve güvenilir bir iş ortağı.",
@@ -61,7 +61,7 @@ function ExhibitionSupport() {
           number: "02",
           title: "Stant Seçimi ve Rezervasyonu",
           description:
-            "EXPOVIA en uygun stant konumunu seçmenize yardımcı olur, rezervasyon sürecini yönetir ve organizatörle iletişimi koordine eder.",
+            "VIAFA en uygun stant konumunu seçmenize yardımcı olur, rezervasyon sürecini yönetir ve organizatörle iletişimi koordine eder.",
         },
         {
           number: "03",

@@ -10,7 +10,7 @@ function Industries() {
       label: "Industries",
       title: "Sector-focused exhibition opportunities.",
       intro:
-        "EXPOVIA helps Turkish manufacturers and exporters identify international exhibitions aligned with their products, commercial goals and target markets.",
+        "VIAFA helps Turkish manufacturers and exporters identify international exhibitions aligned with their products, commercial goals and target markets.",
       introLink: "Tell us your requirements",
       footerText:
         "Looking for an exhibition in a different industry or target country?",
@@ -73,7 +73,7 @@ function Industries() {
       label: "Sektörler",
       title: "Sektör odaklı uluslararası fuar fırsatları.",
       intro:
-        "EXPOVIA, Türk üretici ve ihracatçıların ürünleri, ticari hedefleri ve hedef pazarlarıyla uyumlu uluslararası fuarları belirlemelerine yardımcı olur.",
+        "VIAFA, Türk üretici ve ihracatçıların ürünleri, ticari hedefleri ve hedef pazarlarıyla uyumlu uluslararası fuarları belirlemelerine yardımcı olur.",
       introLink: "İhtiyaçlarınızı paylaşın",
       footerText:
         "Farklı bir sektörde veya hedef ülkede fuar mı arıyorsunuz?",

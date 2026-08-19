@@ -13,8 +13,8 @@ function About() {
   return (
     <div className="about-page">
       <SEO
-        title="About EXPOVIA"
-        description="Learn about EXPOVIA, our international exhibition representation expertise, industry experience and commitment to helping companies expand into global markets."
+        title="About VIAFA"
+        description="Learn about VIAFA, our international exhibition representation expertise, industry experience and commitment to helping companies expand into global markets."
         canonical="/about"
       />
 

@@ -8,18 +8,18 @@ function ContactCTA() {
   const content = {
     en: {
       label: "Ready to Grow Internationally?",
-      title: "Start Your International Exhibition Journey with EXPOVIA",
+      title: "Start Your International Exhibition Journey with VIAFA",
       description:
-        "From selecting the right exhibition to managing every step of your participation, EXPOVIA helps Turkish companies connect with global business opportunities through international trade fairs.",
+        "From selecting the right exhibition to managing every step of your participation, VIAFA helps Turkish companies connect with global business opportunities through international trade fairs.",
       primaryButton: "Contact Us",
       secondaryButton: "Explore Exhibitions",
     },
 
     tr: {
       label: "Uluslararası Büyümeye Hazır mısınız?",
-      title: "EXPOVIA ile Uluslararası Fuar Yolculuğunuza Başlayın",
+      title: "VIAFA ile Uluslararası Fuar Yolculuğunuza Başlayın",
       description:
-        "Doğru fuarı seçmekten katılım sürecinizin her aşamasını yönetmeye kadar EXPOVIA, Türk şirketlerinin uluslararası ticaret fuarları aracılığıyla küresel iş fırsatlarına ulaşmasına yardımcı olur.",
+        "Doğru fuarı seçmekten katılım sürecinizin her aşamasını yönetmeye kadar VIAFA, Türk şirketlerinin uluslararası ticaret fuarları aracılığıyla küresel iş fırsatlarına ulaşmasına yardımcı olur.",
       primaryButton: "Bize Ulaşın",
       secondaryButton: "Fuarları Keşfedin",
     },

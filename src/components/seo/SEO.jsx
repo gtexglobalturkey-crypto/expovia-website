@@ -1,14 +1,14 @@
 import { useEffect } from "react";
 
-import { SITE_NAME } from "../../config/site";
+import { SITE_NAME, SITE_URL } from "../../config/site";
 
 const DEFAULT_SITE_NAME = SITE_NAME;
 
 const DEFAULT_TITLE =
-  "EXPOVIA | International Exhibition Representation";
+  "VIAFA | International Exhibition Representation";
 
 const DEFAULT_DESCRIPTION =
-  "EXPOVIA provides international exhibition representation and participation support for companies expanding into global markets.";
+  "VIAFA provides international exhibition representation and participation support for companies expanding into global markets.";
 
 // TODO: set once a final EXPOVIA social share image exists — no og-image asset is available yet.
 const DEFAULT_IMAGE = "";
@@ -50,14 +50,16 @@ function getOrCreateLink(selector, attributes) {
 }
 
 function getAbsoluteUrl(value) {
+  const origin = SITE_URL || window.location.origin;
+
   if (!value) {
-    return window.location.origin;
+    return origin;
   }
 
   try {
-    return new URL(value, window.location.origin).href;
+    return new URL(value, origin).href;
   } catch {
-    return window.location.origin;
+    return origin;
   }
 }
 

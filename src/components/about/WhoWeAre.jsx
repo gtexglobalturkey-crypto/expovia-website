@@ -11,13 +11,13 @@ function WhoWeAre() {
       titleFirst: "Built on Experience.",
       titleSecond: "Founded with Purpose.",
       paragraphs: [
-        "EXPOVIA was established after more than 15 years of hands-on experience in the international exhibition industry. Throughout this journey, we worked closely with exhibition organizers, manufacturers, exporters and business professionals across different markets.",
+        "VIAFA was established after more than 15 years of hands-on experience in the international exhibition industry. Throughout this journey, we worked closely with exhibition organizers, manufacturers, exporters and business professionals across different markets.",
         "We have experienced every stage of the exhibition process — from planning and stand allocation to exhibitor support, organizer coordination and international business development. This practical experience allows us to understand not only exhibitions, but also the real expectations of companies participating in them.",
-        "Today, EXPOVIA combines that experience with a modern, transparent and client-focused approach, helping Turkish companies participate in international exhibitions with confidence and long-term strategic value.",
+        "Today, VIAFA combines that experience with a modern, transparent and client-focused approach, helping Turkish companies participate in international exhibitions with confidence and long-term strategic value.",
       ],
       noteLabel: "15+ YEARS OF EXPERIENCE",
       noteTitle:
-        "EXPOVIA may be a new company, but the experience behind it has been built over more than 15 years.",
+        "VIAFA may be a new company, but the experience behind it has been built over more than 15 years.",
       noteDescription:
         "Our goal is simple: to transform years of industry knowledge into reliable international exhibition representation for Turkish companies seeking sustainable global growth.",
     },
@@ -27,13 +27,13 @@ function WhoWeAre() {
       titleFirst: "Deneyim Üzerine Kuruldu.",
       titleSecond: "Bir Amaçla Hayata Geçti.",
       paragraphs: [
-        "EXPOVIA, uluslararası fuarcılık sektöründe 15 yılı aşkın saha deneyiminin ardından kurulmuştur. Bu süreç boyunca farklı pazarlarda fuar organizatörleri, üreticiler, ihracatçılar ve iş profesyonelleriyle yakın çalıştık.",
+        "VIAFA, uluslararası fuarcılık sektöründe 15 yılı aşkın saha deneyiminin ardından kurulmuştur. Bu süreç boyunca farklı pazarlarda fuar organizatörleri, üreticiler, ihracatçılar ve iş profesyonelleriyle yakın çalıştık.",
         "Planlama ve stant tahsisinden katılımcı desteğine, organizatör koordinasyonundan uluslararası iş geliştirmeye kadar fuar sürecinin her aşamasını bizzat deneyimledik. Bu sayede yalnızca fuarları değil, fuarlara katılan şirketlerin gerçek beklentilerini de yakından biliyoruz.",
-        "Bugün EXPOVIA, bu deneyimi modern, şeffaf ve müşteri odaklı bir yaklaşımla birleştirerek Türk şirketlerinin uluslararası fuarlara güvenle katılmasına ve uzun vadeli stratejik değer oluşturmasına yardımcı olmaktadır.",
+        "Bugün VIAFA, bu deneyimi modern, şeffaf ve müşteri odaklı bir yaklaşımla birleştirerek Türk şirketlerinin uluslararası fuarlara güvenle katılmasına ve uzun vadeli stratejik değer oluşturmasına yardımcı olmaktadır.",
       ],
       noteLabel: "15+ YILLIK DENEYİM",
       noteTitle:
-        "EXPOVIA yeni bir şirket olabilir, ancak arkasındaki deneyim 15 yılı aşkın bir sürede oluşturuldu.",
+        "VIAFA yeni bir şirket olabilir, ancak arkasındaki deneyim 15 yılı aşkın bir sürede oluşturuldu.",
       noteDescription:
         "Hedefimiz basit: yılların sektör bilgisini, sürdürülebilir küresel büyüme hedefleyen Türk şirketleri için güvenilir uluslararası fuar temsilciliğine dönüştürmek.",
     },
