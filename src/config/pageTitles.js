@@ -26,6 +26,10 @@ export const PAGE_TITLES = {
     tr: "VIAMATE | VIAFA",
     en: "VIAMATE | VIAFA",
   },
+  viamatePrivacy: {
+    tr: "VIAMATE Gizlilik Politikası | VIAFA",
+    en: "VIAMATE Privacy Policy | VIAFA",
+  },
   viawa: {
     tr: "VIAWA | VIAFA",
     en: "VIAWA | VIAFA",

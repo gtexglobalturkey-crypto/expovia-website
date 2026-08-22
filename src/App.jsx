@@ -16,6 +16,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Services from "./pages/Services";
 import TermsOfUse from "./pages/TermsOfUse";
 import Viamate from "./pages/Viamate";
+import ViamatePrivacyPolicy from "./pages/ViamatePrivacyPolicy";
 import Viawa from "./pages/Viawa";
 
 function App() {
@@ -58,6 +59,11 @@ function App() {
         <Route
           path="/viamate"
           element={<Viamate />}
+        />
+
+        <Route
+          path="/viamate/privacy"
+          element={<ViamatePrivacyPolicy />}
         />
 
         <Route
