@@ -6,7 +6,7 @@ function ExhibitionHighlights() {
   const content = {
     en: {
       label: "Why Participate",
-      title: "Four Reasons to Exhibit at Mining Türkiye",
+      title: "Four Reasons to Exhibit at WAMPEX West Africa",
       description:
         "Successful exhibition participation is more than displaying products. It is about creating business opportunities, building strategic partnerships and accelerating international growth.",
 
@@ -44,7 +44,7 @@ function ExhibitionHighlights() {
 
     tr: {
       label: "Neden Katılmalısınız?",
-      title: "Mining Türkiye’de Katılımcı Olmak İçin Dört Neden",
+      title: "WAMPEX West Africa'da Katılımcı Olmak İçin Dört Neden",
       description:
         "Başarılı bir fuar katılımı yalnızca ürün sergilemekten ibaret değildir. Yeni iş fırsatları oluşturmak, stratejik ortaklıklar kurmak ve uluslararası büyümeyi hızlandırmak anlamına gelir.",
 

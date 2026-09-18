@@ -16,7 +16,6 @@ function ExhibitionDetailCTA() {
         "Professional Participation Management",
         "International Business Network",
       ],
-      primary: "Request Participation Information",
       secondary: "Contact VIAFA",
     },
 
@@ -30,7 +29,6 @@ function ExhibitionDetailCTA() {
         "Profesyonel Katılım Yönetimi",
         "Uluslararası İş Ağı",
       ],
-      primary: "Katılım Bilgisi Talep Edin",
       secondary: "VIAFA ile İletişime Geçin",
     },
   };
@@ -63,13 +61,6 @@ function ExhibitionDetailCTA() {
             <Link
               to="/contact"
               className="btn btn-primary"
-            >
-              {t.primary}
-            </Link>
-
-            <Link
-              to="/contact"
-              className="btn btn-secondary"
             >
               {t.secondary}
             </Link>

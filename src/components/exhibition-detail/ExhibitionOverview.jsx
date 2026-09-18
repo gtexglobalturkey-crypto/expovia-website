@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 import { useTranslation } from "../../hooks/useTranslation";
 
 function ExhibitionOverview() {
@@ -8,120 +6,76 @@ function ExhibitionOverview() {
   const content = {
     en: {
       label: "About the Exhibition",
-      title: "A Strategic Business Platform for the Mining Industry",
+      title: "A Strategic Business Platform for the Mining & Power Industry",
       lead:
-        "Mining Türkiye brings together mining companies, machinery manufacturers, technology providers, engineering firms and qualified international buyers in one of the region's most important industrial meeting points.",
+        "WAMPEX West Africa brings together mining companies, machinery manufacturers, technology providers, engineering firms and qualified international buyers in one of West Africa's most important industrial meeting points.",
       secondary:
-        "The exhibition creates a focused environment for companies to present new products, develop distributor relationships, explore export opportunities and connect directly with industry decision makers.",
-      button: "Request Participation Information",
-      factsLabel: "Key Facts",
-      factsTitle: "Exhibition Information",
+        "The exhibition creates a focused environment for companies to present new products, develop distributor relationships, explore export opportunities and connect directly with industry decision makers across the region's fast-growing mining and power market.",
+      whyLabel: "Why Participate",
+      whyTitle: "Four Reasons to Exhibit at WAMPEX West Africa",
 
-      opportunities: [
+      whyParticipate: [
         {
           number: "01",
-          title: "Enter New Export Markets",
+          title: "Meet Qualified Buyers",
           description:
-            "Present your products to international buyers, distributors and industry professionals looking for new suppliers and technologies.",
+            "Connect directly with purchasing managers, distributors, project owners and decision makers actively looking for innovative mining products and solutions.",
         },
         {
           number: "02",
-          title: "Build Strategic Partnerships",
+          title: "Strengthen Your Brand",
           description:
-            "Meet manufacturers, contractors, engineering companies and decision makers who can support your long-term international growth.",
+            "Position your company alongside leading global manufacturers and reinforce your brand presence in one of the region's most influential mining exhibitions.",
         },
         {
           number: "03",
-          title: "Strengthen Brand Visibility",
+          title: "Discover New Opportunities",
           description:
-            "Position your company alongside leading mining brands and increase your visibility in one of the region's most active industrial markets.",
-        },
-      ],
-
-      keyFacts: [
-        {
-          label: "Date",
-          value: "12–15 May 2027",
+            "Identify new export markets, establish strategic partnerships and develop long-term commercial relationships with international stakeholders.",
         },
         {
-          label: "Venue",
-          value: "Istanbul Expo Center",
-        },
-        {
-          label: "Organizer",
-          value: "HKF Trade Fairs",
-        },
-        {
-          label: "Frequency",
-          value: "Biennial",
-        },
-        {
-          label: "Visitor Profile",
-          value: "Mining Professionals",
-        },
-        {
-          label: "Exhibition Area",
-          value: "78,000 m²",
+          number: "04",
+          title: "Showcase Innovation",
+          description:
+            "Present your latest machinery, equipment and technologies to an audience specifically interested in mining innovation and industrial development.",
         },
       ],
     },
 
     tr: {
       label: "Fuar Hakkında",
-      title: "Madencilik Sektörü İçin Stratejik Bir İş Platformu",
+      title: "Madencilik ve Enerji Sektörü İçin Stratejik Bir İş Platformu",
       lead:
-        "Mining Türkiye; madencilik şirketlerini, makine üreticilerini, teknoloji sağlayıcılarını, mühendislik firmalarını ve nitelikli uluslararası alıcıları bölgenin en önemli endüstriyel buluşma noktalarından birinde bir araya getirir.",
+        "WAMPEX West Africa; madencilik şirketlerini, makine üreticilerini, teknoloji sağlayıcılarını, mühendislik firmalarını ve nitelikli uluslararası alıcıları Batı Afrika'nın en önemli endüstriyel buluşma noktalarından birinde bir araya getirir.",
       secondary:
-        "Fuar, şirketlerin yeni ürünlerini tanıtabileceği, distribütör ilişkileri geliştirebileceği, ihracat fırsatlarını değerlendirebileceği ve sektörün karar vericileriyle doğrudan bağlantı kurabileceği odaklı bir ortam sunar.",
-      button: "Katılım Bilgisi Talep Edin",
-      factsLabel: "Temel Bilgiler",
-      factsTitle: "Fuar Bilgileri",
+        "Fuar, şirketlerin yeni ürünlerini tanıtabileceği, distribütör ilişkileri geliştirebileceği, ihracat fırsatlarını değerlendirebileceği ve bölgenin hızla büyüyen madencilik ve enerji pazarında sektörün karar vericileriyle doğrudan bağlantı kurabileceği odaklı bir ortam sunar.",
+      whyLabel: "Neden Katılmalısınız?",
+      whyTitle: "WAMPEX West Africa'da Katılımcı Olmak İçin Dört Neden",
 
-      opportunities: [
+      whyParticipate: [
         {
           number: "01",
-          title: "Yeni İhracat Pazarlarına Girin",
+          title: "Nitelikli Alıcılarla Tanışın",
           description:
-            "Ürünlerinizi yeni tedarikçiler ve teknolojiler arayan uluslararası alıcılara, distribütörlere ve sektör profesyonellerine sunun.",
+            "Yenilikçi madencilik ürünleri ve çözümleri arayan satın alma yöneticileri, distribütörler, proje sahipleri ve karar vericilerle doğrudan bağlantı kurun.",
         },
         {
           number: "02",
-          title: "Stratejik İş Birlikleri Kurun",
+          title: "Markanızı Güçlendirin",
           description:
-            "Uzun vadeli uluslararası büyümenizi destekleyebilecek üreticiler, yükleniciler, mühendislik firmaları ve karar vericilerle tanışın.",
+            "Şirketinizi önde gelen küresel üreticilerle birlikte konumlandırın ve bölgenin en etkili madencilik fuarlarından birinde marka varlığınızı güçlendirin.",
         },
         {
           number: "03",
-          title: "Marka Görünürlüğünüzü Güçlendirin",
+          title: "Yeni Fırsatları Keşfedin",
           description:
-            "Şirketinizi önde gelen madencilik markalarıyla birlikte konumlandırın ve bölgenin en aktif endüstriyel pazarlarından birinde görünürlüğünüzü artırın.",
-        },
-      ],
-
-      keyFacts: [
-        {
-          label: "Tarih",
-          value: "12–15 Mayıs 2027",
+            "Yeni ihracat pazarlarını belirleyin, stratejik ortaklıklar kurun ve uluslararası paydaşlarla uzun vadeli ticari ilişkiler geliştirin.",
         },
         {
-          label: "Fuar Alanı",
-          value: "İstanbul Fuar Merkezi",
-        },
-        {
-          label: "Organizatör",
-          value: "HKF Trade Fairs",
-        },
-        {
-          label: "Düzenlenme Sıklığı",
-          value: "İki Yılda Bir",
-        },
-        {
-          label: "Ziyaretçi Profili",
-          value: "Madencilik Profesyonelleri",
-        },
-        {
-          label: "Net Fuar Alanı",
-          value: "78.000 m²",
+          number: "04",
+          title: "Yeniliklerinizi Sergileyin",
+          description:
+            "En yeni makine, ekipman ve teknolojilerinizi madencilik inovasyonu ve endüstriyel gelişimle yakından ilgilenen profesyonel bir ziyaretçi kitlesine sunun.",
         },
       ],
     },
@@ -150,18 +104,19 @@ function ExhibitionOverview() {
             <p className="overview-secondary">
               {t.secondary}
             </p>
-
-            <Link
-              to="/contact"
-              className="btn btn-primary"
-            >
-              {t.button}
-            </Link>
           </div>
 
           <div className="overview-content-column">
+            <div className="overview-why-header">
+              <p className="section-label">
+                {t.whyLabel}
+              </p>
+
+              <h3>{t.whyTitle}</h3>
+            </div>
+
             <div className="overview-story">
-              {t.opportunities.map((item) => (
+              {t.whyParticipate.map((item) => (
                 <article
                   key={item.number}
                   className="overview-card"
@@ -177,29 +132,6 @@ function ExhibitionOverview() {
                   </div>
                 </article>
               ))}
-            </div>
-
-            <div className="overview-facts-panel">
-              <div className="overview-facts-header">
-                <p className="section-label">
-                  {t.factsLabel}
-                </p>
-
-                <h3>{t.factsTitle}</h3>
-              </div>
-
-              <div className="overview-facts-grid">
-                {t.keyFacts.map((item) => (
-                  <article
-                    key={item.label}
-                    className="overview-fact-card"
-                  >
-                    <span>{item.label}</span>
-
-                    <strong>{item.value}</strong>
-                  </article>
-                ))}
-              </div>
             </div>
           </div>
         </div>

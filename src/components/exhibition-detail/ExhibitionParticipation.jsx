@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 import { useTranslation } from "../../hooks/useTranslation";
 
 function ExhibitionParticipation() {
@@ -165,13 +163,6 @@ function ExhibitionParticipation() {
                   </li>
                 ))}
               </ul>
-
-              <Link
-                to="/contact"
-                className="btn btn-primary"
-              >
-                {item.button}
-              </Link>
             </article>
           ))}
         </div>

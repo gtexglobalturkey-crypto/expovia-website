@@ -1,6 +1,5 @@
 import {
   BrowserRouter,
-  Navigate,
   Route,
   Routes,
 } from "react-router-dom";
@@ -8,6 +7,7 @@ import {
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import CookiePolicy from "./pages/CookiePolicy";
+import ExhibitionDetail from "./pages/ExhibitionDetail";
 import Exhibitions from "./pages/Exhibitions";
 import Home from "./pages/Home";
 import Industries from "./pages/Industries";
@@ -33,17 +33,9 @@ function App() {
           element={<Exhibitions />}
         />
 
-        {/* No confirmed exhibitions to detail yet — send visitors (and any
-            old shared links) back to the portfolio status page instead of
-            showing the previous hardcoded placeholder exhibition. */}
         <Route
           path="/exhibition-detail"
-          element={
-            <Navigate
-              to="/exhibitions"
-              replace
-            />
-          }
+          element={<ExhibitionDetail />}
         />
 
         <Route

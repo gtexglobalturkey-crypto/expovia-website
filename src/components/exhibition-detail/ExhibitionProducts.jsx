@@ -1,5 +1,21 @@
 import { useTranslation } from "../../hooks/useTranslation";
 
+import productFinance from "../../assets/exhibitions/wampex/products/product-finance.jpg";
+import productMining from "../../assets/exhibitions/wampex/products/product-mining.jpg";
+import productDigital from "../../assets/exhibitions/wampex/products/product-digital.jpg";
+import productProcessing from "../../assets/exhibitions/wampex/products/product-processing.jpg";
+import productEnergy from "../../assets/exhibitions/wampex/products/product-energy.jpg";
+import productLogistics from "../../assets/exhibitions/wampex/products/product-logistics.jpg";
+
+const productImages = [
+  productFinance,
+  productMining,
+  productDigital,
+  productProcessing,
+  productEnergy,
+  productLogistics,
+];
+
 function ExhibitionProducts() {
   const { language } = useTranslation();
 
@@ -8,55 +24,43 @@ function ExhibitionProducts() {
       label: "Product Scope",
       title: "Products & Technologies",
       description:
-        "Explore the major product groups and innovative technologies presented throughout the exhibition.",
+        "Explore the major product groups presented across the mining value chain at WAMPEX West Africa.",
       productGroups: [
         {
           number: "01",
-          title: "Mining Machinery",
+          title: "Financial & Legal Services",
           description:
-            "Heavy-duty equipment and complete mining systems.",
+            "Investment, insurance and regulatory advisory services.",
         },
         {
           number: "02",
-          title: "Drilling Technologies",
+          title: "Mining Equipment",
           description:
-            "Exploration, drilling and rock excavation solutions.",
+            "Heavy machinery, field equipment and spare parts.",
         },
         {
           number: "03",
-          title: "Crushing & Screening",
+          title: "Digital Mining Technologies",
           description:
-            "Modern crushing, screening and material handling systems.",
+            "Automation, sensors and field software solutions.",
         },
         {
           number: "04",
-          title: "Conveyor Solutions",
+          title: "Mineral Processing & Refining",
           description:
-            "Bulk material transportation and conveying technologies.",
+            "Ore beneficiation and refining solutions.",
         },
         {
           number: "05",
-          title: "Mineral Processing",
+          title: "Energy & Power Supply",
           description:
-            "Processing equipment and mineral recovery technologies.",
+            "On-site energy infrastructure and power solutions.",
         },
         {
           number: "06",
-          title: "Automation Systems",
+          title: "Logistics & Transportation",
           description:
-            "Digital mining, automation and smart production solutions.",
-        },
-        {
-          number: "07",
-          title: "Safety Equipment",
-          description:
-            "Occupational safety, monitoring and protection systems.",
-        },
-        {
-          number: "08",
-          title: "Engineering Services",
-          description:
-            "Consultancy, project management and technical services.",
+            "On-site and international transportation services.",
         },
       ],
     },
@@ -65,55 +69,43 @@ function ExhibitionProducts() {
       label: "Ürün Kapsamı",
       title: "Ürünler ve Teknolojiler",
       description:
-        "Fuar boyunca sergilenen başlıca ürün gruplarını ve yenilikçi teknolojileri keşfedin.",
+        "WAMPEX West Africa'da madencilik değer zincirinin tamamında sergilenen başlıca ürün gruplarını keşfedin.",
       productGroups: [
         {
           number: "01",
-          title: "Maden Makineleri",
+          title: "Finansal & Hukuki Hizmetler",
           description:
-            "Ağır hizmet ekipmanları ve kapsamlı madencilik sistemleri.",
+            "Yatırım, sigorta ve mevzuat danışmanlığı.",
         },
         {
           number: "02",
-          title: "Sondaj Teknolojileri",
+          title: "Madencilik Ekipmanları",
           description:
-            "Arama, sondaj ve kaya kazı çözümleri.",
+            "Ağır makine, saha ekipmanı ve yedek parça.",
         },
         {
           number: "03",
-          title: "Kırma ve Eleme",
+          title: "Dijital Madencilik Teknolojileri",
           description:
-            "Modern kırma, eleme ve malzeme taşıma sistemleri.",
+            "Otomasyon, sensörler ve saha yazılımları.",
         },
         {
           number: "04",
-          title: "Konveyör Çözümleri",
+          title: "Mineral İşleme & Arıtma",
           description:
-            "Dökme malzeme taşıma ve konveyör teknolojileri.",
+            "Cevher zenginleştirme ve arıtma çözümleri.",
         },
         {
           number: "05",
-          title: "Cevher Hazırlama",
+          title: "Enerji & Güç Tedariki",
           description:
-            "İşleme ekipmanları ve mineral geri kazanım teknolojileri.",
+            "Saha enerji altyapısı ve güç çözümleri.",
         },
         {
           number: "06",
-          title: "Otomasyon Sistemleri",
+          title: "Lojistik & Ulaştırma",
           description:
-            "Dijital madencilik, otomasyon ve akıllı üretim çözümleri.",
-        },
-        {
-          number: "07",
-          title: "İş Güvenliği Ekipmanları",
-          description:
-            "İş güvenliği, izleme ve koruma sistemleri.",
-        },
-        {
-          number: "08",
-          title: "Mühendislik Hizmetleri",
-          description:
-            "Danışmanlık, proje yönetimi ve teknik hizmetler.",
+            "Saha içi ve uluslararası taşımacılık.",
         },
       ],
     },
@@ -135,24 +127,27 @@ function ExhibitionProducts() {
         </div>
 
         <div className="products-grid">
-          {t.productGroups.map((item) => (
+          {t.productGroups.map((item, index) => (
             <article
               key={item.number}
               className="product-card"
             >
-              <div className="product-top">
+              <div className="product-image">
+                <img
+                  src={productImages[index % productImages.length]}
+                  alt={item.title}
+                />
+
                 <span className="product-number">
                   {item.number}
                 </span>
-
-                <div className="product-icon">
-                  ⚙
-                </div>
               </div>
 
-              <h3>{item.title}</h3>
+              <div className="product-body">
+                <h3>{item.title}</h3>
 
-              <p>{item.description}</p>
+                <p>{item.description}</p>
+              </div>
             </article>
           ))}
         </div>

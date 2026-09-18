@@ -8,7 +8,7 @@ function ExhibitionProfiles() {
       label: "Business Network",
       title: "Meet the Right People",
       description:
-        "Mining Türkiye brings together qualified buyers and leading industry suppliers, creating an ideal environment for long-term business development.",
+        "WAMPEX West Africa brings together qualified buyers and leading industry suppliers, creating an ideal environment for long-term business development.",
 
       buyerBadge: "BUYERS",
       buyerTitle: "Visitor Profile",
@@ -18,28 +18,26 @@ function ExhibitionProfiles() {
       supplierBadge: "SUPPLIERS",
       supplierTitle: "Exhibitor Profile",
       supplierDescription:
-        "International manufacturers and solution providers presenting the latest mining technologies.",
+        "International manufacturers and solution providers presenting the latest mining and power technologies.",
 
       visitorProfile: [
-        "Mining companies",
-        "Quarries & mine operators",
-        "Engineering companies",
-        "Government institutions",
+        "CEOs",
+        "Mine managers",
+        "Engineers",
+        "Supply chain managers",
+        "Policy makers",
         "Investors & project developers",
         "Distributors & importers",
-        "Procurement managers",
         "International buyers",
       ],
 
       exhibitorProfile: [
-        "Mining machinery manufacturers",
-        "Heavy equipment suppliers",
-        "Technology providers",
-        "Automation companies",
-        "Safety equipment manufacturers",
-        "Processing system suppliers",
-        "Industrial solution providers",
-        "Engineering consultants",
+        "Mining equipment manufacturers",
+        "Digital mining technology providers",
+        "Mineral processing & refining solutions",
+        "Energy & power supply companies",
+        "Logistics & transportation providers",
+        "Financial & legal service providers",
       ],
     },
 
@@ -47,7 +45,7 @@ function ExhibitionProfiles() {
       label: "İş Ağı",
       title: "Doğru Kişilerle Tanışın",
       description:
-        "Mining Türkiye, nitelikli ziyaretçileri ve sektörün önde gelen tedarikçilerini bir araya getirerek uzun vadeli iş birlikleri için ideal bir ortam oluşturur.",
+        "WAMPEX West Africa, nitelikli ziyaretçileri ve sektörün önde gelen tedarikçilerini bir araya getirerek uzun vadeli iş birlikleri için ideal bir ortam oluşturur.",
 
       buyerBadge: "ZİYARETÇİLER",
       buyerTitle: "Ziyaretçi Profili",
@@ -57,28 +55,26 @@ function ExhibitionProfiles() {
       supplierBadge: "KATILIMCILAR",
       supplierTitle: "Katılımcı Profili",
       supplierDescription:
-        "En yeni madencilik teknolojilerini sunan uluslararası üreticiler ve çözüm sağlayıcıları.",
+        "En yeni madencilik ve enerji teknolojilerini sunan uluslararası üreticiler ve çözüm sağlayıcıları.",
 
       visitorProfile: [
-        "Madencilik şirketleri",
-        "Maden işletmeleri",
-        "Mühendislik firmaları",
-        "Kamu kurumları",
+        "CEO'lar",
+        "Maden müdürleri",
+        "Mühendisler",
+        "Tedarik zinciri müdürleri",
+        "Politika yapıcılar",
         "Yatırımcılar ve proje geliştiricileri",
         "Distribütörler ve ithalatçılar",
-        "Satın alma yöneticileri",
         "Uluslararası alıcılar",
       ],
 
       exhibitorProfile: [
-        "Madencilik makinesi üreticileri",
-        "Ağır ekipman tedarikçileri",
-        "Teknoloji sağlayıcıları",
-        "Otomasyon firmaları",
-        "İş güvenliği ekipmanı üreticileri",
-        "Cevher işleme sistemi üreticileri",
-        "Endüstriyel çözüm sağlayıcıları",
-        "Mühendislik danışmanları",
+        "Madencilik ekipmanı üreticileri",
+        "Dijital madencilik teknolojisi sağlayıcıları",
+        "Mineral işleme ve arıtma çözümleri",
+        "Enerji ve güç tedarikçileri",
+        "Lojistik ve ulaştırma sağlayıcıları",
+        "Finansal ve hukuki hizmet sağlayıcıları",
       ],
     },
   };

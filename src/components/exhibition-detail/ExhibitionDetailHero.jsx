@@ -1,47 +1,44 @@
-import { Link } from "react-router-dom";
-
 import { useTranslation } from "../../hooks/useTranslation";
 
-import miningImage from "../../assets/exhibitions/mining-01.png";
+import wampexLogo from "../../assets/exhibitions/wampex/wampex-logo.png";
+import heroImage from "../../assets/exhibitions/wampex/gallery-entrance.jpg";
 
 function ExhibitionDetailHero() {
   const { language } = useTranslation();
 
   const content = {
     en: {
-      label: "International Mining Exhibition",
-      title: "Mining Türkiye 2027",
+      label: "International Mining & Power Exhibition",
       description:
-        "Mining Türkiye is one of the region's leading mining exhibitions, bringing together manufacturers, suppliers, mining companies and international buyers on a single business platform.",
+        "WAMPEX West Africa is the region's largest mining and power exhibition, bringing together manufacturers, suppliers, mining companies and international buyers for its 20th anniversary edition in Accra.",
       dateLabel: "Date",
-      date: "12–15 May 2027",
+      date: "2–4 June 2027",
       locationLabel: "Location",
-      location: "Istanbul Expo Center",
+      location: "La Palm Royal Beach Hotel, Accra, Ghana",
       organizerLabel: "Organizer",
-      organizer: "HKF Trade Fairs",
+      organizer: "DMG Events · EPI · Ghana Chamber of Mines",
       industryLabel: "Industry",
-      industry: "Mining Technologies",
-      primary: "Request Participation",
-      secondary: "Download Brochure",
-      imageAlt: "Mining Türkiye 2027",
+      industry: "Mining & Power",
+      imageAlt: "WAMPEX West Africa entrance banner",
+      logoAlt: "WAMPEX West Africa",
+      announcement: "2026 Incentive Amount: 22,983 TRY",
     },
 
     tr: {
-      label: "Uluslararası Madencilik Fuarı",
-      title: "Mining Türkiye 2027",
+      label: "Uluslararası Madencilik ve Enerji Fuarı",
       description:
-        "Mining Türkiye; üreticileri, tedarikçileri, madencilik şirketlerini ve uluslararası alıcıları tek bir iş platformunda buluşturan bölgenin önde gelen madencilik fuarlarından biridir.",
+        "WAMPEX West Africa, Batı Afrika'nın en büyük madencilik ve enerji fuarı; üreticileri, tedarikçileri, madencilik şirketlerini ve uluslararası alıcıları 20. yıl dönümü edisyonunda Accra'da bir araya getiriyor.",
       dateLabel: "Tarih",
-      date: "12–15 Mayıs 2027",
+      date: "2–4 Haziran 2027",
       locationLabel: "Konum",
-      location: "İstanbul Fuar Merkezi",
+      location: "La Palm Royal Beach Hotel, Accra, Gana",
       organizerLabel: "Organizatör",
-      organizer: "HKF Trade Fairs",
+      organizer: "DMG Events · EPI · Ghana Chamber of Mines",
       industryLabel: "Sektör",
-      industry: "Madencilik Teknolojileri",
-      primary: "Katılım Talebi Oluştur",
-      secondary: "Broşürü İndir",
-      imageAlt: "Mining Türkiye 2027",
+      industry: "Madencilik & Enerji",
+      imageAlt: "WAMPEX West Africa giriş bannerı",
+      logoAlt: "WAMPEX West Africa",
+      announcement: "2026 Yılı Teşvik Tutarı: 22.983 TL",
     },
   };
 
@@ -56,7 +53,17 @@ function ExhibitionDetailHero() {
               {t.label}
             </p>
 
-            <h1>{t.title}</h1>
+            <div className="detail-hero-logo-row">
+              <img
+                src={wampexLogo}
+                alt={t.logoAlt}
+                className="detail-hero-logo"
+              />
+
+              <span className="hero-announcement-badge">
+                {t.announcement}
+              </span>
+            </div>
 
             <p className="detail-hero-description">
               {t.description}
@@ -83,27 +90,11 @@ function ExhibitionDetailHero() {
                 <span>{t.industry}</span>
               </div>
             </div>
-
-            <div className="detail-hero-actions">
-              <Link
-                to="/contact"
-                className="btn btn-primary"
-              >
-                {t.primary}
-              </Link>
-
-              <a
-                href="#overview"
-                className="btn btn-secondary"
-              >
-                {t.secondary}
-              </a>
-            </div>
           </div>
 
           <div className="detail-hero-image">
             <img
-              src={miningImage}
+              src={heroImage}
               alt={t.imageAlt}
             />
           </div>

@@ -4,6 +4,7 @@ import Footer from "../components/layout/Footer";
 import SEO from "../components/seo/SEO";
 
 import ExhibitionsHero from "../components/exhibitions/ExhibitionsHero";
+import FeaturedExhibitions from "../components/exhibitions/FeaturedExhibitions";
 import ExhibitionsPortfolioNotice from "../components/exhibitions/ExhibitionsPortfolioNotice";
 import ExhibitionsCTA from "../components/exhibitions/ExhibitionsCTA";
 
@@ -17,7 +18,7 @@ function Exhibitions() {
     <>
       <SEO
         title={PAGE_TITLES.exhibitions[language]}
-        description="Explore international trade exhibitions across mining, construction, energy, manufacturing and other strategic industries with VIAFA."
+        description="Explore the international exhibitions VIAFA represents for participation from Türkiye, including WAMPEX West Africa, the region's largest mining and power exhibition."
         canonical="/exhibitions"
       />
 
@@ -25,6 +26,8 @@ function Exhibitions() {
 
       <main>
         <ExhibitionsHero />
+
+        <FeaturedExhibitions />
 
         <ExhibitionsPortfolioNotice />
 

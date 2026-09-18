@@ -6,16 +6,16 @@ function ExhibitionsHero() {
   const content = {
     en: {
       label: "International Exhibitions",
-      title: "Our Exhibition Portfolio Is Being Prepared",
+      title: "Our International Exhibition Portfolio",
       description:
-        "VIAFA is currently developing its international exhibition portfolio and establishing partnerships with leading international exhibition organizers. Confirmed exhibitions and participation opportunities will be published here as agreements are finalized.",
+        "VIAFA is building its international exhibition portfolio and establishing partnerships with leading international exhibition organizers. Confirmed exhibitions and participation opportunities are published below as agreements are finalized.",
     },
 
     tr: {
       label: "Uluslararası Fuarlar",
-      title: "Fuar Portföyümüz Hazırlanıyor",
+      title: "Uluslararası Fuar Portföyümüz",
       description:
-        "VIAFA, uluslararası fuar portföyünü oluşturmakta ve önde gelen uluslararası fuar organizatörleriyle iş birlikleri kurmaktadır. Anlaşmalar tamamlandıkça onaylanmış fuarlar ve katılım fırsatları bu sayfada yayımlanacaktır.",
+        "VIAFA, uluslararası fuar portföyünü oluşturmakta ve önde gelen uluslararası fuar organizatörleriyle iş birlikleri kurmaktadır. Anlaşmalar tamamlandıkça onaylanmış fuarlar ve katılım fırsatları aşağıda yayımlanmaktadır.",
     },
   };
 
