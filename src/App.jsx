@@ -13,11 +13,13 @@ import Home from "./pages/Home";
 import Industries from "./pages/Industries";
 import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import SecurexSouthAfrica2027 from "./pages/SecurexSouthAfrica2027";
 import Services from "./pages/Services";
 import TermsOfUse from "./pages/TermsOfUse";
 import Viamate from "./pages/Viamate";
 import ViamatePrivacyPolicy from "./pages/ViamatePrivacyPolicy";
 import Viawa from "./pages/Viawa";
+
 
 function App() {
   return (
@@ -36,6 +38,11 @@ function App() {
         <Route
           path="/exhibition-detail"
           element={<ExhibitionDetail />}
+        />
+
+        <Route
+          path="/exhibition-detail/securex-south-africa-2027"
+          element={<SecurexSouthAfrica2027 />}
         />
 
         <Route

@@ -10,6 +10,10 @@ export const PAGE_TITLES = {
     tr: "Uluslararası Fuarlar | VIAFA",
     en: "International Exhibitions | VIAFA",
   },
+  securexSouthAfrica2027: {
+    tr: "Securex South Africa 2027 – Johannesburg Fuarı | VIAFA",
+    en: "Securex South Africa 2027 – Johannesburg | VIAFA",
+  },
   industries: {
     tr: "Hizmet Verdiğimiz Sektörler | VIAFA",
     en: "Industries We Serve | VIAFA",

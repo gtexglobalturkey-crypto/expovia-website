@@ -1,0 +1,353 @@
+
+/* EXPOVIA — SECUREX SOUTH AFRICA 2027
+   Additive styles only. Everything else on the Securex page reuses the
+   existing exhibition-detail / exhibitions classes untouched. */
+
+/* HERO — the four shows stacked (show name + sector) in place of the
+   title/paragraph; the h1 stays in the DOM, visually hidden. */
+
+.detail-hero-content .securex-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.securex-hero-shows {
+  max-width: 650px;
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.securex-hero-shows li {
+  padding: 9px 0;
+  border-top: 1px solid rgba(23, 23, 25, 0.1);
+}
+
+.securex-hero-shows li:last-child {
+  border-bottom: 1px solid rgba(23, 23, 25, 0.1);
+}
+
+.securex-hero-show-name,
+.securex-hero-shows strong {
+  display: block;
+}
+
+.securex-hero-show-name {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #871c37;
+}
+
+.securex-hero-shows strong {
+  margin-top: 2px;
+  font-size: clamp(19px, 1.9vw, 24px);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: #171719;
+}
+
+/* HERO VISUAL — official organizer artwork, shown at its natural ratio
+   (never stretched or cropped by the browser), with HTML caption. */
+
+.securex-hero-visual {
+  margin: 0;
+  overflow: hidden;
+  min-width: 0;
+  background: #171719;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 28px;
+  box-shadow:
+    0 28px 70px rgba(26, 24, 27, 0.16),
+    0 8px 22px rgba(26, 24, 27, 0.08);
+}
+
+.securex-hero-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.securex-hero-caption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px 16px;
+  padding: 13px 20px 14px;
+  background: linear-gradient(145deg, #171719 0%, #74162e 100%);
+}
+
+.securex-hero-tagline {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.securex-hero-concept {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+
+/* OVERVIEW FIGURE — organizer show-floor photo under the intro copy */
+
+.securex-overview-figure {
+  max-width: 590px;
+  margin: 20px 0 0;
+  overflow: hidden;
+  border: 1px solid #dfdcd5;
+  border-radius: 22px;
+  box-shadow: 0 14px 34px rgba(20, 20, 22, 0.08);
+}
+
+.securex-overview-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* FOUR-SHOW CARDS (reuse .products-grid / .product-card, no image) */
+
+.securex-show-logo {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  margin-bottom: 14px;
+}
+
+.securex-show-logo img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 170px;
+  max-height: 60px;
+  object-fit: contain;
+}
+
+/* The logo files have opaque white backgrounds and must stay unaltered, so
+   these cards skip the faint maroon hover tint that would show them as a
+   white box. Hover lift, border and shadow are unchanged. */
+.securex-shows .product-card::before {
+  display: none;
+}
+
+.product-card .securex-show-sector {
+  margin: 8px 0 0;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #871c37;
+}
+
+.securex-show-groups {
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.securex-show-groups li {
+  display: flex;
+  gap: 8px;
+  padding: 8px 0;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.45;
+  color: #4f4d52;
+  border-top: 1px solid #ece9e3;
+}
+
+.securex-show-groups li span {
+  flex-shrink: 0;
+  color: #871c37;
+}
+
+/* 2026 EVENT RESULTS — reuses .statistics-grid / .statistic-card with a
+   fifth metric, so the grid is five columns on desktop. */
+
+.securex-results {
+  border-bottom: 1px solid #e1ded7;
+}
+
+.securex-results .statistics-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.securex-results-note {
+  margin: 12px 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #8a878e;
+}
+
+@media (max-width: 900px) {
+  .securex-results .statistics-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .securex-results .statistic-card {
+    border-bottom: 1px solid #e5e2dc;
+  }
+
+  .securex-results .statistic-card:nth-child(even) {
+    border-right: 0;
+  }
+
+  .securex-results .statistic-card:last-child {
+    grid-column: 1 / -1;
+    border-right: 0;
+    border-bottom: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .securex-results .statistics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .securex-results .statistic-card {
+    border-right: 0;
+  }
+}
+
+/* 2026 SPONSORS — reuses .logo-grid / .logo-tile with a tier + show caption */
+
+.securex-sponsors {
+  background: #f3f2ee;
+  border-bottom: 1px solid #e1ded7;
+}
+
+.securex-sponsor-tile {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  min-height: 148px;
+  padding: 16px 12px 12px;
+  text-align: center;
+}
+
+.securex-sponsor-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 64px;
+}
+
+/* taller cap than .logo-tile img so tall logos (e.g. Fire & Instrument
+   Services) keep their small print legible */
+.securex-sponsor-logo img {
+  max-height: 60px;
+}
+
+.securex-sponsor-caption {
+  margin: 0;
+}
+
+.securex-sponsor-caption strong,
+.securex-sponsor-caption span {
+  display: block;
+}
+
+.securex-sponsor-caption strong {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #871c37;
+}
+
+.securex-sponsor-caption span {
+  margin-top: 2px;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #6a676d;
+}
+
+/* PARTICIPATION OPTIONS — three stand categories, no price/feature lists */
+
+.securex-participation .participation-card {
+  min-height: 0;
+}
+
+/* EXHIBITIONS LISTING — each card sits in a group with its own intro line
+   (WAMPEX keeps its representation wording, Securex its neutral one). The
+   groups share rows via subgrid so both cards line up side by side. */
+
+.featured-exhibitions-grid--groups {
+  row-gap: 24px;
+}
+
+.featured-exhibitions-group {
+  display: grid;
+  grid-row: span 2;
+  grid-template-rows: subgrid;
+  row-gap: 0;
+  min-width: 0;
+}
+
+.featured-exhibitions-group .featured-exhibitions-intro {
+  align-self: end;
+}
+
+/* Securex card image: the hero's four-show artwork shown whole (contain, never
+   cropped) on a matching dark field, edges softened on wide cards. */
+
+.exhibition-image--lockup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1b222a;
+}
+
+.exhibition-image--lockup::before {
+  display: none;
+}
+
+.exhibition-image--lockup img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 5%, #000 95%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 5%, #000 95%, transparent);
+}
+
+/* Below ~1260px a half-width card is too narrow for the tag/pill overlays to
+   sit beside the artwork, so the groups stack (full-width cards). */
+@media (max-width: 1260px) {
+  .featured-exhibitions-grid--groups {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile: leave a band above and below the artwork so the industry tag and
+   VIAFA pill sit in the dark field instead of over the show names. */
+@media (max-width: 640px) {
+  .exhibition-image--lockup {
+    padding: 40px 0;
+    box-sizing: border-box;
+  }
+
+  .exhibition-image--lockup img {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}
