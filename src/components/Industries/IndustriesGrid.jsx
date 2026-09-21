@@ -46,9 +46,9 @@ function IndustriesGrid() {
         },
         {
           number: "07",
-          title: "Technology",
+          title: "Technology & Security",
           description:
-            "Digital transformation, industrial software and innovative technologies.",
+            "Digital transformation, industrial software, security and innovation.",
         },
         {
           number: "08",
@@ -99,9 +99,9 @@ function IndustriesGrid() {
         },
         {
           number: "07",
-          title: "Teknoloji",
+          title: "Teknoloji ve Güvenlik",
           description:
-            "Dijital dönüşüm, endüstriyel yazılımlar ve yenilikçi teknolojiler.",
+            "Dijital dönüşüm, endüstriyel yazılımlar, güvenlik sistemleri ve yenilikçi teknolojiler.",
         },
         {
           number: "08",
