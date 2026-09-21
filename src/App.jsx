@@ -20,6 +20,7 @@ import Viamate from "./pages/Viamate";
 import ViamatePrivacyPolicy from "./pages/ViamatePrivacyPolicy";
 import Viawa from "./pages/Viawa";
 
+import WhatsAppButton from "./components/ui/WhatsAppButton";
 
 function App() {
   return (
@@ -100,6 +101,8 @@ function App() {
           element={<NotFound />}
         />
       </Routes>
+
+      <WhatsAppButton />
     </BrowserRouter>
   );
 }

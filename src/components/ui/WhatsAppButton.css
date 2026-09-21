@@ -1,0 +1,64 @@
+.whatsapp-float {
+  position: fixed;
+  right: 20px;
+  bottom: calc(20px + var(--whatsapp-lift, 0px));
+  z-index: 900;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 52px;
+  padding: 0 20px 0 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  background: #0f7d6f;
+  border-radius: 999px;
+  box-shadow:
+    0 12px 28px rgba(15, 125, 111, 0.32),
+    0 4px 10px rgba(20, 20, 22, 0.12);
+  transition:
+    transform 200ms ease,
+    background 200ms ease,
+    box-shadow 200ms ease;
+}
+
+.whatsapp-float:hover {
+  background: #0c6a5e;
+  transform: translateY(-2px);
+  box-shadow:
+    0 16px 34px rgba(15, 125, 111, 0.38),
+    0 6px 14px rgba(20, 20, 22, 0.14);
+}
+
+.whatsapp-float:focus-visible {
+  outline: 3px solid rgba(15, 125, 111, 0.45);
+  outline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+  .whatsapp-float {
+    right: 16px;
+    bottom: calc(16px + var(--whatsapp-lift, 0px));
+    justify-content: center;
+    width: 52px;
+    padding: 0;
+  }
+
+  /* icon-only on phones; the link keeps its aria-label */
+  .whatsapp-float__label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+  }
+}
+
+@media print {
+  .whatsapp-float {
+    display: none;
+  }
+}
