@@ -1,10 +1,7 @@
-import { Link } from "react-router-dom";
-
 import { useTranslation } from "../../../hooks/useTranslation";
 
 // VIAFA offers only the standard booth for this exhibition — no raw space.
-// Deliberately no prices: 2027 pricing is shared through the contact flow
-// until verified commercial terms are final.
+// Deliberately no prices or pricing section on the page.
 function ContechParticipation() {
   const { language } = useTranslation();
 
@@ -29,11 +26,6 @@ function ContechParticipation() {
         "2 lights",
         "Waste bin",
       ],
-      pricingLabel: "Pricing",
-      pricingTitle: "2027 participation terms on request",
-      pricingText:
-        "Prices are not published on this page. Contact VIAFA, the Türkiye Sales Agent for CONTECH Vietnam 2027, for current participation terms and booth availability.",
-      cta: "Request Participation Information",
     },
 
     tr: {
@@ -56,11 +48,6 @@ function ContechParticipation() {
         "2 adet aydınlatma",
         "Çöp kutusu",
       ],
-      pricingLabel: "Fiyatlandırma",
-      pricingTitle: "2027 katılım koşulları talep üzerine",
-      pricingText:
-        "Fiyatlar bu sayfada yayımlanmamaktadır. Güncel katılım koşulları ve stant müsaitliği için CONTECH Vietnam 2027'nin Türkiye Satış Temsilcisi VIAFA ile iletişime geçebilirsiniz.",
-      cta: "Katılım Bilgisi Al",
     },
   };
 
@@ -79,52 +66,33 @@ function ContechParticipation() {
           <p>{t.description}</p>
         </div>
 
-        <div className="contech-participation-layout">
-          <article className="participation-card featured">
-            <div className="participation-top">
-              <span className="participation-number">
-                9 m²
-              </span>
-            </div>
-
-            <span className="participation-badge">
-              {t.badge}
+        <article className="participation-card featured">
+          <div className="participation-top">
+            <span className="participation-number">
+              9 m²
             </span>
+          </div>
 
-            <h3>{t.boothTitle}</h3>
+          <span className="participation-badge">
+            {t.badge}
+          </span>
 
-            <p>{t.boothDescription}</p>
+          <h3>{t.boothTitle}</h3>
 
-            <p className="contech-equipment-label">
-              {t.equipmentLabel}
-            </p>
+          <p>{t.boothDescription}</p>
 
-            <ul className="participation-features">
-              {t.equipment.map((item) => (
-                <li key={item}>
-                  ✓ {item}
-                </li>
-              ))}
-            </ul>
-          </article>
+          <p className="contech-equipment-label">
+            {t.equipmentLabel}
+          </p>
 
-          <aside className="contech-pricing-panel">
-            <p className="section-label">
-              {t.pricingLabel}
-            </p>
-
-            <h3>{t.pricingTitle}</h3>
-
-            <p>{t.pricingText}</p>
-
-            <Link
-              to="/contact"
-              className="contech-btn"
-            >
-              {t.cta}
-            </Link>
-          </aside>
-        </div>
+          <ul className="participation-features">
+            {t.equipment.map((item) => (
+              <li key={item}>
+                ✓ {item}
+              </li>
+            ))}
+          </ul>
+        </article>
       </div>
     </section>
   );

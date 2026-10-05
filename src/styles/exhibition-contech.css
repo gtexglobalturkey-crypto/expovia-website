@@ -2,7 +2,7 @@
    Additive styles only. Everything else on the CONTECH page reuses the
    existing exhibition-detail / exhibitions classes untouched. */
 
-/* SHARED BUTTON — maroon primary used in the hero and pricing panel */
+/* SHARED BUTTON — maroon primary used in the hero */
 
 .contech-btn {
   display: inline-flex;
@@ -282,14 +282,7 @@
   color: #8a878e;
 }
 
-/* PARTICIPATION — one standard booth card beside a pricing/enquiry panel */
-
-.contech-participation-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-  gap: 14px;
-  align-items: stretch;
-}
+/* PARTICIPATION — one full-width standard booth card, no pricing */
 
 .contech-participation .participation-card,
 .contech-participation .participation-card.featured {
@@ -318,40 +311,9 @@
 }
 
 .contech-participation .participation-features {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 8px;
   margin: 10px 0 0;
-}
-
-.contech-pricing-panel {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 26px;
-  background: linear-gradient(180deg, #fcfcfb 0%, #f4f3ef 100%);
-  border: 1px solid #dfdcd5;
-  border-radius: 24px;
-}
-
-.contech-pricing-panel h3 {
-  margin: 14px 0 0;
-  font-size: 26px;
-  font-weight: 600;
-  line-height: 1.12;
-  letter-spacing: -0.04em;
-  color: #1b1b1e;
-}
-
-.contech-pricing-panel p:not(.section-label) {
-  margin: 14px 0 0;
-  font-size: 14px;
-  line-height: 1.72;
-  color: #68656c;
-}
-
-.contech-pricing-panel .contech-btn {
-  margin-top: 22px;
 }
 
 /* EXHIBITIONS LISTING — text-first card image until official artwork is
@@ -405,6 +367,10 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
     column-gap: 18px;
   }
+
+  .contech-participation .participation-features {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 900px) {
@@ -413,8 +379,7 @@
   }
 
   .contech-visitors .profiles-grid,
-  .contech-opportunities .highlights-grid,
-  .contech-participation-layout {
+  .contech-opportunities .highlights-grid {
     grid-template-columns: 1fr;
   }
 
@@ -445,17 +410,5 @@
   .contech-visitors .profile-card ul,
   .contech-participation .participation-features {
     grid-template-columns: 1fr;
-  }
-
-  .contech-pricing-panel {
-    padding: 24px 20px;
-  }
-
-  .contech-pricing-panel h3 {
-    font-size: 23px;
-  }
-
-  .contech-pricing-panel .contech-btn {
-    width: 100%;
   }
 }
