@@ -195,6 +195,15 @@ function SEO({
 
       meta.setAttribute("content", content);
     });
+
+    // Pages without their own share image must not inherit the previous
+    // route's og:image / twitter:image (meta tags persist across SPA
+    // navigation).
+    if (!imageUrl) {
+      document.head
+        .querySelectorAll('meta[property="og:image"], meta[name="twitter:image"]')
+        .forEach((element) => element.remove());
+    }
   }, [
     title,
     description,

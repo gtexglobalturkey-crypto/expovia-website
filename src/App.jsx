@@ -6,6 +6,7 @@ import {
 
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import ContechVietnam2027 from "./pages/ContechVietnam2027";
 import CookiePolicy from "./pages/CookiePolicy";
 import ExhibitionDetail from "./pages/ExhibitionDetail";
 import Exhibitions from "./pages/Exhibitions";
@@ -44,6 +45,11 @@ function App() {
         <Route
           path="/exhibition-detail/securex-south-africa-2027"
           element={<SecurexSouthAfrica2027 />}
+        />
+
+        <Route
+          path="/exhibition-detail/contech-vietnam-2027"
+          element={<ContechVietnam2027 />}
         />
 
         <Route

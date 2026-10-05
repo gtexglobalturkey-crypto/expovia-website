@@ -6,6 +6,10 @@ import wampexImage from "../../assets/exhibitions/wampex-01.png";
 import securexImage from "../../assets/exhibitions/securex/securex-2027-hero.webp";
 
 import { SECUREX_PATH } from "../../data/securexSouthAfrica2027";
+import {
+  CONTECH_IMAGES,
+  CONTECH_PATH,
+} from "../../data/contechVietnam2027";
 
 function FeaturedExhibitions() {
   const { language } = useTranslation();
@@ -16,6 +20,8 @@ function FeaturedExhibitions() {
         "The international exhibition VIAFA is currently representing for participation from Türkiye.",
       opportunityDescription:
         "An additional exhibition opportunity for companies from Türkiye. Contact VIAFA to discuss participation.",
+      salesAgentDescription:
+        "VIAFA is the Türkiye Sales Agent for this exhibition.",
       country: "Country",
       city: "City",
       date: "Date",
@@ -53,6 +59,22 @@ function FeaturedExhibitions() {
           description:
             "Four co-located shows in one venue, covering security technology, occupational health & safety, facilities management and fire protection.",
         },
+        {
+          id: 3,
+          path: CONTECH_PATH,
+          salesAgent: true,
+          image: CONTECH_IMAGES.card,
+          fallbackKicker: "Hanoi · 2027",
+          fallbackTitle: "Vietnam Exposition Center (VEC)",
+          name: "CONTECH Vietnam 2027",
+          country: "Vietnam",
+          city: "Hanoi",
+          date: "23–25 June 2027",
+          industry: "Construction · Mining · Transport",
+          organizer: "HADIFA",
+          description:
+            "Machinery, equipment, technologies, vehicles and materials for construction, mining and transport infrastructure.",
+        },
       ],
     },
 
@@ -61,6 +83,8 @@ function FeaturedExhibitions() {
         "VIAFA'nın Türkiye'den katılım için temsilciliğini yürüttüğü uluslararası fuar.",
       opportunityDescription:
         "Türkiye'den firmalar için ek bir fuar fırsatı. Katılım için VIAFA ile iletişime geçebilirsiniz.",
+      salesAgentDescription:
+        "VIAFA, bu fuarın Türkiye Satış Temsilcisidir.",
 
       country: "Ülke",
       city: "Şehir",
@@ -99,6 +123,22 @@ function FeaturedExhibitions() {
           description:
             "Güvenlik teknolojileri, iş sağlığı ve güvenliği, tesis yönetimi ve yangın güvenliği alanlarını aynı mekânda buluşturan dört fuar.",
         },
+        {
+          id: 3,
+          path: CONTECH_PATH,
+          salesAgent: true,
+          image: CONTECH_IMAGES.card,
+          fallbackKicker: "Hanoi · 2027",
+          fallbackTitle: "Vietnam Exposition Center (VEC)",
+          name: "CONTECH Vietnam 2027",
+          country: "Vietnam",
+          city: "Hanoi",
+          date: "23–25 Haziran 2027",
+          industry: "İnşaat · Madencilik · Ulaştırma",
+          organizer: "HADIFA",
+          description:
+            "İnşaat, madencilik ve ulaştırma altyapısına yönelik makine, ekipman, teknoloji, araç ve malzemeler.",
+        },
       ],
     },
   };
@@ -113,12 +153,23 @@ function FeaturedExhibitions() {
       <div
         className={`exhibition-image${
           exhibition.imageLockup ? " exhibition-image--lockup" : ""
-        }`}
+        }${exhibition.image ? "" : " exhibition-image--text"}`}
       >
-        <img
-          src={exhibition.image}
-          alt={exhibition.imageAlt ?? exhibition.name}
-        />
+        {exhibition.image ? (
+          <img
+            src={exhibition.image}
+            alt={exhibition.imageAlt ?? exhibition.name}
+          />
+        ) : (
+          // Text-first stand-in until official artwork is approved.
+          <div
+            className="exhibition-image-fallback"
+            aria-hidden="true"
+          >
+            <span>{exhibition.fallbackKicker}</span>
+            <strong>{exhibition.fallbackTitle}</strong>
+          </div>
+        )}
 
         <span className="industry-tag">
           {exhibition.industry}
@@ -176,7 +227,9 @@ function FeaturedExhibitions() {
               <p className="featured-exhibitions-intro">
                 {exhibition.representationConfirmed
                   ? t.description
-                  : t.opportunityDescription}
+                  : exhibition.salesAgent
+                    ? t.salesAgentDescription
+                    : t.opportunityDescription}
               </p>
 
               {renderCard(exhibition)}

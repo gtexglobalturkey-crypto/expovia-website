@@ -288,10 +288,12 @@
 }
 
 /* EXHIBITIONS LISTING — each card sits in a group with its own intro line
-   (WAMPEX keeps its representation wording, Securex its neutral one). The
-   groups share rows via subgrid so both cards line up side by side. */
+   (WAMPEX keeps its representation wording, Securex its neutral one,
+   CONTECH its sales-agent one). The groups share rows via subgrid so the
+   three cards line up side by side on wide screens. */
 
 .featured-exhibitions-grid--groups {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   row-gap: 24px;
 }
 
@@ -330,7 +332,22 @@
   mask-image: linear-gradient(to right, transparent, #000 5%, #000 95%, transparent);
 }
 
-/* Below ~1260px a half-width card is too narrow for the tag/pill overlays to
+/* Three columns: a third-width card is too narrow for the tag/pill overlays
+   to sit beside the Securex artwork, so the images get a little taller and
+   the artwork sits in a band between the overlays (as on mobile). */
+@media (min-width: 1261px) {
+  .featured-exhibitions-grid--groups .exhibition-card.featured .exhibition-image {
+    height: 176px;
+    min-height: 176px;
+  }
+
+  .featured-exhibitions-grid--groups .exhibition-image--lockup {
+    padding: 42px 0;
+    box-sizing: border-box;
+  }
+}
+
+/* Below ~1260px a third-width card is too narrow for the tag/pill overlays to
    sit beside the artwork, so the groups stack (full-width cards). */
 @media (max-width: 1260px) {
   .featured-exhibitions-grid--groups {

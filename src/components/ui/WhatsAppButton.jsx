@@ -6,6 +6,7 @@ import { useTranslation } from "../../hooks/useTranslation";
 
 import { WHATSAPP_NUMBER } from "../../config/site";
 import { SECUREX_PATH } from "../../data/securexSouthAfrica2027";
+import { CONTECH_PATH } from "../../data/contechVietnam2027";
 
 import "./WhatsAppButton.css";
 
@@ -21,6 +22,8 @@ const messages = {
       "Hello, I would like to get information about Securex South Africa 2027.",
     wampex:
       "Hello, I would like to get information about WAMPEX West Africa 2027.",
+    contech:
+      "Hello, I would like to get participation information about CONTECH Vietnam 2027.",
   },
 
   tr: {
@@ -32,6 +35,8 @@ const messages = {
       "Merhaba, Securex South Africa 2027 fuarı hakkında bilgi almak istiyorum.",
     wampex:
       "Merhaba, WAMPEX West Africa 2027 fuarı hakkında bilgi almak istiyorum.",
+    contech:
+      "Merhaba, CONTECH Vietnam 2027 fuarına katılım hakkında bilgi almak istiyorum.",
   },
 };
 
@@ -46,6 +51,8 @@ function WhatsAppButton() {
 
   if (pathname === SECUREX_PATH) {
     text = t.securex;
+  } else if (pathname === CONTECH_PATH) {
+    text = t.contech;
   } else if (pathname === "/exhibition-detail") {
     text = t.wampex;
   }

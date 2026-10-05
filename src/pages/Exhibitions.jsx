@@ -11,6 +11,11 @@ import ExhibitionsCTA from "../components/exhibitions/ExhibitionsCTA";
 import { PAGE_TITLES } from "../config/pageTitles";
 import { useTranslation } from "../hooks/useTranslation";
 
+const DESCRIPTIONS = {
+  en: "Explore the international exhibitions VIAFA offers for participation from Türkiye: WAMPEX West Africa 2027, Securex South Africa 2027 and CONTECH Vietnam 2027.",
+  tr: "VIAFA aracılığıyla Türkiye'den katılım sağlanabilecek uluslararası fuarları keşfedin: WAMPEX West Africa 2027, Securex South Africa 2027 ve CONTECH Vietnam 2027.",
+};
+
 function Exhibitions() {
   const { language } = useTranslation();
 
@@ -18,7 +23,7 @@ function Exhibitions() {
     <>
       <SEO
         title={PAGE_TITLES.exhibitions[language]}
-        description="Explore the international exhibitions VIAFA represents for participation from Türkiye, including WAMPEX West Africa, the region's largest mining and power exhibition."
+        description={DESCRIPTIONS[language]}
         canonical="/exhibitions"
       />
 

@@ -14,6 +14,10 @@ export const PAGE_TITLES = {
     tr: "Securex South Africa 2027 – Johannesburg Fuarı | VIAFA",
     en: "Securex South Africa 2027 – Johannesburg | VIAFA",
   },
+  contechVietnam2027: {
+    tr: "CONTECH Vietnam 2027 – Hanoi İnşaat, Madencilik ve Ulaştırma Fuarı | VIAFA",
+    en: "CONTECH Vietnam 2027 – Construction, Mining & Transport Exhibition in Hanoi | VIAFA",
+  },
   industries: {
     tr: "Hizmet Verdiğimiz Sektörler | VIAFA",
     en: "Industries We Serve | VIAFA",
