@@ -1,3 +1,6 @@
+> **YÖNLENDİRME / REDIRECT (14.10.2026):** Kanonik standart artık **[`docs/VIAFA-MAILING-STANDARD.md`](VIAFA-MAILING-STANDARD.md)** dosyasıdır. Bu belgenin tüm içeriği oraya değiştirilmeden taşındı (Bölüm 3, Ek A, Ek B, Ek C). Bu dosya yalnızca arşiv amacıyla korunuyor; yeni çalışmalarda kanonik belgeyi kullanın.
+> The canonical standard is now `docs/VIAFA-MAILING-STANDARD.md`. This file is kept unchanged below for reference only.
+
 # VIAFA Mailing Standard — Gmail HTML Campaigns
 
 **Status:** Approved workflow, validated with WAMPEX 2027 on 12 October 2026.
