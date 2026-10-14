@@ -12,7 +12,7 @@
 var CONFIG = {
   // GitHub (public) üzerindeki kampanya HTML'i – dosya main'e push edildikten sonra erişilebilir.
   HTML_URL: 'https://raw.githubusercontent.com/gtexglobalturkey-crypto/expovia-website/main/email-campaigns/securex-2027/securex-2027-gmail-campaign.html',
-  EXPECTED_IMG_COUNT: 5,
+  EXPECTED_IMG_COUNT: 7,
   TEST_TO: 'gtexglobalturkey@gmail.com',
   SUBJECT: 'Afrika Güvenlik Pazarına Johannesburg’dan Açılın | SECUREX 2027',
   SENDER_NAME: 'Gülşah Eryıldırım | VIAFA',
