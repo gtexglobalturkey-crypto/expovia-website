@@ -1,6 +1,6 @@
 # VIAFA Mailing Standardı (KANONİK)
 
-**Durum:** Tek kanonik standart · **Son güncelleme:** 14.10.2026 · **Kapsam:** WAMPEX 2027 ve SECUREX 2027 kampanyalarında kullanılan yöntemler
+**Durum:** Tek kanonik standart · **Son güncelleme:** 14.10.2026 (2. revizyon) · **Kapsam:** WAMPEX 2027 ve SECUREX 2027 kampanyalarında kullanılan yöntemler
 
 Bu belge VIAFA mailing çalışmalarının **tek kanonik standardıdır**. `docs/VIAFA_MAILING_STANDARD.md` (12.10.2026, İngilizce) içeriğinin tamamı bu belgeye taşındı (Bölüm 3, Ek A, Ek B, Ek C). O dosya yalnızca yönlendirme notuyla korunuyor.
 
@@ -50,7 +50,7 @@ Gönderim sonrası: SEND_LOG + CAMPAIGNS + MASTER güncellemesi (Bölüm 8); kal
 | | |
 |---|---|
 | **Görevi** | **Yalnızca HTML test taslağı oluşturur. Toplu gönderim scripti değildir; e-posta göndermez.** |
-| **Kaynak kod** | `email-campaigns/wampex-2027-mining/HANDOFF-WAMPEX-2027-GMAIL.md` › Bölüm 3. Kodun tek kopyası bu dosyada; dosya henüz Git'e eklenmedi (untracked), bkz. Bölüm 10. |
+| **Kaynak kod** | `email-campaigns/wampex-2027-mining/HANDOFF-WAMPEX-2027-GMAIL.md` › Bölüm 3. Dosya 14.10.2026'da içeriği değiştirilmeden Git'e eklendi (commit `364c383`). |
 | **Çalıştığı yer** | Google Apps Script (https://script.google.com), WAMPEX testi için `ahmet@expoviafair.com` hesabında. Proje bilgisayardaki dosyalardan görünmez. |
 | **Ne yapar** | 1) Kampanya HTML'ini GitHub raw adresinden `UrlFetchApp.fetch` ile alır. 2) HTML'deki `<img>` sayısını günlüğe yazar. 3) `GmailApp.createDraft(TO, SUBJECT, plain, { htmlBody: html, name: 'VIAFA' })` ile test taslağı oluşturur. 4) Kaydedilen taslaktaki `<img>` sayısını yazar. |
 | **Bağlı dosyalar** | `email-campaigns/wampex-2027-mining/wampex-2027-mining-campaign.html` (raw GitHub) · `public/email-assets/wampex-2027-mining/*`, `public/email-assets/viafa-logo.png` · Unsplash CDN görselleri |
@@ -80,7 +80,7 @@ Repoda ve Drive'da **toplu gönderim yapan bir script yoktur**. Gönderim Gmail 
 | Yöntem | Tanım | Kullanıldığı doğrulanan gönderimler |
 |---|---|---|
 | **BCC** | Tek bir Gmail iletisinde alıcılar BCC alanına eklenir | **WAMPEX 2027, 05.10.2026:** Gülşah'ın Gmail hesabından, **823 alıcı**, SEND_LOG'a kayıtlı [Kullanıcı doğruladı] |
-| **Bireysel e-posta** | Her alıcıya ayrı ileti | **WAMPEX 2027 B grubu, 14.10.2026:** **8 e-posta**, SEND_LOG'a kayıtlı [Kullanıcı doğruladı] |
+| **Bireysel e-posta** | Her alıcıya ayrı ileti | **WAMPEX 2027 B grubu, 14.10.2026:** `gulsah@expoviafair.com` hesabından **8 e-posta**, SEND_LOG'a kayıtlı [Kullanıcı doğruladı] |
 | **Gmail Merge** | Google Sheets alıcı listesinden kişiselleştirilmiş toplu gönderim | **Belgelenmiş bir kampanyada kullanıldığı doğrulanmadı** [Doğrulanmadı]. Hazırlık izleri var: RULES'taki "Merge parça limiti 1500" kuralı ve kablo listesinin ~1.133 alıcılık A–D parçalarına bölünmüş olması [Doğrulandı – dosya]. |
 
 - **SECUREX 2027:** SECUREX alıcı listesinde (13.10.2026 dışa aktarımı) "Teknik hata" ve "Geçici hata" durumları var. Bu, bir gönderim yapıldığını gösteriyor [Çıkarım]. Yöntem, tarih, gönderen hesap ve alıcı sayısı bu belgede doğrulanmadı; SEND_LOG'dan Bölüm 8.2'ye işlenmeli.
@@ -146,8 +146,8 @@ Canlı Google Sheets dosyası `VIAFA_MAILING_MASTER` altı sekme içerir [Kullan
 | **SUPPRESSION** | E-posta · Firma Adı · Neden · Tarih · Kaynak · Not | [Doğrulandı – arşiv kopyası] |
 | **CAMPAIGNS** | Kampanya · Fuar · Sektör · Gönderim Tarihi · Toplam Alıcı · Part Sayısı · Durum · Not | [Doğrulandı – arşiv kopyası] |
 | **RULES** | Kural · Değer | [Doğrulandı] Merge parça limiti 1500 · Kalıcı bounce → SUPPRESSION · Geçici gecikme / dolu kutu → aktif tutulur · Opt-out → SUPPRESSION · Tekrar gönderim → kampanya geçmişi kontrol edilir · E-posta standardı: ASCII + boşluksuz + hücre başına tek adres |
-| **CAMPAIGN_BUILDER** | Canlı dosyada var; sütunları bu belgede henüz listelenmedi | [Kullanıcı doğruladı – sekme] |
-| **SEND_LOG** | Canlı dosyada var; WAMPEX 05.10.2026 (823 alıcı) ve 14.10.2026 (8 e-posta) gönderimleri kayıtlı. Sütunları bu belgede henüz listelenmedi | [Kullanıcı doğruladı – sekme ve kayıtlar] |
+| **CAMPAIGN_BUILDER** | Canlı dosyada var. **Sütunları doğrulanmadı; tahmin edilmedi.** Canlı dosyadan teyit edilince eklenecek. | [Kullanıcı doğruladı – yalnızca sekme] |
+| **SEND_LOG** | E-posta · Kampanya · Part · Gönderim Tarihi · Sonuç · Not. WAMPEX 05.10.2026 (823 alıcı) ve 14.10.2026 (8 e-posta) gönderimleri kayıtlı. | [Kullanıcı doğruladı – sütunlar ve kayıtlar] |
 
 Canlı dosyadaki sütun yapısı bu belgedekinden farklıysa **canlı dosya esastır**. Arşiv kopyası 05.10.2026 tarihlidir.
 
@@ -205,7 +205,18 @@ Her gönderim, yöntemi ne olursa olsun (BCC, bireysel, Gmail Merge, test), gön
 | Not | | |
 
 - **CAMPAIGNS:** Kampanya özeti tutulur (kimlik, fuar, segment, tarih, toplam alıcı, parça sayısı, durum). Mevcut sütunlarda olmayan **gönderen hesap, yöntem ve kampanya kimliği** CAMPAIGNS'in Not alanına veya kullanıcı kararıyla eklenecek sütunlara yazılır.
-- **SEND_LOG:** Alıcı veya gönderim satırı düzeyinde kayıt tutulur. Her satırda en az e-posta, kampanya kimliği, tarih, gönderen hesap ve yöntem olmalıdır. SEND_LOG'un mevcut sütunları korunur; eksik alan varsa ekleme kararı VIAFA ekibinindir.
+- **SEND_LOG:** Alıcı düzeyinde kayıt tutulur. Mevcut sütunlar korunur ve şöyle doldurulur:
+
+  | SEND_LOG sütunu | Yazılacak bilgi |
+  |---|---|
+  | **E-posta** | Alıcı adresi (hücre başına tek adres, ASCII) |
+  | **Kampanya** | Kampanya kimliği (8.1 biçimi) |
+  | **Part** | Parça no (parçasız gönderimde `1`) |
+  | **Gönderim Tarihi** | Gönderim tarihi |
+  | **Sonuç** | Gönderildi · Kalıcı bounce · Geçici bounce · Opt-out vb. |
+  | **Not** | **Gönderen hesap ve yöntem** (ör. `gulsah@expoviafair.com · BCC`) ve gerekirse ek açıklama |
+
+  SEND_LOG'da gönderen hesap ve yöntem için ayrı sütun olmadığından bu iki bilgi **Not** sütununa yazılır. Ayrı sütun eklenip eklenmeyeceği VIAFA ekibinin kararıdır; bu belge canlı veriyi değiştirmez.
 
 ### 8.2 Kayıtlı gönderimler
 
@@ -213,8 +224,8 @@ Her gönderim, yöntemi ne olursa olsun (BCC, bireysel, Gmail Merge, test), gön
 |---|---|---|---|---|---|---|
 | WAMPEX2027-TR-MADEN-20261005-BCC | 05.10.2026 | BCC | Gülşah'ın Gmail hesabı | 823 | SEND_LOG | [Kullanıcı doğruladı] |
 | WAMPEX2027-TR-HTMLTEST-20261012-TEST | 12.10.2026 | Test taslağı (Apps Script) | `ahmet@expoviafair.com` | 1 test alıcısı (taslak) | `HANDOFF-WAMPEX-2027-GMAIL.md` | [Doğrulandı] |
-| WAMPEX2027-TR-BGRUBU-20261014-BIREYSEL | 14.10.2026 | Bireysel e-posta | — (SEND_LOG'dan tamamlanacak) | 8 | SEND_LOG | [Kullanıcı doğruladı] |
-| SECUREX2027-… | — | — | — | — | SECUREX alıcı listesinde bounce durumları var | [Çıkarım – SEND_LOG'dan tamamlanacak] |
+| WAMPEX2027-TR-BGRUBU-20261014-BIREYSEL | 14.10.2026 | Bireysel e-posta | `gulsah@expoviafair.com` | 8 | SEND_LOG | [Kullanıcı doğruladı] |
+| SECUREX2027-… | — | — | — | — | **AÇIK KONTROL** – SECUREX alıcı listesinde bounce durumları var; yöntem, tarih, gönderen ve alıcı sayısı doğrulanmadı | [Doğrulanmadı] |
 
 *Bu tablodaki kampanya kimlikleri 8.1 biçimine göre geriye dönük olarak önerilmiştir. SEND_LOG'da farklı bir kimlik kullanıldıysa SEND_LOG'daki kimlik esastır.*
 
@@ -249,10 +260,10 @@ Her gönderim, yöntemi ne olursa olsun (BCC, bireysel, Gmail Merge, test), gön
 
 ## 10. Açık noktalar ve riskler (14.10.2026)
 
-1. **Çalışan test scriptinin tek kopyası Git'te değil.** `HANDOFF-WAMPEX-2027-GMAIL.md` untracked durumda. Git'e eklenmesi önerilir (kullanıcı onayıyla).
-2. **SEND_LOG ve CAMPAIGN_BUILDER sütunları** bu belgede listelenmedi; canlı dosyadan eklenmeli.
+1. ~~Çalışan test scriptinin tek kopyası Git'te değil.~~ **Çözüldü (14.10.2026):** `HANDOFF-WAMPEX-2027-GMAIL.md` içeriği değiştirilmeden Git'e eklendi (`364c383`).
+2. **CAMPAIGN_BUILDER sütunları doğrulanmadı.** Tahmin edilmedi; canlı dosyadan teyit edilip eklenmeli. (SEND_LOG sütunları 14.10.2026'da belgelendi.)
 3. **Eski satış hazırlık dosyaları SEND_LOG'a bakılmadan hazırlandı.** `WAMPEX_2027_SATIS_HAVUZU_FINAL.xlsx` ve `WAMPEX_2027_BC_GONDERIM_HAZIRLIK.xlsx`'teki "gönderim kaydı yok" ifadeleri yerel kopyalara dayanıyor. 05.10.2026'daki 823 alıcılık BCC gönderimi ve 14.10.2026'daki 8 e-posta bu dosyalarda yok. Bu listeler kullanılmadan önce canlı SEND_LOG ile karşılaştırılmalı.
-4. **SECUREX gönderim kaydı** (yöntem, tarih, gönderen, alıcı sayısı) bu belgeye SEND_LOG'dan işlenmeli.
+4. **AÇIK KONTROL – SECUREX gönderim geçmişi doğrulanmadı.** Alıcı listesindeki bounce durumları bir gönderim yapıldığını düşündürüyor. Yöntem, tarih, gönderen hesap ve alıcı sayısı SEND_LOG'dan teyit edilip 8.2'ye işlenene kadar SECUREX listesi "gönderilmemiş" ya da "gönderilmiş" kabul edilmez.
 5. **Gönderen hesap ve yöntem** geçmiş kampanyalarda tutarlı kaydedilmemiş. Bölüm 8.1 bundan sonra zorunlu.
 6. **Hukuki uyum:** 6563 sayılı Kanun ve İYS kapsamında tacirlere gönderimde ret hakkı tanınmalı. BCC'de alıcılar birbirini görmez; yine de pazarlama izni ve ret kayıtları kampanya öncesinde teyit edilmeli.
 
