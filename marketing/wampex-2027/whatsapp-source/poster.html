@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=block" rel="stylesheet">
+<style>
+  :root{ --bordo:#7a1f2b; --antrasit:#0e0f12; --altin:#e6b94a; --gred:#CE1126; --ggold:#FCD116; --ggreen:#006B3F; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1080px;height:1350px;overflow:hidden;background:var(--antrasit);color:#fff;font-family:'Montserrat',Arial,sans-serif}
+  .poster{position:relative;width:1080px;height:1350px;overflow:hidden}
+
+  /* Sahne: fotoğraf + Gana renkleriyle sinematik renk düzeni */
+  .scene{position:absolute;inset:0;height:1160px;
+    background:url(hero.jpg) -193px -40px/auto 1200px no-repeat;
+    filter:saturate(.38) sepia(.28) contrast(1.18) brightness(.9)}
+  .grade{position:absolute;inset:0;height:1160px;mix-blend-mode:overlay;opacity:.85;
+    background:linear-gradient(180deg,#b3121f 0%,#d2401c 16%,#f0a623 36%,#fcd116 46%,#a8861f 56%,#0f6b40 66%,#08311f 80%)}
+  .grade2{position:absolute;inset:0;height:1160px;mix-blend-mode:multiply;opacity:.55;
+    background:linear-gradient(180deg,#5e0d16 0%,rgba(94,13,22,.35) 18%,rgba(94,13,22,0) 36%)}
+  .vignette{position:absolute;inset:0;
+    background:radial-gradient(ellipse 85% 60% at 52% 46%,rgba(0,0,0,0) 40%,rgba(0,0,0,.62) 100%)}
+  .fade{position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(14,15,18,.55) 0%,rgba(14,15,18,0) 16%,rgba(14,15,18,0) 54%,rgba(14,15,18,.78) 66%,var(--antrasit) 80%)}
+  .star svg{display:block;width:100%;height:100%}
+
+  /* Dalgalanan Gana bayrağı */
+  .flag{position:absolute;left:-60px;top:-78px;width:1240px;transform:rotate(-3deg);opacity:.52;mix-blend-mode:hard-light;
+    -webkit-mask-image:radial-gradient(ellipse 64% 38% at 44% 50%,#000 36%,rgba(0,0,0,.45) 62%,transparent 86%);
+            mask-image:radial-gradient(ellipse 64% 38% at 44% 50%,#000 36%,rgba(0,0,0,.45) 62%,transparent 86%);
+    filter:blur(.4px)}
+  .flag img{display:block;width:100%}
+
+  /* WAMPEX logo plakası */
+  .wplate{position:absolute;top:36px;left:50%;transform:translateX(-50%);background:#fff;border-radius:20px;padding:20px 40px;
+    box-shadow:0 14px 40px rgba(0,0,0,.45)}
+  .wplate img{display:block;height:118px}
+
+  /* Üst satır */
+  .topline{position:absolute;top:216px;left:0;right:0;text-align:center;font-family:'Oswald',sans-serif;font-weight:500;
+    font-size:34px;letter-spacing:10px;color:#fff;text-shadow:0 3px 14px rgba(0,0,0,.75)}
+  .topline b{color:var(--ggold);font-weight:600}
+  .rule{position:absolute;top:272px;left:50%;transform:translateX(-50%);width:180px;height:4px;display:flex}
+  .rule i{flex:1}
+
+  /* Başlık */
+  .title{position:absolute;left:0;right:0;top:686px;text-align:center}
+  .pre{font-family:'Oswald',sans-serif;font-weight:500;font-size:38px;letter-spacing:7px;color:#fff;
+    text-shadow:0 3px 14px rgba(0,0,0,.8);margin-bottom:4px}
+  .pre span{color:var(--ggold)}
+  .main{font-family:'Anton',sans-serif;font-size:136px;line-height:1.1;letter-spacing:2px;
+    background:linear-gradient(180deg,#fff7d6 0%,#f4cf62 45%,#c8921f 100%);-webkit-background-clip:text;background-clip:text;color:transparent;
+    filter:drop-shadow(0 6px 18px rgba(0,0,0,.75))}
+  .date{margin-top:2px;font-family:'Oswald',sans-serif;font-weight:600;font-size:40px;letter-spacing:5px;color:#fff}
+  .date em{font-style:normal;color:var(--ggold);margin:0 16px}
+  .venue{font-family:'Oswald',sans-serif;font-weight:400;font-size:27px;letter-spacing:4px;color:rgba(255,255,255,.82);margin-top:2px}
+
+  /* Künye bloğu */
+  .billing{position:absolute;left:90px;right:90px;top:1030px;text-align:center}
+  .lead{font-weight:600;font-size:22px;line-height:1.4;color:rgba(255,255,255,.86);margin-bottom:14px}
+  .sectors{font-family:'Oswald',sans-serif;font-weight:500;font-size:25px;line-height:1.5;letter-spacing:2px;color:#fff;text-transform:uppercase}
+  .sectors i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--ggold);margin:0 14px 5px;vertical-align:middle}
+
+  /* Alt şerit: logolar + iletişim */
+  .foot{position:absolute;left:0;right:0;bottom:0;height:128px;display:flex;align-items:center;justify-content:center;gap:26px;
+    background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.05));border-top:1px solid rgba(255,255,255,.12)}
+  .flagline{position:absolute;left:0;right:0;bottom:128px;height:5px;display:flex}
+  .flagline i{flex:1}
+  .card{background:#fff;border-radius:12px;height:98px;display:flex;align-items:center;padding:0 18px}
+  .card img{display:block}
+  .card.w img{height:58px}
+  .card.v img{height:84px}
+  .contact{text-align:left;margin-left:6px}
+  .contact .t{font-family:'Oswald',sans-serif;font-weight:600;font-size:21px;letter-spacing:3px;color:var(--ggold)}
+  .contact .c{font-weight:700;font-size:23px;line-height:1.32;color:#fff}
+  .credit{position:absolute;right:16px;top:660px;font-size:12px;color:rgba(255,255,255,.55);writing-mode:vertical-rl;transform:rotate(180deg)}
+</style>
+</head>
+<body>
+<div class="poster">
+  <div class="scene"></div>
+  <div class="grade"></div>
+  <div class="grade2"></div>
+  <div class="vignette"></div>
+  <div class="fade"></div>
+  <div class="flag"><img src="flag.svg" alt=""></div>
+
+  <div class="wplate"><img src="wampex.png" alt="WAMPEX"></div>
+  <div class="topline"><b>2027</b> · GANA · BATI AFRİKA</div>
+
+  <div class="title">
+    <div class="pre">BATI AFRİKA <span>MADENCİLİK</span> PAZARINDA</div>
+    <div class="main">YERİNİZİ ALIN!</div>
+    <div class="date">2–4 HAZİRAN 2027<em>|</em>ACCRA, GANA</div>
+    <div class="venue">LA PALM ROYAL BEACH HOTEL</div>
+  </div>
+
+  <div class="credit">Fotoğraf: Dominik Vanyi / Unsplash</div>
+
+  <div class="billing">
+    <p class="lead">Gana ve Batı Afrika'nın madencilik, enerji ve altyapı sektörleriyle yeni iş bağlantıları kurun.</p>
+    <div class="sectors">Maden makineleri<i></i>Kırma ve eleme<i></i>Sondaj ekipmanları<br>Pompa ve vana<i></i>Enerji ve otomasyon</div>
+  </div>
+
+  <div class="flagline"><i style="background:var(--gred)"></i><i style="background:var(--ggold)"></i><i style="background:var(--ggreen)"></i></div>
+  <div class="foot">
+    <div class="card v"><img src="viafa.png" alt="VIAFA"></div>
+    <div class="contact">
+      <div class="t">KATILIM VE DETAYLI BİLGİ</div>
+      <div class="c">info@expoviafair.com<br>www.expoviafair.com</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
