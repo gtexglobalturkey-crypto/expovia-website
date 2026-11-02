@@ -15,16 +15,19 @@ export const CONTECH_ORGANIZER =
 
 export const CONTECH_VENUE = "Vietnam Exposition Center (VEC)";
 
-// Official artwork slots. No approved 2027 imagery exists yet, so every
-// slot is null and the page/card render a text-first fallback. To add an
-// official image later, import it here and assign it, e.g.:
-//   import contechHero from "../assets/exhibitions/contech/contech-2027-hero.webp";
-//   hero: { src: contechHero, width: 1200, height: 800 },
-// `og` takes a plain imported URL (1200×630 JPG) for social sharing.
+// Assets are served from /public/images/contech/. Until uploaded, components
+// retain their text-first fallbacks and hide missing gallery imagery.
 export const CONTECH_IMAGES = {
-  hero: null,
-  card: null,
+  hero: { src: "/images/contech/contech-2027-hero.webp", width: 1100, height: 1554 },
+  card: "/images/contech/contech-2027-hero.webp",
   og: null,
+  gallery: [
+    { id: "construction", src: "/images/contech/contech-construction.webp", width: 674, height: 162 },
+    { id: "mining", src: "/images/contech/contech-mining.webp", width: 674, height: 191 },
+    { id: "materials", src: "/images/contech/contech-materials.webp", width: 674, height: 162 },
+    { id: "transport", src: "/images/contech/contech-transport.webp", width: 674, height: 191 },
+    { id: "visitors", src: "/images/contech/contech-trade-visitors.webp", width: 895, height: 660 },
+  ],
 };
 
 // "Who Should Exhibit" scope, grouped by the three verified sectors.
