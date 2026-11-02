@@ -2,7 +2,10 @@ import { HardHat, Pickaxe, TrainTrack } from "lucide-react";
 
 import { useTranslation } from "../../../hooks/useTranslation";
 
-import { contechSectors } from "../../../data/contechVietnam2027";
+import {
+  CONTECH_IMAGES,
+  contechSectors,
+} from "../../../data/contechVietnam2027";
 
 const sectorIcons = {
   construction: HardHat,
@@ -10,8 +13,9 @@ const sectorIcons = {
   transport: TrainTrack,
 };
 
-// "Who Should Exhibit": the verified product scope per sector, presented
-// like SecurexShows (.products-grid / .product-card, no image).
+// "Who Should Exhibit": a photo strip for the exhibition's fields, then the
+// verified product scope per sector, presented like SecurexShows
+// (.products-grid / .product-card).
 function ContechSectors() {
   const { language } = useTranslation();
 
@@ -21,6 +25,24 @@ function ContechSectors() {
       title: "Product Scope by Sector",
       description:
         "Manufacturers and suppliers whose products fall within the exhibition's construction, mining and transport infrastructure scope.",
+      photos: {
+        construction: {
+          label: "Construction",
+          alt: "Tower cranes above buildings under construction",
+        },
+        materials: {
+          label: "Construction Materials",
+          alt: "Concrete blocks, bricks, pipes and timber",
+        },
+        mining: {
+          label: "Mining",
+          alt: "Yellow mining truck at a surface mine",
+        },
+        transport: {
+          label: "Transport Infrastructure",
+          alt: "Cars and trucks on a multi-lane highway",
+        },
+      },
     },
 
     tr: {
@@ -28,6 +50,24 @@ function ContechSectors() {
       title: "Sektörlere Göre Ürün Kapsamı",
       description:
         "Ürünleri fuarın inşaat, madencilik ve ulaştırma altyapısı kapsamına giren üretici ve tedarikçiler.",
+      photos: {
+        construction: {
+          label: "İnşaat",
+          alt: "İnşaat hâlindeki binaların üzerinde kule vinçler",
+        },
+        materials: {
+          label: "İnşaat Malzemeleri",
+          alt: "Beton bloklar, tuğlalar, borular ve kereste",
+        },
+        mining: {
+          label: "Madencilik",
+          alt: "Açık ocak madeninde sarı maden kamyonu",
+        },
+        transport: {
+          label: "Ulaştırma Altyapısı",
+          alt: "Çok şeritli otoyolda otomobiller ve kamyonlar",
+        },
+      },
     },
   };
 
@@ -45,6 +85,25 @@ function ContechSectors() {
           <h2>{t.title}</h2>
 
           <p>{t.description}</p>
+        </div>
+
+        <div className="contech-sector-photos">
+          {CONTECH_IMAGES.sectors.map((photo) => (
+            <figure
+              key={photo.id}
+              className={`contech-sector-photo contech-sector-photo--${photo.id}`}
+            >
+              <img
+                src={photo.src}
+                alt={t.photos[photo.id].alt}
+                width={photo.width}
+                height={photo.height}
+                loading="lazy"
+              />
+
+              <figcaption>{t.photos[photo.id].label}</figcaption>
+            </figure>
+          ))}
         </div>
 
         <div className="products-grid">

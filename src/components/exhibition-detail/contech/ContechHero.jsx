@@ -16,9 +16,9 @@ const sectorIcons = {
   transport: TrainTrack,
 };
 
-// No approved 2027 artwork exists yet, so the visual is a text-first panel
-// (date, city, venue, the three sectors). Once CONTECH_IMAGES.hero is set in
-// the data file, the official image replaces the panel.
+// The visual is the organizer's 2027 brochure cover (CONTECH_IMAGES.hero).
+// If that slot is ever emptied, a text-first panel (date, city, venue, the
+// three sectors) takes its place.
 function ContechHero() {
   const { language } = useTranslation();
 
@@ -28,16 +28,16 @@ function ContechHero() {
       description:
         "International trade fair in Hanoi for construction, mining and transport machinery, equipment, technology, vehicles and materials.",
       dateLabel: "Date",
-      date: "23–25 June 2027",
+      date: "17–19 August 2027",
       venueLabel: "Venue",
-      venue: "Vietnam Exposition Center (VEC), Hanoi, Vietnam",
+      venue: CONTECH_VENUE,
       organizerLabel: "Organizer",
       organizer: "HADIFA",
       industryLabel: "Industry",
       industry: "Construction · Mining · Transport Infrastructure",
       cta: "Request Participation Information",
       agent: "VIAFA · Türkiye Sales Agent",
-      panelKicker: "Hanoi, Vietnam · 23–25 June 2027",
+      panelKicker: "Hanoi, Vietnam · 17–19 August 2027",
       imageAlt:
         "CONTECH Vietnam 2027, construction, mining and transport exhibition in Hanoi",
     },
@@ -47,16 +47,16 @@ function ContechHero() {
       description:
         "Hanoi'de inşaat, madencilik ve ulaştırma sektörlerine yönelik makine, ekipman, teknoloji, araç ve malzemeleri bir araya getiren uluslararası ticaret fuarı.",
       dateLabel: "Tarih",
-      date: "23–25 Haziran 2027",
+      date: "17–19 Ağustos 2027",
       venueLabel: "Fuar Alanı",
-      venue: "Vietnam Exposition Center (VEC), Hanoi, Vietnam",
+      venue: CONTECH_VENUE,
       organizerLabel: "Organizatör",
       organizer: "HADIFA",
       industryLabel: "Sektör",
       industry: "İnşaat · Madencilik · Ulaştırma Altyapısı",
       cta: "Katılım Bilgisi Al",
       agent: "VIAFA · Türkiye Satış Temsilcisi",
-      panelKicker: "Hanoi, Vietnam · 23–25 Haziran 2027",
+      panelKicker: "Hanoi, Vietnam · 17–19 Ağustos 2027",
       imageAlt:
         "Hanoi'de düzenlenen inşaat, madencilik ve ulaştırma fuarı CONTECH Vietnam 2027",
     },
@@ -117,7 +117,11 @@ function ContechHero() {
             </div>
           </div>
 
-          <figure className="contech-hero-visual">
+          <figure
+            className={`contech-hero-visual${
+              heroImage ? " contech-hero-visual--poster" : ""
+            }`}
+          >
             {heroImage ? (
               <img
                 src={heroImage.src}

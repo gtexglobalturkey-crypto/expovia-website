@@ -1,7 +1,11 @@
 import { useTranslation } from "../../../hooks/useTranslation";
 
+import { CONTECH_IMAGES } from "../../../data/contechVietnam2027";
+
 // The organizer's verified visitor target groups, sorted into three
-// readable groups. No visitor numbers are published for 2027.
+// readable groups. The brochure's estimated visitor figure is not shown. The
+// photo is from CONTECH Vietnam 2026 and its banner shows those dates, so the
+// caption must stay.
 function ContechVisitors() {
   const { language } = useTranslation();
 
@@ -11,6 +15,9 @@ function ContechVisitors() {
       title: "Who You Will Meet",
       description:
         "The organizer's target visitors are professionals and organizations involved in construction, mining and transport infrastructure projects.",
+      photoAlt:
+        "Visitors and press gathered at the conference room entrance at the Vietnam Exposition Center during CONTECH Vietnam 2026",
+      photoCaption: "CONTECH Vietnam 2026 · 16⁠–⁠18 September, VEC, Hanoi",
 
       groups: [
         {
@@ -55,6 +62,9 @@ function ContechVisitors() {
       title: "Kimlerle Tanışacaksınız?",
       description:
         "Organizatörün hedef ziyaretçileri; inşaat, madencilik ve ulaştırma altyapısı projelerinde yer alan profesyoneller ve kuruluşlardır.",
+      photoAlt:
+        "CONTECH Vietnam 2026'da Vietnam Exposition Center'daki konferans salonu girişinde toplanan ziyaretçiler ve basın mensupları",
+      photoCaption: "CONTECH Vietnam 2026 · 16⁠–⁠18 Eylül, VEC, Hanoi",
 
       groups: [
         {
@@ -96,18 +106,33 @@ function ContechVisitors() {
   };
 
   const t = content[language];
+  const photo = CONTECH_IMAGES.visitors;
 
   return (
     <section className="exhibition-profiles contech-visitors section-spacing">
       <div className="container">
-        <div className="section-header">
-          <p className="section-label">
-            {t.label}
-          </p>
+        <div className="contech-visitors-intro">
+          <div className="section-header">
+            <p className="section-label">
+              {t.label}
+            </p>
 
-          <h2>{t.title}</h2>
+            <h2>{t.title}</h2>
 
-          <p>{t.description}</p>
+            <p>{t.description}</p>
+          </div>
+
+          <figure className="contech-visitors-photo">
+            <img
+              src={photo.src}
+              alt={t.photoAlt}
+              width={photo.width}
+              height={photo.height}
+              loading="lazy"
+            />
+
+            <figcaption>{t.photoCaption}</figcaption>
+          </figure>
         </div>
 
         <div className="profiles-grid">

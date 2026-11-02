@@ -9,6 +9,7 @@ import { SECUREX_PATH } from "../../data/securexSouthAfrica2027";
 import {
   CONTECH_IMAGES,
   CONTECH_PATH,
+  CONTECH_VENUE,
 } from "../../data/contechVietnam2027";
 
 function FeaturedExhibitions() {
@@ -64,12 +65,13 @@ function FeaturedExhibitions() {
           path: CONTECH_PATH,
           salesAgent: true,
           image: CONTECH_IMAGES.card,
+          imagePoster: true,
           fallbackKicker: "Hanoi · 2027",
-          fallbackTitle: "Vietnam Exposition Center (VEC)",
+          fallbackTitle: CONTECH_VENUE,
           name: "CONTECH Vietnam 2027",
           country: "Vietnam",
           city: "Hanoi",
-          date: "23–25 June 2027",
+          date: "17–19 August 2027",
           industry: "Construction · Mining · Transport",
           organizer: "HADIFA",
           description:
@@ -128,12 +130,13 @@ function FeaturedExhibitions() {
           path: CONTECH_PATH,
           salesAgent: true,
           image: CONTECH_IMAGES.card,
+          imagePoster: true,
           fallbackKicker: "Hanoi · 2027",
-          fallbackTitle: "Vietnam Exposition Center (VEC)",
+          fallbackTitle: CONTECH_VENUE,
           name: "CONTECH Vietnam 2027",
           country: "Vietnam",
           city: "Hanoi",
-          date: "23–25 Haziran 2027",
+          date: "17–19 Ağustos 2027",
           industry: "İnşaat · Madencilik · Ulaştırma",
           organizer: "HADIFA",
           description:
@@ -153,7 +156,9 @@ function FeaturedExhibitions() {
       <div
         className={`exhibition-image${
           exhibition.imageLockup ? " exhibition-image--lockup" : ""
-        }${exhibition.image ? "" : " exhibition-image--text"}`}
+        }${exhibition.imagePoster ? " exhibition-image--poster" : ""}${
+          exhibition.image ? "" : " exhibition-image--text"
+        }`}
       >
         {exhibition.image ? (
           <img
@@ -161,7 +166,7 @@ function FeaturedExhibitions() {
             alt={exhibition.imageAlt ?? exhibition.name}
           />
         ) : (
-          // Text-first stand-in until official artwork is approved.
+          // Text-first stand-in for a card without an image.
           <div
             className="exhibition-image-fallback"
             aria-hidden="true"

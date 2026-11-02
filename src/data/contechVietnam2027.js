@@ -1,6 +1,13 @@
 // Single source of truth for the CONTECH Vietnam 2027 page. Only verified
-// facts live here: no prices, statistics, exhibitor/visitor numbers or
-// floor-plan data until the 2027 materials are confirmed.
+// facts live here: no prices, statistics or floor-plan data, and the
+// brochure's estimated area, exhibitor and visitor figures are not shown.
+import contechHero from "../assets/exhibitions/contech/contech-2027-hero.webp";
+import contechConstruction from "../assets/exhibitions/contech/contech-construction.webp";
+import contechMaterials from "../assets/exhibitions/contech/contech-materials.webp";
+import contechMining from "../assets/exhibitions/contech/contech-mining.webp";
+import contechTransport from "../assets/exhibitions/contech/contech-transport.webp";
+import contechVisitors from "../assets/exhibitions/contech/contech-trade-visitors.webp";
+
 export const CONTECH_PATH = "/exhibition-detail/contech-vietnam-2027";
 
 export const CONTECH_NAME = "CONTECH Vietnam 2027";
@@ -13,18 +20,23 @@ export const CONTECH_OFFICIAL_NAME =
 export const CONTECH_ORGANIZER =
   "Hanoi Advertising & International Fair Joint Stock Company (HADIFA)";
 
-export const CONTECH_VENUE = "Vietnam Exposition Center (VEC)";
+export const CONTECH_VENUE = "Vietnam Exposition Center (VEC), Dong Anh, Hanoi";
 
-// Official artwork slots. No approved 2027 imagery exists yet, so every
-// slot is null and the page/card render a text-first fallback. To add an
-// official image later, import it here and assign it, e.g.:
-//   import contechHero from "../assets/exhibitions/contech/contech-2027-hero.webp";
-//   hero: { src: contechHero, width: 1200, height: 800 },
-// `og` takes a plain imported URL (1200×630 JPG) for social sharing.
+// Organizer brochure imagery. `sectors` is shown in order in ContechSectors;
+// `visitors` comes from CONTECH Vietnam 2026, so it always needs its caption
+// next to the 2027 dates. `og` takes a plain imported URL (1200×630 JPG) for
+// social sharing.
 export const CONTECH_IMAGES = {
-  hero: null,
-  card: null,
+  hero: { src: contechHero, width: 1100, height: 1554 },
+  card: contechHero,
   og: null,
+  sectors: [
+    { id: "construction", src: contechConstruction, width: 674, height: 162 },
+    { id: "materials", src: contechMaterials, width: 674, height: 162 },
+    { id: "mining", src: contechMining, width: 674, height: 191 },
+    { id: "transport", src: contechTransport, width: 674, height: 191 },
+  ],
+  visitors: { src: contechVisitors, width: 895, height: 660 },
 };
 
 // "Who Should Exhibit" scope, grouped by the three verified sectors.

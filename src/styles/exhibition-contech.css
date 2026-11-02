@@ -59,8 +59,9 @@
   border-radius: 999px;
 }
 
-/* HERO VISUAL — official artwork slot. Until an approved 2027 image is set
-   in contechVietnam2027.js, a text-first branded panel fills it. */
+/* HERO VISUAL — official artwork slot. The brochure cover is a tall poster, so
+   it is capped to keep the hero compact. If the image slot in
+   contechVietnam2027.js is emptied, a text-first branded panel fills it. */
 
 .contech-hero-visual {
   margin: 0;
@@ -78,6 +79,13 @@
   display: block;
   width: 100%;
   height: auto;
+}
+
+.contech-hero-visual--poster {
+  justify-self: center;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
 }
 
 .contech-hero-panel {
@@ -176,8 +184,49 @@
   min-height: 0;
 }
 
-/* WHO SHOULD EXHIBIT — three sector cards (reuse .products-grid /
-   .product-card, no image) */
+/* WHO SHOULD EXHIBIT — photo strip, then three sector cards (reuse
+   .products-grid / .product-card). The source photos are 674px wide, so two
+   columns keep them from being upscaled. */
+
+.contech-sector-photos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.contech-sector-photo {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  aspect-ratio: 674 / 162;
+  background: #d9d7d2;
+  border-radius: 14px;
+}
+
+.contech-sector-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contech-sector-photo--mining img {
+  object-position: center bottom;
+}
+
+.contech-sector-photo figcaption {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  padding: 4px 9px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #ffffff;
+  background: rgba(23, 23, 25, 0.72);
+  border-radius: 7px;
+}
 
 .contech-sectors .products-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -232,7 +281,54 @@
   color: #871c37;
 }
 
-/* VISITOR PROFILE — three groups (reuse .profiles-grid / .profile-card) */
+/* VISITOR PROFILE — header beside the CONTECH Vietnam 2026 photo, then three
+   groups (reuse .profiles-grid / .profile-card). The photo is a brochure cut:
+   the 106% width and bottom anchoring crop its stray icon and white corners,
+   and the caption sits on the brochure's blue circle. */
+
+.contech-visitors-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 500px);
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contech-visitors .contech-visitors-intro .section-header {
+  grid-template-columns: 1fr;
+  row-gap: 12px;
+  margin-bottom: 0;
+}
+
+.contech-visitors-photo {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  aspect-ratio: 16 / 10;
+  background: #d9d7d2;
+  border-radius: 18px;
+}
+
+.contech-visitors-photo img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 106%;
+  max-width: none;
+  height: auto;
+}
+
+.contech-visitors-photo figcaption {
+  position: absolute;
+  left: 16px;
+  bottom: 14px;
+  max-width: 50%;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #ffffff;
+}
 
 .contech-visitors .profiles-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -316,8 +412,19 @@
   margin: 10px 0 0;
 }
 
-/* EXHIBITIONS LISTING — text-first card image until official artwork is
-   approved (same dark field as the Securex lockup). */
+/* EXHIBITIONS LISTING — the card band is too short for the whole poster, so it
+   shows the photo area only: the oversize width crops the poster's white and
+   yellow left edge, where the VIAFA badge sits. */
+
+.exhibition-image--poster img {
+  width: 115%;
+  max-width: none;
+  margin-left: -13%;
+  object-position: center 54%;
+}
+
+/* Text-first card image if the image slot is emptied (same dark field as the
+   Securex lockup). */
 
 .exhibition-image--text {
   background:
@@ -378,6 +485,7 @@
     min-height: 0;
   }
 
+  .contech-visitors-intro,
   .contech-visitors .profiles-grid,
   .contech-opportunities .highlights-grid {
     grid-template-columns: 1fr;
@@ -404,6 +512,19 @@
 
   .contech-hero-sectors strong {
     font-size: 19px;
+  }
+
+  .contech-hero-visual--poster {
+    max-width: 320px;
+  }
+
+  .contech-sector-photos {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .contech-sector-photo {
+    aspect-ratio: 3 / 1;
   }
 
   .contech-scope-list,
