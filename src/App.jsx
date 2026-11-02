@@ -21,11 +21,14 @@ import Viamate from "./pages/Viamate";
 import ViamatePrivacyPolicy from "./pages/ViamatePrivacyPolicy";
 import Viawa from "./pages/Viawa";
 
+import ScrollToTop from "./components/layout/ScrollToTop";
 import WhatsAppButton from "./components/ui/WhatsAppButton";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
+
       <Routes>
         <Route
           path="/"
