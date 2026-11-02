@@ -18,8 +18,8 @@ export const CONTECH_VENUE = "Vietnam Exposition Center (VEC)";
 // Assets are served from /public/images/contech/. Until uploaded, components
 // retain their text-first fallbacks and hide missing gallery imagery.
 export const CONTECH_IMAGES = {
-  hero: { src: "/images/contech/contech-2027-hero.webp", width: 1100, height: 1554 },
-  card: "/images/contech/contech-2027-hero.webp",
+  hero: null, // Activate after the WebP assets are uploaded
+  card: null, // Activate after the WebP assets are uploaded
   og: null,
   gallery: [
     { id: "construction", src: "/images/contech/contech-construction.webp", width: 674, height: 162 },
