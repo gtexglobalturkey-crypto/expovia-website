@@ -17,7 +17,7 @@ function ContechOverview() {
       lead:
         "CONTECH Vietnam brings together machinery, equipment, technologies, vehicles and materials serving construction, mining and transport infrastructure.",
       secondary:
-        "The 2027 edition takes place on 17–19 August at the Vietnam Exhibition Center (VEC) in Hanoi, giving companies from Türkiye a platform to present their products and solutions to contractors, investors, engineers and other professionals in these sectors.",
+        "The 2027 edition takes place on 17–19 August at the Vietnam Exposition Center (VEC) in Hanoi, giving companies from Türkiye a platform to present their products and solutions to contractors, investors, engineers and other professionals in these sectors.",
       factsLabel: "Key Information",
       factsTitle: "Exhibition Details",
       officialNameLabel: "Official Name",
@@ -25,7 +25,7 @@ function ContechOverview() {
       date: "17–19 August 2027",
       venueLabel: "Venue",
       venue:
-        "Vietnam Exhibition Center (VEC), Tu Lien Bridge Road, Dong Anh, Hanoi, Vietnam",
+        "Vietnam Exposition Center (VEC), Tu Lien Bridge Road, Dong Anh, Hanoi, Vietnam",
       organizerLabel: "Organizer",
     },
 
@@ -35,7 +35,7 @@ function ContechOverview() {
       lead:
         "CONTECH Vietnam; inşaat, madencilik ve ulaştırma altyapısına hizmet eden makine, ekipman, teknoloji, araç ve malzemeleri bir araya getirir.",
       secondary:
-        "2027 edisyonu 17–19 Ağustos tarihlerinde Hanoi'deki Vietnam Exhibition Center'da (VEC) düzenlenir ve Türkiye'deki firmalara ürün ve çözümlerini bu sektörlerdeki yüklenicilere, yatırımcılara, mühendislere ve diğer profesyonellere sunabilecekleri bir platform sağlar.",
+        "2027 edisyonu 17–19 Ağustos tarihlerinde Hanoi'deki Vietnam Exposition Center'da (VEC) düzenlenir ve Türkiye'deki firmalara ürün ve çözümlerini bu sektörlerdeki yüklenicilere, yatırımcılara, mühendislere ve diğer profesyonellere sunabilecekleri bir platform sağlar.",
       factsLabel: "Temel Bilgiler",
       factsTitle: "Fuar Detayları",
       officialNameLabel: "Resmî Adı",
@@ -43,7 +43,7 @@ function ContechOverview() {
       date: "17–19 Ağustos 2027",
       venueLabel: "Fuar Alanı",
       venue:
-        "Vietnam Exhibition Center (VEC), Tu Lien Bridge Road, Dong Anh, Hanoi, Vietnam",
+        "Vietnam Exposition Center (VEC), Tu Lien Bridge Road, Dong Anh, Hanoi, Vietnam",
       organizerLabel: "Organizatör",
     },
   };
