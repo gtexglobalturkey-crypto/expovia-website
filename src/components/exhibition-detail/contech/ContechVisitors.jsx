@@ -3,9 +3,9 @@ import { useTranslation } from "../../../hooks/useTranslation";
 import { CONTECH_IMAGES } from "../../../data/contechVietnam2027";
 
 // The organizer's verified visitor target groups, sorted into three
-// readable groups. No visitor numbers are published for 2027. The photo is
-// from the previous edition: its banner shows the 2026 dates, so the caption
-// must stay.
+// readable groups. The brochure's estimated visitor figure is not shown. The
+// photo is from CONTECH Vietnam 2026 and its banner shows those dates, so the
+// caption must stay.
 function ContechVisitors() {
   const { language } = useTranslation();
 
@@ -16,8 +16,8 @@ function ContechVisitors() {
       description:
         "The organizer's target visitors are professionals and organizations involved in construction, mining and transport infrastructure projects.",
       photoAlt:
-        "Visitors and press gathered at the conference room entrance at the Vietnam Exposition Center during the previous CONTECH Vietnam edition",
-      photoCaption: "Previous edition, September 2026 · VEC, Hanoi",
+        "Visitors and press gathered at the conference room entrance at the Vietnam Exposition Center during CONTECH Vietnam 2026",
+      photoCaption: "CONTECH Vietnam 2026 · 16⁠–⁠18 September, VEC, Hanoi",
 
       groups: [
         {
@@ -63,8 +63,8 @@ function ContechVisitors() {
       description:
         "Organizatörün hedef ziyaretçileri; inşaat, madencilik ve ulaştırma altyapısı projelerinde yer alan profesyoneller ve kuruluşlardır.",
       photoAlt:
-        "Önceki CONTECH Vietnam edisyonunda Vietnam Exposition Center'daki konferans salonu girişinde toplanan ziyaretçiler ve basın mensupları",
-      photoCaption: "Önceki edisyon, Eylül 2026 · VEC, Hanoi",
+        "CONTECH Vietnam 2026'da Vietnam Exposition Center'daki konferans salonu girişinde toplanan ziyaretçiler ve basın mensupları",
+      photoCaption: "CONTECH Vietnam 2026 · 16⁠–⁠18 Eylül, VEC, Hanoi",
 
       groups: [
         {

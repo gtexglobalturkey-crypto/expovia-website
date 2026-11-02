@@ -19,8 +19,8 @@ import {
 import { useTranslation } from "../hooks/useTranslation";
 
 const DESCRIPTIONS = {
-  en: "CONTECH Vietnam 2027 (17–19 August 2027, Vietnam Exposition Center, Dong Anh, Hanoi): international exhibition for construction, mining and transport infrastructure machinery, equipment and technology. VIAFA is the Türkiye Sales Agent.",
-  tr: "CONTECH Vietnam 2027 (17–19 Ağustos 2027, Vietnam Exposition Center, Dong Anh, Hanoi): inşaat, madencilik ve ulaştırma altyapısı makine, ekipman ve teknolojileri fuarı. VIAFA, fuarın Türkiye Satış Temsilcisidir.",
+  en: "CONTECH Vietnam 2027 (17–19 August 2027, Vietnam Exposition Center (VEC), Dong Anh, Hanoi): international exhibition for construction, mining and transport infrastructure machinery, equipment and technology. VIAFA is the Türkiye Sales Agent.",
+  tr: "CONTECH Vietnam 2027 (17–19 Ağustos 2027, Vietnam Exposition Center (VEC), Dong Anh, Hanoi): inşaat, madencilik ve ulaştırma altyapısı makine, ekipman ve teknolojileri fuarı. VIAFA, fuarın Türkiye Satış Temsilcisidir.",
 };
 
 function ContechVietnam2027() {

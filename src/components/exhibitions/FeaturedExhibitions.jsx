@@ -9,6 +9,7 @@ import { SECUREX_PATH } from "../../data/securexSouthAfrica2027";
 import {
   CONTECH_IMAGES,
   CONTECH_PATH,
+  CONTECH_VENUE,
 } from "../../data/contechVietnam2027";
 
 function FeaturedExhibitions() {
@@ -66,7 +67,7 @@ function FeaturedExhibitions() {
           image: CONTECH_IMAGES.card,
           imagePoster: true,
           fallbackKicker: "Hanoi · 2027",
-          fallbackTitle: "Vietnam Exposition Center (VEC)",
+          fallbackTitle: CONTECH_VENUE,
           name: "CONTECH Vietnam 2027",
           country: "Vietnam",
           city: "Hanoi",
@@ -131,7 +132,7 @@ function FeaturedExhibitions() {
           image: CONTECH_IMAGES.card,
           imagePoster: true,
           fallbackKicker: "Hanoi · 2027",
-          fallbackTitle: "Vietnam Exposition Center (VEC)",
+          fallbackTitle: CONTECH_VENUE,
           name: "CONTECH Vietnam 2027",
           country: "Vietnam",
           city: "Hanoi",
@@ -165,7 +166,7 @@ function FeaturedExhibitions() {
             alt={exhibition.imageAlt ?? exhibition.name}
           />
         ) : (
-          // Text-first stand-in until official artwork is approved.
+          // Text-first stand-in for a card without an image.
           <div
             className="exhibition-image-fallback"
             aria-hidden="true"

@@ -3,6 +3,7 @@ import { useTranslation } from "../../../hooks/useTranslation";
 import {
   CONTECH_OFFICIAL_NAME,
   CONTECH_ORGANIZER,
+  CONTECH_VENUE,
 } from "../../../data/contechVietnam2027";
 
 // Same layout as SecurexOverview; the right column shows the verified
@@ -24,8 +25,7 @@ function ContechOverview() {
       dateLabel: "Date",
       date: "17–19 August 2027",
       venueLabel: "Venue",
-      venue:
-        "Vietnam Exposition Center (VEC), Tu Lien Bridge Road, Dong Anh, Hanoi, Vietnam",
+      venue: CONTECH_VENUE,
       organizerLabel: "Organizer",
     },
 
@@ -42,8 +42,7 @@ function ContechOverview() {
       dateLabel: "Tarih",
       date: "17–19 Ağustos 2027",
       venueLabel: "Fuar Alanı",
-      venue:
-        "Vietnam Exposition Center (VEC), Tu Lien Bridge Road, Dong Anh, Hanoi, Vietnam",
+      venue: CONTECH_VENUE,
       organizerLabel: "Organizatör",
     },
   };

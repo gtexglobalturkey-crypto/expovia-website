@@ -1,6 +1,6 @@
 // Single source of truth for the CONTECH Vietnam 2027 page. Only verified
-// facts live here: no prices, statistics, exhibitor/visitor numbers or
-// floor-plan data until the 2027 materials are confirmed.
+// facts live here: no prices, statistics or floor-plan data, and the
+// brochure's estimated area, exhibitor and visitor figures are not shown.
 import contechHero from "../assets/exhibitions/contech/contech-2027-hero.webp";
 import contechConstruction from "../assets/exhibitions/contech/contech-construction.webp";
 import contechMaterials from "../assets/exhibitions/contech/contech-materials.webp";
@@ -20,12 +20,12 @@ export const CONTECH_OFFICIAL_NAME =
 export const CONTECH_ORGANIZER =
   "Hanoi Advertising & International Fair Joint Stock Company (HADIFA)";
 
-export const CONTECH_VENUE = "Vietnam Exposition Center (VEC)";
+export const CONTECH_VENUE = "Vietnam Exposition Center (VEC), Dong Anh, Hanoi";
 
 // Organizer brochure imagery. `sectors` is shown in order in ContechSectors;
-// `visitors` comes from the September 2026 edition, so it always needs its
-// caption next to the 2027 dates. `og` takes a plain imported URL (1200×630
-// JPG) for social sharing.
+// `visitors` comes from CONTECH Vietnam 2026, so it always needs its caption
+// next to the 2027 dates. `og` takes a plain imported URL (1200×630 JPG) for
+// social sharing.
 export const CONTECH_IMAGES = {
   hero: { src: contechHero, width: 1100, height: 1554 },
   card: contechHero,
