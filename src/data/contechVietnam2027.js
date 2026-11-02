@@ -22,6 +22,9 @@ export const CONTECH_ORGANIZER =
 
 export const CONTECH_VENUE = "Vietnam Exposition Center (VEC), Dong Anh, Hanoi";
 
+// HADIFA MEDIA's YouTube video "CONTECH VIETNAM 2025 - DAY 1".
+export const CONTECH_VIDEO_ID = "deFeYEq1PhM";
+
 // Organizer brochure imagery. `sectors` is shown in order in ContechSectors;
 // `visitors` comes from CONTECH Vietnam 2026, so it always needs its caption
 // next to the 2027 dates. `og` takes a plain imported URL (1200×630 JPG) for

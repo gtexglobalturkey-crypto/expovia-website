@@ -7,6 +7,8 @@ import ContechHero from "../components/exhibition-detail/contech/ContechHero";
 import ContechOverview from "../components/exhibition-detail/contech/ContechOverview";
 import ContechSectors from "../components/exhibition-detail/contech/ContechSectors";
 import ContechVisitors from "../components/exhibition-detail/contech/ContechVisitors";
+import ContechVideo from "../components/exhibition-detail/contech/ContechVideo";
+import ContechPastExhibitors from "../components/exhibition-detail/contech/ContechPastExhibitors";
 import ContechOpportunities from "../components/exhibition-detail/contech/ContechOpportunities";
 import ContechParticipation from "../components/exhibition-detail/contech/ContechParticipation";
 import ContechCTA from "../components/exhibition-detail/contech/ContechCTA";
@@ -45,6 +47,10 @@ function ContechVietnam2027() {
         <ContechSectors />
 
         <ContechVisitors />
+
+        <ContechVideo />
+
+        <ContechPastExhibitors />
 
         <ContechOpportunities />
 

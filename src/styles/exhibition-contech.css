@@ -361,6 +361,70 @@
   padding: 10px 12px;
 }
 
+/* VIDEO — centred 16:9 player, width capped to stay within one screen */
+
+.contech-video .section-header {
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+
+.contech-video-frame {
+  overflow: hidden;
+  max-width: 860px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  background: #171719;
+  border-radius: 18px;
+}
+
+.contech-video-frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* PAST EXHIBITORS — logo-only cards. White because many logos have no
+   transparent version. */
+
+.contech-past-group + .contech-past-group {
+  margin-top: 28px;
+}
+
+.contech-past-logos {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contech-past-logos--six {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.contech-past-logos li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  height: 84px;
+  padding: 12px;
+  background: #ffffff;
+  border: 1px solid #e6e3dd;
+  border-radius: 12px;
+}
+
+.contech-past-logos img {
+  display: block;
+  width: auto;
+  max-width: min(100%, 150px);
+  height: auto;
+  max-height: 44px;
+  object-fit: contain;
+}
+
 /* BUSINESS OPPORTUNITIES — three highlight cards, no arrow */
 
 .contech-opportunities .highlights-grid {
@@ -485,6 +549,15 @@
     min-height: 0;
   }
 
+  /* Full rows: 10 logos as 5 + 5 and 12 logos as 4 + 4 + 4 */
+  .contech-past-logos--six {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .contech-past-logos li {
+    padding: 10px;
+  }
+
   .contech-visitors-intro,
   .contech-visitors .profiles-grid,
   .contech-opportunities .highlights-grid {
@@ -525,6 +598,15 @@
 
   .contech-sector-photo {
     aspect-ratio: 3 / 1;
+  }
+
+  .contech-past-logos,
+  .contech-past-logos--six {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contech-past-logos li {
+    height: 72px;
   }
 
   .contech-scope-list,
