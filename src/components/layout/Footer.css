@@ -38,7 +38,7 @@
   align-items: center;
 }
 
-/* VIAFA-seffaf-temiz.png is already a tightly-cropped transparent
+/* VIAFA-seffaf-temiz.webp is already a tightly-cropped transparent
    logo, so the mark just needs a fixed-height box that lets the image
    scale to fit within it without clipping or stretching. */
 .site-footer__logo-mark {

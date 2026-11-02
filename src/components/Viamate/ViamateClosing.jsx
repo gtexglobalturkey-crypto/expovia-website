@@ -4,8 +4,8 @@ const GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=com.viafa
 
 import { useTranslation } from "../../hooks/useTranslation";
 
-import transferSceneEn from "../../assets/images/viamate/illustrations/viamate-closing-transfer-en.png";
-import transferSceneTr from "../../assets/images/viamate/illustrations/viamate-closing-transfer-tr.png";
+import transferSceneEn from "../../assets/images/viamate/illustrations/viamate-closing-transfer-en.webp";
+import transferSceneTr from "../../assets/images/viamate/illustrations/viamate-closing-transfer-tr.webp";
 
 function ViamateClosing() {
   const { language } = useTranslation();

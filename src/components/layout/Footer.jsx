@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import { useTranslation } from "../../hooks/useTranslation";
 
-import logo from "../../assets/images/VIAFA-seffaf-temiz.png";
+import logo from "../../assets/images/VIAFA-seffaf-temiz.webp";
 
 import "./Footer.css";
 

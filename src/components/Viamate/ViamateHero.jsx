@@ -4,7 +4,7 @@ const GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=com.viafa
 
 import { useTranslation } from "../../hooks/useTranslation";
 
-import viamateLogo from "../../assets/images/viamate/viamate-logo.png";
+import viamateLogo from "../../assets/images/viamate/viamate-logo.webp";
 import viamateHomeScreenshotEn from "../../assets/images/viamate/optimized/viamate-home.webp";
 import viamateHomeScreenshotTr from "../../assets/images/viamate/optimized/viamate-home-tr.webp";
 

@@ -4,8 +4,8 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { useContext, useEffect, useRef, useState } from "react";
 import { Menu, X } from "lucide-react";
 
-import logo from "../../assets/images/VIAFA-seffaf-temiz.png";
-import viamateLogo from "../../assets/images/viamate/viamate-logo.png";
+import logo from "../../assets/images/VIAFA-seffaf-temiz.webp";
+import viamateLogo from "../../assets/images/viamate/viamate-logo.webp";
 import viawaLogo from "../../assets/images/viawa/viawa-logo.png";
 
 import { useTranslation } from "../../hooks/useTranslation";

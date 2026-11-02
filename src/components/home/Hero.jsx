@@ -2,7 +2,7 @@ import "./Hero.css";
 
 import { useTranslation } from "../../hooks/useTranslation";
 
-import heroImage from "../../assets/images/hero.png";
+import heroImage from "../../assets/images/hero.webp";
 import Button from "../ui/Button";
 
 function Hero() {
