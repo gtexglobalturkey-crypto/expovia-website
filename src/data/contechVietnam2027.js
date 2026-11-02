@@ -13,7 +13,7 @@ export const CONTECH_OFFICIAL_NAME =
 export const CONTECH_ORGANIZER =
   "Hanoi Advertising & International Fair Joint Stock Company (HADIFA)";
 
-export const CONTECH_VENUE = "Vietnam Exhibition Center (VEC)";
+export const CONTECH_VENUE = "Vietnam Exposition Center (VEC)";
 
 // Official artwork slots. No approved 2027 imagery exists yet, so every
 // slot is null and the page/card render a text-first fallback. To add an
