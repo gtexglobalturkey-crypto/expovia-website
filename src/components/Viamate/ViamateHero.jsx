@@ -1,5 +1,7 @@
 import { Apple, PlayCircle } from "lucide-react";
 
+const GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=com.viafa.viamate";
+
 import { useTranslation } from "../../hooks/useTranslation";
 
 import viamateLogo from "../../assets/images/viamate/viamate-logo.png";
@@ -21,7 +23,8 @@ function ViamateHero() {
         "VIAMATE brings everything together around the work you are actually doing, keeps it organized, and gives it back to you when the job is complete.",
       ],
       comingSoonOn: "Coming soon on",
-      availability: "Coming soon on iOS and Android.",
+      availableOn: "Get it on",
+      availability: "Available on Android. Coming soon on iOS.",
       homeScreenshotAlt: "VIAMATE Home screen",
     },
 
@@ -34,7 +37,8 @@ function ViamateHero() {
         "VIAMATE, sahada topladığınız bilgileri bir çalışma etrafında bir araya getirir, düzenler ve işiniz bittiğinde size teslim eder.",
       ],
       comingSoonOn: "Yakında",
-      availability: "Yakında iOS ve Android'de.",
+      availableOn: "Şimdi indir",
+      availability: "Android'de yayında. iOS yakında.",
       homeScreenshotAlt: "VIAMATE Ana Ekranı",
     },
   };
@@ -80,18 +84,19 @@ function ViamateHero() {
               </span>
             </div>
 
-            <div className="viamate-store-badge">
-              <PlayCircle
-                size={22}
-                aria-hidden="true"
-              />
+            <a
+              className="viamate-store-badge"
+              href={GOOGLE_PLAY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={language === "tr" ? "VIAMATE'i Google Play'den indir" : "Get VIAMATE on Google Play"}
+            >
+              <PlayCircle size={22} aria-hidden="true" />
               <span className="viamate-store-badge-text">
-                <span className="viamate-store-badge-label">
-                  {t.comingSoonOn}
-                </span>
+                <span className="viamate-store-badge-label">{t.availableOn}</span>
                 <span className="viamate-store-badge-store">Google Play</span>
               </span>
-            </div>
+            </a>
           </div>
 
           <p className="viamate-hero-availability-note">{t.availability}</p>
