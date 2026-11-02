@@ -287,6 +287,45 @@
   min-height: 0;
 }
 
+/* VIDEOS — main 16:9 player, previous-edition player smaller below it. Widths
+   are capped so the main player stays within one screen. */
+
+.securex-videos .section-header {
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+
+.securex-video-frame {
+  overflow: hidden;
+  max-width: 860px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  background: #171719;
+  border-radius: 18px;
+}
+
+.securex-video-frame--small {
+  max-width: 520px;
+  border-radius: 14px;
+}
+
+.securex-video-frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.securex-video-subtitle {
+  margin: 28px 0 14px;
+  font-size: clamp(19px, 2vw, 24px);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #1b1b1e;
+}
+
 /* EXHIBITIONS LISTING — each card sits in a group with its own intro line
    (WAMPEX keeps its representation wording, Securex its neutral one,
    CONTECH its sales-agent one). The groups share rows via subgrid so the

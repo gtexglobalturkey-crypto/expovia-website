@@ -9,6 +9,13 @@ export const SECUREX_TAGLINE = "Africa’s Integrated Protection Marketplace";
 
 export const SECUREX_CONCEPT = "4 Shows. 1 Destination.";
 
+// Montgomery Group Africa's YouTube videos: "Securex Africa 2027: New Era" and
+// the 2026 "Day 3 Recap".
+export const SECUREX_VIDEOS = {
+  main: "rnMV6ImTIwg",
+  previous: "ic1hi4g_Uiw",
+};
+
 export const securexShows = {
   en: [
     {

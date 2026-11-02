@@ -6,6 +6,7 @@ import SEO from "../components/seo/SEO";
 import SecurexHero from "../components/exhibition-detail/securex/SecurexHero";
 import SecurexOverview from "../components/exhibition-detail/securex/SecurexOverview";
 import SecurexShows from "../components/exhibition-detail/securex/SecurexShows";
+import SecurexVideos from "../components/exhibition-detail/securex/SecurexVideos";
 import SecurexResults from "../components/exhibition-detail/securex/SecurexResults";
 import SecurexSponsors from "../components/exhibition-detail/securex/SecurexSponsors";
 import SecurexParticipation from "../components/exhibition-detail/securex/SecurexParticipation";
@@ -42,6 +43,8 @@ function SecurexSouthAfrica2027() {
         <SecurexOverview />
 
         <SecurexShows />
+
+        <SecurexVideos />
 
         <SecurexResults />
 
