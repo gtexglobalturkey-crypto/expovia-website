@@ -16,9 +16,9 @@ const sectorIcons = {
   transport: TrainTrack,
 };
 
-// No approved 2027 artwork exists yet, so the visual is a text-first panel
-// (date, city, venue, the three sectors). Once CONTECH_IMAGES.hero is set in
-// the data file, the official image replaces the panel.
+// The visual is the organizer's 2027 brochure cover (CONTECH_IMAGES.hero).
+// If that slot is ever emptied, a text-first panel (date, city, venue, the
+// three sectors) takes its place.
 function ContechHero() {
   const { language } = useTranslation();
 
@@ -117,7 +117,11 @@ function ContechHero() {
             </div>
           </div>
 
-          <figure className="contech-hero-visual">
+          <figure
+            className={`contech-hero-visual${
+              heroImage ? " contech-hero-visual--poster" : ""
+            }`}
+          >
             {heroImage ? (
               <img
                 src={heroImage.src}

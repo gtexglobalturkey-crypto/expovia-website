@@ -64,6 +64,7 @@ function FeaturedExhibitions() {
           path: CONTECH_PATH,
           salesAgent: true,
           image: CONTECH_IMAGES.card,
+          imagePoster: true,
           fallbackKicker: "Hanoi · 2027",
           fallbackTitle: "Vietnam Exposition Center (VEC)",
           name: "CONTECH Vietnam 2027",
@@ -128,6 +129,7 @@ function FeaturedExhibitions() {
           path: CONTECH_PATH,
           salesAgent: true,
           image: CONTECH_IMAGES.card,
+          imagePoster: true,
           fallbackKicker: "Hanoi · 2027",
           fallbackTitle: "Vietnam Exposition Center (VEC)",
           name: "CONTECH Vietnam 2027",
@@ -153,7 +155,9 @@ function FeaturedExhibitions() {
       <div
         className={`exhibition-image${
           exhibition.imageLockup ? " exhibition-image--lockup" : ""
-        }${exhibition.image ? "" : " exhibition-image--text"}`}
+        }${exhibition.imagePoster ? " exhibition-image--poster" : ""}${
+          exhibition.image ? "" : " exhibition-image--text"
+        }`}
       >
         {exhibition.image ? (
           <img

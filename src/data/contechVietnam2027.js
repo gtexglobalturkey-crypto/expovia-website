@@ -1,6 +1,13 @@
 // Single source of truth for the CONTECH Vietnam 2027 page. Only verified
 // facts live here: no prices, statistics, exhibitor/visitor numbers or
 // floor-plan data until the 2027 materials are confirmed.
+import contechHero from "../assets/exhibitions/contech/contech-2027-hero.webp";
+import contechConstruction from "../assets/exhibitions/contech/contech-construction.webp";
+import contechMaterials from "../assets/exhibitions/contech/contech-materials.webp";
+import contechMining from "../assets/exhibitions/contech/contech-mining.webp";
+import contechTransport from "../assets/exhibitions/contech/contech-transport.webp";
+import contechVisitors from "../assets/exhibitions/contech/contech-trade-visitors.webp";
+
 export const CONTECH_PATH = "/exhibition-detail/contech-vietnam-2027";
 
 export const CONTECH_NAME = "CONTECH Vietnam 2027";
@@ -15,19 +22,21 @@ export const CONTECH_ORGANIZER =
 
 export const CONTECH_VENUE = "Vietnam Exposition Center (VEC)";
 
-// Assets are served from /public/images/contech/. Until uploaded, components
-// retain their text-first fallbacks and hide missing gallery imagery.
+// Organizer brochure imagery. `sectors` is shown in order in ContechSectors;
+// `visitors` comes from the September 2026 edition, so it always needs its
+// caption next to the 2027 dates. `og` takes a plain imported URL (1200×630
+// JPG) for social sharing.
 export const CONTECH_IMAGES = {
-  hero: null, // Activate after the WebP assets are uploaded
-  card: null, // Activate after the WebP assets are uploaded
+  hero: { src: contechHero, width: 1100, height: 1554 },
+  card: contechHero,
   og: null,
-  gallery: [
-    { id: "construction", src: "/images/contech/contech-construction.webp", width: 674, height: 162 },
-    { id: "mining", src: "/images/contech/contech-mining.webp", width: 674, height: 191 },
-    { id: "materials", src: "/images/contech/contech-materials.webp", width: 674, height: 162 },
-    { id: "transport", src: "/images/contech/contech-transport.webp", width: 674, height: 191 },
-    { id: "visitors", src: "/images/contech/contech-trade-visitors.webp", width: 895, height: 660 },
+  sectors: [
+    { id: "construction", src: contechConstruction, width: 674, height: 162 },
+    { id: "materials", src: contechMaterials, width: 674, height: 162 },
+    { id: "mining", src: contechMining, width: 674, height: 191 },
+    { id: "transport", src: contechTransport, width: 674, height: 191 },
   ],
+  visitors: { src: contechVisitors, width: 895, height: 660 },
 };
 
 // "Who Should Exhibit" scope, grouped by the three verified sectors.

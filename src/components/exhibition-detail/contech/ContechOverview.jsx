@@ -6,7 +6,7 @@ import {
 } from "../../../data/contechVietnam2027";
 
 // Same layout as SecurexOverview; the right column shows the verified
-// official details instead of photography (no approved 2027 imagery yet).
+// official details instead of photography.
 function ContechOverview() {
   const { language } = useTranslation();
 
