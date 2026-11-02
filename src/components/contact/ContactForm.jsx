@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { useTranslation } from "../../hooks/useTranslation";
 
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/mdenpjol";
@@ -25,11 +26,17 @@ function ContactForm() {
       placeholders: {
         company: "Company",
         name: "Contact Person",
-        email: "Business Email",
+        email: "Business Email *",
         phone: "Phone",
         industry: "Industry",
         message:
-          "Tell us about your products, target markets and the exhibitions you are interested in.",
+          "Tell us about your products, target markets and the exhibitions you are interested in. *",
+      },
+
+      privacy: {
+        before: "Read our ",
+        link: "Privacy Policy",
+        after: " to see how we handle your personal data.",
       },
 
       button: "Send Message",
@@ -48,11 +55,17 @@ function ContactForm() {
       placeholders: {
         company: "Şirket",
         name: "İlgili Kişi",
-        email: "Kurumsal E-posta",
+        email: "Kurumsal E-posta *",
         phone: "Telefon",
         industry: "Sektör",
         message:
-          "Ürünleriniz, hedef pazarlarınız ve ilgilendiğiniz fuarlar hakkında bize bilgi verin.",
+          "Ürünleriniz, hedef pazarlarınız ve ilgilendiğiniz fuarlar hakkında bize bilgi verin. *",
+      },
+
+      privacy: {
+        before: "Kişisel verilerinizin nasıl işlendiğini ",
+        link: "Gizlilik Politikası",
+        after: "'nda bulabilirsiniz.",
       },
 
       button: "Mesaj Gönder",
@@ -150,6 +163,7 @@ function ContactForm() {
             placeholder={t.placeholders.email}
             value={form.corporate_email}
             onChange={handleChange}
+            required
           />
 
           <input
@@ -175,15 +189,24 @@ function ContactForm() {
           placeholder={t.placeholders.message}
           value={form.message}
           onChange={handleChange}
+          required
         />
 
-        <button
-          type="submit"
-          className="primary-button"
-          disabled={isSubmitting}
-        >
-          {isSubmitting ? t.buttonSending : t.button}
-        </button>
+        <div className="contact-form-actions">
+          <p className="contact-form-privacy">
+            {t.privacy.before}
+            <Link to="/privacy-policy">{t.privacy.link}</Link>
+            {t.privacy.after}
+          </p>
+
+          <button
+            type="submit"
+            className="primary-button"
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? t.buttonSending : t.button}
+          </button>
+        </div>
 
         {status === "success" && (
           <p className="contact-form-status contact-form-status--success">
