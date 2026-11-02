@@ -22,6 +22,8 @@ function ExhibitionDetailHero() {
       imageAlt: "WAMPEX West Africa entrance banner",
       logoAlt: "WAMPEX West Africa",
       announcement: "2026 Incentive Amount: 22,983 TRY",
+      announcementNote:
+        "This amount applies to 2026 only. Contact VIAFA for the 2027 amount.",
     },
 
     tr: {
@@ -39,6 +41,8 @@ function ExhibitionDetailHero() {
       imageAlt: "WAMPEX West Africa giriş bannerı",
       logoAlt: "WAMPEX West Africa",
       announcement: "2026 Yılı Teşvik Tutarı: 22.983 TL",
+      announcementNote:
+        "Bu tutar yalnızca 2026 yılı içindir. 2027 tutarı için VIAFA ile iletişime geçin.",
     },
   };
 
@@ -53,6 +57,10 @@ function ExhibitionDetailHero() {
               {t.label}
             </p>
 
+            <h1 className="detail-hero-visually-hidden">
+              WAMPEX West Africa 2027
+            </h1>
+
             <div className="detail-hero-logo-row">
               <img
                 src={wampexLogo}
@@ -64,6 +72,10 @@ function ExhibitionDetailHero() {
                 {t.announcement}
               </span>
             </div>
+
+            <p className="detail-hero-announcement-note">
+              {t.announcementNote}
+            </p>
 
             <p className="detail-hero-description">
               {t.description}
