@@ -1,8 +1,15 @@
 import LegalPage from "../components/legal/LegalPage";
+import SEO from "../components/seo/SEO";
 
+import { PAGE_TITLES } from "../config/pageTitles";
 import { useTranslation } from "../hooks/useTranslation";
 
 import { CONTACT_EMAIL } from "../config/site";
+
+const SEO_DESCRIPTIONS = {
+  en: "How the VIAFA website collects, uses, stores and protects personal information.",
+  tr: "VIAFA internet sitesinde kişisel verilerin nasıl toplandığını, kullanıldığını, saklandığını ve korunduğunu açıklayan gizlilik politikası.",
+};
 
 function PrivacyPolicy() {
   const { language } = useTranslation();
@@ -1166,14 +1173,22 @@ function PrivacyPolicy() {
     content[language] ?? content.en;
 
   return (
-    <LegalPage
-      eyebrow={pageContent.eyebrow}
-      title={pageContent.title}
-      description={pageContent.description}
-      updatedLabel={pageContent.updatedLabel}
-      updatedDate={pageContent.updatedDate}
-      sections={pageContent.sections}
-    />
+    <>
+      <SEO
+        title={PAGE_TITLES.privacyPolicy[language]}
+        description={SEO_DESCRIPTIONS[language]}
+        canonical="/privacy-policy"
+      />
+
+      <LegalPage
+        eyebrow={pageContent.eyebrow}
+        title={pageContent.title}
+        description={pageContent.description}
+        updatedLabel={pageContent.updatedLabel}
+        updatedDate={pageContent.updatedDate}
+        sections={pageContent.sections}
+      />
+    </>
   );
 }
 

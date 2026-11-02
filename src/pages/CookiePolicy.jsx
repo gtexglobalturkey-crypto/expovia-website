@@ -1,8 +1,15 @@
 import LegalPage from "../components/legal/LegalPage";
+import SEO from "../components/seo/SEO";
 
+import { PAGE_TITLES } from "../config/pageTitles";
 import { useTranslation } from "../hooks/useTranslation";
 
 import { CONTACT_EMAIL } from "../config/site";
+
+const SEO_DESCRIPTIONS = {
+  en: "How the VIAFA website uses cookies and similar technologies, and how you can manage your choices.",
+  tr: "VIAFA internet sitesinde çerezlerin ve benzeri teknolojilerin nasıl kullanıldığını ve tercihlerinizi nasıl yönetebileceğinizi açıklayan çerez politikası.",
+};
 
 function CookiePolicy() {
   const { language } = useTranslation();
@@ -1034,14 +1041,22 @@ function CookiePolicy() {
     content[language] ?? content.en;
 
   return (
-    <LegalPage
-      eyebrow={pageContent.eyebrow}
-      title={pageContent.title}
-      description={pageContent.description}
-      updatedLabel={pageContent.updatedLabel}
-      updatedDate={pageContent.updatedDate}
-      sections={pageContent.sections}
-    />
+    <>
+      <SEO
+        title={PAGE_TITLES.cookiePolicy[language]}
+        description={SEO_DESCRIPTIONS[language]}
+        canonical="/cookie-policy"
+      />
+
+      <LegalPage
+        eyebrow={pageContent.eyebrow}
+        title={pageContent.title}
+        description={pageContent.description}
+        updatedLabel={pageContent.updatedLabel}
+        updatedDate={pageContent.updatedDate}
+        sections={pageContent.sections}
+      />
+    </>
   );
 }
 

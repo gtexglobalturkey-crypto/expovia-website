@@ -1,8 +1,15 @@
 import LegalPage from "../components/legal/LegalPage";
+import SEO from "../components/seo/SEO";
 
+import { PAGE_TITLES } from "../config/pageTitles";
 import { useTranslation } from "../hooks/useTranslation";
 
 import { CONTACT_EMAIL } from "../config/site";
+
+const SEO_DESCRIPTIONS = {
+  en: "The terms that apply to using the VIAFA website, its content and exhibition information.",
+  tr: "VIAFA internet sitesinin, içeriklerinin ve fuar bilgilerinin kullanımına ilişkin koşullar.",
+};
 
 function TermsOfUse() {
   const { language } = useTranslation();
@@ -944,14 +951,22 @@ function TermsOfUse() {
     content[language] ?? content.en;
 
   return (
-    <LegalPage
-      eyebrow={pageContent.eyebrow}
-      title={pageContent.title}
-      description={pageContent.description}
-      updatedLabel={pageContent.updatedLabel}
-      updatedDate={pageContent.updatedDate}
-      sections={pageContent.sections}
-    />
+    <>
+      <SEO
+        title={PAGE_TITLES.termsOfUse[language]}
+        description={SEO_DESCRIPTIONS[language]}
+        canonical="/terms-of-use"
+      />
+
+      <LegalPage
+        eyebrow={pageContent.eyebrow}
+        title={pageContent.title}
+        description={pageContent.description}
+        updatedLabel={pageContent.updatedLabel}
+        updatedDate={pageContent.updatedDate}
+        sections={pageContent.sections}
+      />
+    </>
   );
 }
 

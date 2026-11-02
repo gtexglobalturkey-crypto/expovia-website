@@ -46,4 +46,16 @@ export const PAGE_TITLES = {
     tr: "İletişim | VIAFA",
     en: "Contact | VIAFA",
   },
+  privacyPolicy: {
+    tr: "Gizlilik Politikası | VIAFA",
+    en: "Privacy Policy | VIAFA",
+  },
+  cookiePolicy: {
+    tr: "Çerez Politikası | VIAFA",
+    en: "Cookie Policy | VIAFA",
+  },
+  termsOfUse: {
+    tr: "Kullanım Koşulları | VIAFA",
+    en: "Terms of Use | VIAFA",
+  },
 };
