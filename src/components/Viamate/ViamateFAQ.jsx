@@ -42,7 +42,17 @@ function ViamateFAQ() {
         {
           question: "Which devices can use VIAMATE?",
           answer:
-            "The first version of VIAMATE is being prepared for Android 10 and above. An iOS version is planned for a later stage.",
+            "VIAMATE is available on Google Play for Android, and Google Play shows whether your device is compatible. An iOS version is coming soon.",
+        },
+        {
+          question: "Is VIAMATE free?",
+          answer:
+            "You can try VIAMATE free for 48 hours from the first time you open it. After the trial, you can continue with a one-time Pro purchase on Google Play; there is no subscription. The price is shown on Google Play and may vary by country.",
+        },
+        {
+          question: "What happens to my data when the trial ends?",
+          answer:
+            "Your data stays on your device. Without Pro, you can still view and export what you have already recorded, but you cannot add or change records.",
         },
       ],
     },
@@ -80,7 +90,17 @@ function ViamateFAQ() {
         {
           question: "VIAMATE hangi cihazlarda kullanılabilir?",
           answer:
-            "VIAMATE'in ilk sürümü Android 10 ve üzeri cihazlar için hazırlanmıştır. iOS sürümü daha sonraki aşamada planlanmaktadır.",
+            "VIAMATE, Android için Google Play'de yayındadır; cihazınızın uyumlu olup olmadığını Google Play'de görebilirsiniz. iOS sürümü yakında geliyor.",
+        },
+        {
+          question: "VIAMATE ücretsiz mi?",
+          answer:
+            "VIAMATE'i ilk açtığınız andan itibaren 48 saat ücretsiz deneyebilirsiniz. Deneme bittikten sonra Google Play üzerinden tek seferlik Pro satın alımıyla devam edebilirsiniz; abonelik yoktur. Fiyat Google Play'de gösterilir ve ülkeye göre değişebilir.",
+        },
+        {
+          question: "Deneme bitince verilerime ne olur?",
+          answer:
+            "Verileriniz cihazınızda kalır. Pro olmadan kayıtlı verilerinizi görüntülemeye ve dışa aktarmaya devam edebilirsiniz, ancak yeni kayıt ekleyemez ve mevcut kayıtları değiştiremezsiniz.",
         },
       ],
     },
