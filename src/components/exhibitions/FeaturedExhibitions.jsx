@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 import { useTranslation } from "../../hooks/useTranslation";
 
-import wampexImage from "../../assets/exhibitions/wampex-01.png";
 import securexImage from "../../assets/exhibitions/securex/securex-2027-hero.webp";
 
 import { SECUREX_PATH } from "../../data/securexSouthAfrica2027";
@@ -30,20 +29,6 @@ function FeaturedExhibitions() {
       button: "View Exhibition",
 
       exhibitions: [
-        {
-          id: 1,
-          path: "/exhibition-detail",
-          representationConfirmed: true,
-          image: wampexImage,
-          name: "WAMPEX West Africa 2027",
-          country: "Ghana",
-          city: "Accra",
-          date: "2–4 June 2027",
-          industry: "Mining & Power",
-          organizer: "DMG Events",
-          description:
-            "The region's largest mining and power exhibition, connecting equipment manufacturers, technology providers and mining professionals across West Africa.",
-        },
         {
           id: 2,
           path: SECUREX_PATH,
@@ -95,20 +80,6 @@ function FeaturedExhibitions() {
       button: "Fuarı İncele",
 
       exhibitions: [
-        {
-          id: 1,
-          path: "/exhibition-detail",
-          representationConfirmed: true,
-          image: wampexImage,
-          name: "WAMPEX West Africa 2027",
-          country: "Gana",
-          city: "Accra",
-          date: "2–4 Haziran 2027",
-          industry: "Madencilik & Enerji",
-          organizer: "DMG Events",
-          description:
-            "Batı Afrika'nın en büyük madencilik ve enerji fuarı; ekipman üreticilerini, teknoloji sağlayıcılarını ve sektör profesyonellerini bir araya getiriyor.",
-        },
         {
           id: 2,
           path: SECUREX_PATH,
