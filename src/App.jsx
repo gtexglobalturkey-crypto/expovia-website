@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 import ContechVietnam2027 from "./pages/ContechVietnam2027";
 import CookiePolicy from "./pages/CookiePolicy";
 import Exhibitions from "./pages/Exhibitions";
+import FlipItPrivacyPolicy from "./pages/FlipItPrivacyPolicy";
 import Home from "./pages/Home";
 import Industries from "./pages/Industries";
 import NotFound from "./pages/NotFound";
@@ -69,6 +70,8 @@ function App() {
           path="/viamate"
           element={<Viamate />}
         />
+
+        <Route path="/flip-it/privacy" element={<FlipItPrivacyPolicy />} />
 
         <Route
           path="/viamate/privacy"
