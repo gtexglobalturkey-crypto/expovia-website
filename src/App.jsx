@@ -1,5 +1,6 @@
 import {
   BrowserRouter,
+  Navigate,
   Route,
   Routes,
 } from "react-router-dom";
@@ -8,7 +9,6 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ContechVietnam2027 from "./pages/ContechVietnam2027";
 import CookiePolicy from "./pages/CookiePolicy";
-import ExhibitionDetail from "./pages/ExhibitionDetail";
 import Exhibitions from "./pages/Exhibitions";
 import Home from "./pages/Home";
 import Industries from "./pages/Industries";
@@ -42,7 +42,7 @@ function App() {
 
         <Route
           path="/exhibition-detail"
-          element={<ExhibitionDetail />}
+          element={<Navigate to="/exhibitions" replace />}
         />
 
         <Route
