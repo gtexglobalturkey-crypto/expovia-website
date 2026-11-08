@@ -18,6 +18,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import SecurexSouthAfrica2027 from "./pages/SecurexSouthAfrica2027";
 import Services from "./pages/Services";
 import TermsOfUse from "./pages/TermsOfUse";
+import TiltPrivacyPolicy from "./pages/TiltPrivacyPolicy";
 import Viamate from "./pages/Viamate";
 import ViamatePrivacyPolicy from "./pages/ViamatePrivacyPolicy";
 import Viawa from "./pages/Viawa";
@@ -72,6 +73,8 @@ function App() {
         />
 
         <Route path="/flip-it/privacy" element={<FlipItPrivacyPolicy />} />
+
+        <Route path="/tilt/privacy" element={<TiltPrivacyPolicy />} />
 
         <Route
           path="/viamate/privacy"
