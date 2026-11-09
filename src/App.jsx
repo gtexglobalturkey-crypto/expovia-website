@@ -13,6 +13,7 @@ import Exhibitions from "./pages/Exhibitions";
 import FlipItPrivacyPolicy from "./pages/FlipItPrivacyPolicy";
 import Home from "./pages/Home";
 import Industries from "./pages/Industries";
+import MozaikPrivacyPolicy from "./pages/MozaikPrivacyPolicy";
 import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import SecurexSouthAfrica2027 from "./pages/SecurexSouthAfrica2027";
@@ -75,6 +76,8 @@ function App() {
         <Route path="/flip-it/privacy" element={<FlipItPrivacyPolicy />} />
 
         <Route path="/tilt/privacy" element={<TiltPrivacyPolicy />} />
+
+        <Route path="/mozaik/privacy" element={<MozaikPrivacyPolicy />} />
 
         <Route
           path="/viamate/privacy"
