@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 
 import About from "./pages/About";
+import AirHockeyPrivacyPolicy from "./pages/AirHockeyPrivacyPolicy";
 import Contact from "./pages/Contact";
 import ContechVietnam2027 from "./pages/ContechVietnam2027";
 import CookiePolicy from "./pages/CookiePolicy";
@@ -78,6 +79,8 @@ function App() {
         <Route path="/tilt/privacy" element={<TiltPrivacyPolicy />} />
 
         <Route path="/mozaik/privacy" element={<MozaikPrivacyPolicy />} />
+
+        <Route path="/air-hockey/privacy" element={<AirHockeyPrivacyPolicy />} />
 
         <Route
           path="/viamate/privacy"
