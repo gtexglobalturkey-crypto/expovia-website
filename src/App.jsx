@@ -7,6 +7,7 @@ import {
 
 import About from "./pages/About";
 import AirHockeyPrivacyPolicy from "./pages/AirHockeyPrivacyPolicy";
+import CircuitFlowPrivacyPolicy from "./pages/CircuitFlowPrivacyPolicy";
 import Contact from "./pages/Contact";
 import ContechVietnam2027 from "./pages/ContechVietnam2027";
 import CookiePolicy from "./pages/CookiePolicy";
@@ -81,6 +82,8 @@ function App() {
         <Route path="/mozaik/privacy" element={<MozaikPrivacyPolicy />} />
 
         <Route path="/air-hockey/privacy" element={<AirHockeyPrivacyPolicy />} />
+
+        <Route path="/circuit-flow/privacy" element={<CircuitFlowPrivacyPolicy />} />
 
         <Route
           path="/viamate/privacy"
