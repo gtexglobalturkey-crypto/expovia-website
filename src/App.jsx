@@ -11,6 +11,9 @@ import CircuitFlowPrivacyPolicy from "./pages/CircuitFlowPrivacyPolicy";
 import Contact from "./pages/Contact";
 import ContechVietnam2027 from "./pages/ContechVietnam2027";
 import CookiePolicy from "./pages/CookiePolicy";
+import EchoPathPrivacyPolicy, {
+  EchoPathPrivacyPolicyTr,
+} from "./pages/EchoPathPrivacyPolicy";
 import Exhibitions from "./pages/Exhibitions";
 import FlipItPrivacyPolicy from "./pages/FlipItPrivacyPolicy";
 import Home from "./pages/Home";
@@ -84,6 +87,10 @@ function App() {
         <Route path="/air-hockey/privacy" element={<AirHockeyPrivacyPolicy />} />
 
         <Route path="/circuit-flow/privacy" element={<CircuitFlowPrivacyPolicy />} />
+
+        <Route path="/echo-path/privacy" element={<EchoPathPrivacyPolicy />} />
+
+        <Route path="/echo-path/privacy/tr" element={<EchoPathPrivacyPolicyTr />} />
 
         <Route
           path="/viamate/privacy"
